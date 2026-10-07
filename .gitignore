@@ -1,0 +1,13 @@
+# Local state and credentials
+.env*
+!.env.example
+.agents/
+.codex/
+.aws/
+node_modules/
+.next/
+dist/
+.tooling/
+.wrangler/
+*.tsbuildinfo
+*.log

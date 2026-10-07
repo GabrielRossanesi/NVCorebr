@@ -1,0 +1,12 @@
+{
+  "architecture": "NV Core > NV Products / NV Solutions",
+  "brands": {
+    "core": "#6ba7ff",
+    "solutions": "#afbcce",
+    "hub": "#86aaff",
+    "med": "#65dac5",
+    "lex": "#dbb989"
+  },
+  "symbols": "Shared diagonal geometry; independent product signals",
+  "wordmarks": "Outlined Space Grotesk; no external font dependency"
+}

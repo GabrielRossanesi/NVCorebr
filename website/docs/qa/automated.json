@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-07",
+  "routes": [
+    "/",
+    "/solutions",
+    "/products",
+    "/products/hub",
+    "/products/med",
+    "/products/lex",
+    "/projects",
+    "/about",
+    "/contact"
+  ],
+  "contactScenarios": 15,
+  "contactAssertions": 24,
+  "metadataTests": 3,
+  "contrast": [
+    {
+      "label": "body",
+      "ratio": 8.69
+    },
+    {
+      "label": "text",
+      "ratio": 17.67
+    },
+    {
+      "label": "Med",
+      "ratio": 10.49
+    },
+    {
+      "label": "Lex",
+      "ratio": 10.41
+    },
+    {
+      "label": "button",
+      "ratio": 12.14
+    },
+    {
+      "label": "error",
+      "ratio": 11.42
+    },
+    {
+      "label": "input border",
+      "ratio": 4.34
+    }
+  ],
+  "largestChunks": [
+    {
+      "name": "1mh6a-0e61pyc.js",
+      "bytes": 229156,
+      "gzip": 71628
+    },
+    {
+      "name": "3ertolydtjaa3.js",
+      "bytes": 156015,
+      "gzip": 42894
+    },
+    {
+      "name": "3ne9q32x4iyc7.js",
+      "bytes": 139383,
+      "gzip": 39927
+    },
+    {
+      "name": "0cz1d0mv5g_q7.js",
+      "bytes": 112594,
+      "gzip": 39627
+    },
+    {
+      "name": "26z5y3xewknxi.js",
+      "bytes": 70637,
+      "gzip": 27335
+    },
+    {
+      "name": "456xqoxdr7185.css",
+      "bytes": 65870,
+      "gzip": 13310
+    },
+    {
+      "name": "2p2jd75im6m_h.js",
+      "bytes": 43373,
+      "gzip": 17488
+    },
+    {
+      "name": "3d1essxkdyz5v.js",
+      "bytes": 39398,
+      "gzip": 12694
+    }
+  ]
+}

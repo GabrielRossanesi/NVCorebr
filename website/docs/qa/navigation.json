@@ -1,0 +1,26 @@
+[
+  {
+    "path": "/products/med",
+    "scrollY": 0,
+    "step": "new",
+    "total": "0"
+  },
+  {
+    "path": "/",
+    "scrollY": 2405,
+    "step": "back",
+    "total": "2"
+  },
+  {
+    "path": "/products/med",
+    "scrollY": 0,
+    "step": "forward",
+    "total": "0"
+  },
+  {
+    "path": "/products/med",
+    "scrollY": 0,
+    "step": "refresh",
+    "total": "0"
+  }
+]

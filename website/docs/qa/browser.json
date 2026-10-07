@@ -1,0 +1,232 @@
+[
+  {
+    "h1": 1,
+    "height": 844,
+    "overflow": false,
+    "path": "/",
+    "triggers": "1",
+    "width": 390
+  },
+  {
+    "h1": 1,
+    "height": 844,
+    "overflow": false,
+    "path": "/solutions",
+    "triggers": "0",
+    "width": 390
+  },
+  {
+    "h1": 1,
+    "height": 844,
+    "overflow": false,
+    "path": "/products",
+    "triggers": "1",
+    "width": 390
+  },
+  {
+    "h1": 1,
+    "height": 844,
+    "overflow": false,
+    "path": "/products/hub",
+    "triggers": "0",
+    "width": 390
+  },
+  {
+    "h1": 1,
+    "height": 844,
+    "overflow": false,
+    "path": "/products/med",
+    "triggers": "0",
+    "width": 390
+  },
+  {
+    "h1": 1,
+    "height": 844,
+    "overflow": false,
+    "path": "/products/lex",
+    "triggers": "0",
+    "width": 390
+  },
+  {
+    "h1": 1,
+    "height": 844,
+    "overflow": false,
+    "path": "/about",
+    "triggers": "1",
+    "width": 390
+  },
+  {
+    "h1": 1,
+    "height": 844,
+    "overflow": false,
+    "path": "/projects",
+    "triggers": "0",
+    "width": 390
+  },
+  {
+    "h1": 1,
+    "height": 844,
+    "overflow": false,
+    "path": "/contact",
+    "triggers": "0",
+    "width": 390
+  },
+  {
+    "h1": 1,
+    "height": 1024,
+    "overflow": false,
+    "path": "/",
+    "triggers": "1",
+    "width": 768
+  },
+  {
+    "h1": 1,
+    "height": 1024,
+    "overflow": false,
+    "path": "/solutions",
+    "triggers": "0",
+    "width": 768
+  },
+  {
+    "h1": 1,
+    "height": 1024,
+    "overflow": false,
+    "path": "/products",
+    "triggers": "1",
+    "width": 768
+  },
+  {
+    "h1": 1,
+    "height": 1024,
+    "overflow": false,
+    "path": "/products/hub",
+    "triggers": "0",
+    "width": 768
+  },
+  {
+    "h1": 1,
+    "height": 1024,
+    "overflow": false,
+    "path": "/products/med",
+    "triggers": "0",
+    "width": 768
+  },
+  {
+    "h1": 1,
+    "height": 1024,
+    "overflow": false,
+    "path": "/products/lex",
+    "triggers": "0",
+    "width": 768
+  },
+  {
+    "h1": 1,
+    "height": 1024,
+    "overflow": false,
+    "path": "/about",
+    "triggers": "1",
+    "width": 768
+  },
+  {
+    "h1": 1,
+    "height": 1024,
+    "overflow": false,
+    "path": "/projects",
+    "triggers": "0",
+    "width": 768
+  },
+  {
+    "h1": 1,
+    "height": 1024,
+    "overflow": false,
+    "path": "/contact",
+    "triggers": "0",
+    "width": 768
+  },
+  {
+    "h1": 1,
+    "height": 900,
+    "overflow": false,
+    "path": "/",
+    "triggers": "2",
+    "width": 1440
+  },
+  {
+    "h1": 1,
+    "height": 900,
+    "overflow": false,
+    "path": "/solutions",
+    "triggers": "1",
+    "width": 1440
+  },
+  {
+    "h1": 1,
+    "height": 900,
+    "overflow": false,
+    "path": "/products",
+    "triggers": "1",
+    "width": 1440
+  },
+  {
+    "h1": 1,
+    "height": 900,
+    "overflow": false,
+    "path": "/products/hub",
+    "triggers": "0",
+    "width": 1440
+  },
+  {
+    "h1": 1,
+    "height": 900,
+    "overflow": false,
+    "path": "/products/med",
+    "triggers": "0",
+    "width": 1440
+  },
+  {
+    "h1": 1,
+    "height": 900,
+    "overflow": false,
+    "path": "/products/lex",
+    "triggers": "0",
+    "width": 1440
+  },
+  {
+    "h1": 1,
+    "height": 900,
+    "overflow": false,
+    "path": "/about",
+    "triggers": "1",
+    "width": 1440
+  },
+  {
+    "h1": 1,
+    "height": 900,
+    "overflow": false,
+    "path": "/projects",
+    "triggers": "0",
+    "width": 1440
+  },
+  {
+    "h1": 1,
+    "height": 900,
+    "overflow": false,
+    "path": "/contact",
+    "triggers": "0",
+    "width": 1440
+  },
+  {
+    "height": 768,
+    "overflow": false,
+    "path": "/",
+    "triggers": "2",
+    "width": 1366
+  },
+  {
+    "height": 1080,
+    "overflow": false,
+    "path": "/",
+    "triggers": "2",
+    "width": 1920
+  }
+]
