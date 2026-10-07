@@ -2,6 +2,7 @@ import { Motion } from "@/components/nv/motion";
 import Link from "next/link";
 import { Brand } from "@/components/nv/brand";
 import { Capabilities } from "@/components/nv/capabilities";
+import { EngineeringVisual } from "@/components/nv/engineering-visual";
 import { Cta } from "@/components/nv/cta";
 import { processSteps } from "@/lib/content";
 import { pageMetadata } from "@/lib/site";
@@ -30,39 +31,21 @@ export default function Solutions() {
             Conte seu projeto
           </Link>
         </div>
-        <div
-          className="architecture-visual"
-          aria-label="Arquitetura: experiência, aplicação, dados e integrações"
-        >
-          <div className="architecture-layer">
-            <span>Experiência</span>
-            <strong>Design que orienta.</strong>
-          </div>
-          <div className="architecture-layer">
-            <span>Aplicação</span>
-            <strong>Software que conecta.</strong>
-          </div>
-          <div className="architecture-layer">
-            <span>Dados & integrações</span>
-            <strong>Estrutura que sustenta.</strong>
-          </div>
-          <div className="architecture-base">
-            <Brand symbolOnly name="solutions" />
-            <span>NV Core engineering</span>
-          </div>
-        </div>
+        <EngineeringVisual />
       </section>
-      <section className="section wrap split-section">
-        <div>
-          <p className="section-label">Capacidades</p>
-          <h2>
-            Construído para
-            <br />o seu contexto.
-          </h2>
-          <p>
-            Uma solução começa pelo problema. Explore o que podemos desenvolver
-            com a sua empresa.
-          </p>
+      <section className="section wrap solutions-capabilities">
+        <div className="section-heading">
+          <div>
+            <p className="section-label">Capacidades</p>
+            <h2>
+              Construído para
+              <br />o seu contexto.
+            </h2>
+            <p>
+              Uma solução começa pelo problema. Explore o que podemos
+              desenvolver com a sua empresa.
+            </p>
+          </div>
         </div>
         <Capabilities />
       </section>

@@ -1,5 +1,5 @@
 import { Motion } from "@/components/nv/motion";
-import { ProductExplorer } from "@/components/nv/product-explorer";
+import { ProductShowcase } from "@/components/nv/product-showcase";
 import { Ecosystem } from "@/components/nv/ecosystem";
 import { Cta } from "@/components/nv/cta";
 import { pageMetadata } from "@/lib/site";
@@ -27,7 +27,7 @@ export default function Products() {
         aria-label="Produtos NV"
       >
         <h2 className="sr-only">Explore os produtos</h2>
-        <ProductExplorer />
+        <ProductShowcase />
       </section>
       <section className="section wrap">
         <div className="section-heading">

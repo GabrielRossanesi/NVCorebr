@@ -1,12 +1,12 @@
 import { Motion } from "@/components/nv/motion";
 import Link from "next/link";
 import { Brand } from "@/components/nv/brand";
-import { ProductGlyph } from "@/components/nv/product-glyph";
+import { ProductScene } from "@/components/nv/product-scene";
 import { Cta } from "@/components/nv/cta";
 import { pageMetadata } from "@/lib/site";
 export const metadata = pageMetadata(
   "NV Med | Tecnologia para saúde",
-  "NV Med é o produto próprio da NV Core voltado ao setor de saúde. Conheça sua origem e converse com a NV.",
+  "Escalas por unidade e setor, cobertura por turno e acompanhamento documental. Conheça o NV Med, produto próprio da NV Core para a operação médica.",
   "/products/med",
 );
 export default function Med() {
@@ -26,8 +26,8 @@ export default function Med() {
             da saúde.
           </h1>
           <p className="opening-description">
-            Um produto próprio voltado ao setor de saúde. A perspectiva de
-            engenharia da NV Core em um ecossistema com necessidades próprias.
+            Escalas por unidade e setor, cobertura por turno e acompanhamento
+            documental. Tecnologia para quem organiza a operação médica.
           </p>
           <Link
             href="/contact?intent=product&product=med"
@@ -36,15 +36,7 @@ export default function Med() {
             Conheça o NV Med
           </Link>
         </div>
-        <div className="med-continuity">
-          <span>NV Med / Continuidade</span>
-          <ProductGlyph id="med" />
-          <p>
-            Saúde é o contexto.
-            <br />
-            Tecnologia é o núcleo.
-          </p>
-        </div>
+        <ProductScene id="med" />
       </section>
       <section className="section wrap med-editorial">
         <p className="section-label">Dentro do ecossistema NV</p>
@@ -54,12 +46,12 @@ export default function Med() {
         </h2>
         <div className="med-text">
           <p className="lead">
-            O NV Med é desenvolvido pela NV Core para o setor de saúde.
+            Ver a escala é entender a cobertura da operação.
           </p>
           <p>
-            Seu escopo, funcionalidades e aplicações serão apresentados com a
-            documentação do produto. Converse com a NV para conhecer o produto e
-            seu contexto.
+            Visões semanal e mensal organizam unidades, setores e profissionais.
+            Estados de cobertura destacam vagas e conflitos de horário. A
+            documentação médica acompanha recebimento, análise e validade.
           </p>
           <Link
             className="text-link"
@@ -67,6 +59,31 @@ export default function Med() {
           >
             Conversar sobre o produto
           </Link>
+        </div>
+      </section>
+      <section className="wrap med-flow" aria-label="Dentro do NV Med">
+        <div>
+          <span>UNIDADE → SETOR → TURNO</span>
+          <h3>Contexto antes de complexidade.</h3>
+          <p>
+            Filtros e diferentes visões ajudam a ler a escala no nível de
+            detalhe necessário.
+          </p>
+        </div>
+        <div className="coverage-legend">
+          <span>
+            <i />
+            Completo
+          </span>
+          <span>
+            <i />
+            Vaga aberta
+          </span>
+          <span>
+            <i />
+            Confirmação pendente
+          </span>
+          <small>Estados presentes na interface do produto.</small>
         </div>
       </section>
       <section className="wrap product-siblings">

@@ -1,0 +1,1650 @@
+{
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "samples": [
+        {
+          "time": "2026-10-07T22:19:25.108Z",
+          "signals": [
+            {
+              "arrival": 0.0014,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -233.45,
+              "opacity": 0,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -40.05,
+              "opacity": 0.72,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -168.48509,
+              "opacity": 0.76,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "0 1000",
+              "name": "solutions",
+              "offset": 0,
+              "opacity": 0,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1920
+        },
+        {
+          "time": "2026-10-07T22:19:31.279Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -85.33,
+              "opacity": 0.82,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -253.75,
+              "opacity": 0,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -302.47,
+              "opacity": 0,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -263.9,
+              "opacity": 0,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1920
+        },
+        {
+          "time": "2026-10-07T22:19:37.443Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -233.45,
+              "opacity": 0,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -253.75,
+              "opacity": 0,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -302.47,
+              "opacity": 0,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -135.114909,
+              "opacity": 0.68,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1920
+        },
+        {
+          "time": "2026-10-07T22:19:43.608Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -233.45,
+              "opacity": 0,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -253.75,
+              "opacity": 0,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -302.47,
+              "opacity": 0,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -263.9,
+              "opacity": 0,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1920
+        },
+        {
+          "time": "2026-10-07T22:19:49.751Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -233.45,
+              "opacity": 0,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -253.75,
+              "opacity": 0,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -302.47,
+              "opacity": 0,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -263.9,
+              "opacity": 0,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1920
+        },
+        {
+          "time": "2026-10-07T22:19:55.906Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -159.706889,
+              "opacity": 0.82,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -174.130645,
+              "opacity": 0.72,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -150.666745,
+              "opacity": 0.76,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -104.174909,
+              "opacity": 0.68,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1920
+        }
+      ],
+      "layout": {
+        "elements": [
+          {
+            "rect": {
+              "height": 976,
+              "width": 1905,
+              "x": 0,
+              "y": 104
+            },
+            "selector": ".hero",
+            "text": "Products & engineeringTecnologiacom umnúcleo próprio.Criamos produtos. Construímos soluções.Uma empresa de tecnologia, do primeiro conceito à próxima evolução.Conheça a NV SolutionsExplore nossos produtosO ponto de conexão.NV / CoreNV HubNV MedNV LexNV SolutionsDesign + produto + engenhariaProdutos próprios. Engenharia sob medida.Conheça o núcleo "
+          },
+          {
+            "rect": {
+              "height": 378.75,
+              "width": 847,
+              "x": 96,
+              "y": 299.640625
+            },
+            "selector": "h1",
+            "text": "Tecnologiacom umnúcleo próprio."
+          },
+          {
+            "rect": {
+              "height": 99.75,
+              "width": 480,
+              "x": 96,
+              "y": 708.390625
+            },
+            "selector": ".hero-description",
+            "text": "Criamos produtos. Construímos soluções.Uma empresa de tecnologia, do primeiro conceito à próxima evolução."
+          },
+          {
+            "rect": {
+              "height": 52,
+              "width": 847,
+              "x": 96,
+              "y": 844.140625
+            },
+            "selector": ".actions",
+            "text": "Conheça a NV SolutionsExplore nossos produtos"
+          },
+          {
+            "rect": {
+              "height": 663.703125,
+              "width": 750,
+              "x": 1039,
+              "y": 236.140625
+            },
+            "selector": ".core-diagram",
+            "text": "O ponto de conexão.NV / CoreNV HubNV MedNV LexNV SolutionsDesign + produto + engenharia"
+          },
+          {
+            "rect": {
+              "height": 20.390625,
+              "width": 690,
+              "x": 1069,
+              "y": 236.140625
+            },
+            "selector": ".diagram-caption",
+            "text": "O ponto de conexão.NV / Core"
+          },
+          {
+            "rect": {
+              "height": 44,
+              "width": 89.03125,
+              "x": 1039,
+              "y": 315.78125
+            },
+            "selector": ".diagram-node.node-hub",
+            "text": "NV Hub"
+          },
+          {
+            "rect": {
+              "height": 44,
+              "width": 91.078125,
+              "x": 1697.921875,
+              "y": 342.328125
+            },
+            "selector": ".diagram-node.node-med",
+            "text": "NV Med"
+          },
+          {
+            "rect": {
+              "height": 44,
+              "width": 85.265625,
+              "x": 1106.5,
+              "y": 796.125
+            },
+            "selector": ".diagram-node.node-lex",
+            "text": "NV Lex"
+          },
+          {
+            "rect": {
+              "height": 44,
+              "width": 124.15625,
+              "x": 1672.34375,
+              "y": 829.296875
+            },
+            "selector": ".diagram-node.node-solutions",
+            "text": "NV Solutions"
+          }
+        ],
+        "height": 1080,
+        "lines": "M130 198H80V70H28M475 195H560V85H615M310 362V450H100M500 330H595V470H620",
+        "overflow": false,
+        "width": 1920,
+        "y": 0
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "samples": [
+        {
+          "time": "2026-10-07T22:20:24.263Z",
+          "signals": [
+            {
+              "arrival": 0.0085,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -233.45,
+              "opacity": 0,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -38.404839,
+              "opacity": 0.72,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -166.388814,
+              "opacity": 0.76,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "0 1000",
+              "name": "solutions",
+              "offset": 0,
+              "opacity": 0,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1440
+        },
+        {
+          "time": "2026-10-07T22:20:30.411Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -81.246222,
+              "opacity": 0.82,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -253.75,
+              "opacity": 0,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -302.47,
+              "opacity": 0,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -263.9,
+              "opacity": 0,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1440
+        },
+        {
+          "time": "2026-10-07T22:20:36.568Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -233.45,
+              "opacity": 0,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0.0142,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -253.75,
+              "opacity": 0,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -302.47,
+              "opacity": 0,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -131.257455,
+              "opacity": 0.68,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1440
+        },
+        {
+          "time": "2026-10-07T22:20:42.744Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -233.45,
+              "opacity": 0,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -253.75,
+              "opacity": 0,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -302.47,
+              "opacity": 0,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -263.9,
+              "opacity": 0,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1440
+        },
+        {
+          "time": "2026-10-07T22:20:48.895Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -233.45,
+              "opacity": 0,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -253.75,
+              "opacity": 0,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -302.47,
+              "opacity": 0,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -263.9,
+              "opacity": 0,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1440
+        },
+        {
+          "time": "2026-10-07T22:20:55.040Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -156.752667,
+              "opacity": 0.82,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -171.333871,
+              "opacity": 0.72,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -147.103076,
+              "opacity": 0.76,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -101.442545,
+              "opacity": 0.68,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1440
+        }
+      ],
+      "layout": {
+        "elements": [
+          {
+            "rect": {
+              "height": 796,
+              "width": 1425,
+              "x": 0,
+              "y": 104
+            },
+            "selector": ".hero",
+            "text": "Products & engineeringTecnologiacom umnúcleo próprio.Criamos produtos. Construímos soluções.Uma empresa de tecnologia, do primeiro conceito à próxima evolução.Conheça a NV SolutionsExplore nossos produtosO ponto de conexão.NV / CoreNV HubNV MedNV LexNV SolutionsDesign + produto + engenhariaProdutos próprios. Engenharia sob medida.Conheça o núcleo "
+          },
+          {
+            "rect": {
+              "height": 295.78125,
+              "width": 655.90625,
+              "x": 72,
+              "y": 255.65625
+            },
+            "selector": "h1",
+            "text": "Tecnologiacom umnúcleo próprio."
+          },
+          {
+            "rect": {
+              "height": 90.703125,
+              "width": 480,
+              "x": 72,
+              "y": 581.4375
+            },
+            "selector": ".hero-description",
+            "text": "Criamos produtos. Construímos soluções.Uma empresa de tecnologia, do primeiro conceito à próxima evolução."
+          },
+          {
+            "rect": {
+              "height": 52,
+              "width": 655.90625,
+              "x": 72,
+              "y": 708.140625
+            },
+            "selector": ".actions",
+            "text": "Conheça a NV SolutionsExplore nossos produtos"
+          },
+          {
+            "rect": {
+              "height": 527.6875,
+              "width": 596.296875,
+              "x": 756.703125,
+              "y": 214.15625
+            },
+            "selector": ".core-diagram",
+            "text": "O ponto de conexão.NV / CoreNV HubNV MedNV LexNV SolutionsDesign + produto + engenharia"
+          },
+          {
+            "rect": {
+              "height": 20.390625,
+              "width": 548.609375,
+              "x": 780.546875,
+              "y": 214.15625
+            },
+            "selector": ".diagram-caption",
+            "text": "O ponto de conexão.NV / Core"
+          },
+          {
+            "rect": {
+              "height": 44,
+              "width": 89.03125,
+              "x": 756.703125,
+              "y": 277.46875
+            },
+            "selector": ".diagram-node.node-hub",
+            "text": "NV Hub"
+          },
+          {
+            "rect": {
+              "height": 44,
+              "width": 91.078125,
+              "x": 1261.921875,
+              "y": 298.578125
+            },
+            "selector": ".diagram-node.node-med",
+            "text": "NV Med"
+          },
+          {
+            "rect": {
+              "height": 44,
+              "width": 85.265625,
+              "x": 810.359375,
+              "y": 650.359375
+            },
+            "selector": ".diagram-node.node-lex",
+            "text": "NV Lex"
+          },
+          {
+            "rect": {
+              "height": 44,
+              "width": 124.15625,
+              "x": 1234.796875,
+              "y": 676.75
+            },
+            "selector": ".diagram-node.node-solutions",
+            "text": "NV Solutions"
+          }
+        ],
+        "height": 900,
+        "lines": "M130 198H80V70H28M475 195H560V85H615M310 362V450H100M500 330H595V470H620",
+        "overflow": false,
+        "width": 1440,
+        "y": 0
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "samples": [
+        {
+          "time": "2026-10-07T22:21:10.334Z",
+          "signals": [
+            {
+              "arrival": 0.0032,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -233.45,
+              "opacity": 0,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -39.474194,
+              "opacity": 0.72,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -167.751393,
+              "opacity": 0.76,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "0 1000",
+              "name": "solutions",
+              "offset": 0,
+              "opacity": 0,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1366
+        },
+        {
+          "time": "2026-10-07T22:21:16.489Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -83.505333,
+              "opacity": 0.82,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -253.75,
+              "opacity": 0,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -302.47,
+              "opacity": 0,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -263.9,
+              "opacity": 0,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1366
+        },
+        {
+          "time": "2026-10-07T22:21:22.633Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -233.45,
+              "opacity": 0,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0.0142,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -253.75,
+              "opacity": 0,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -302.47,
+              "opacity": 0,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -131.257455,
+              "opacity": 0.68,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1366
+        },
+        {
+          "time": "2026-10-07T22:21:28.789Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -233.45,
+              "opacity": 0,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -253.75,
+              "opacity": 0,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -302.47,
+              "opacity": 0,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -263.9,
+              "opacity": 0,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1366
+        },
+        {
+          "time": "2026-10-07T22:21:34.946Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -233.45,
+              "opacity": 0,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -253.75,
+              "opacity": 0,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -302.47,
+              "opacity": 0,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -263.9,
+              "opacity": 0,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1366
+        },
+        {
+          "time": "2026-10-07T22:21:41.081Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -155.536222,
+              "opacity": 0.82,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -170.182258,
+              "opacity": 0.72,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -145.635683,
+              "opacity": 0.76,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -100.317455,
+              "opacity": 0.68,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 1366
+        }
+      ],
+      "layout": {
+        "elements": [
+          {
+            "rect": {
+              "height": 720.40625,
+              "width": 1351,
+              "x": 0,
+              "y": 104
+            },
+            "selector": ".hero",
+            "text": "Products & engineeringTecnologiacom umnúcleo próprio.Criamos produtos. Construímos soluções.Uma empresa de tecnologia, do primeiro conceito à próxima evolução.Conheça a NV SolutionsExplore nossos produtosO ponto de conexão.NV / CoreNV HubNV MedNV LexNV SolutionsDesign + produto + engenhariaProdutos próprios. Engenharia sob medida.Conheça o núcleo "
+          },
+          {
+            "rect": {
+              "height": 280.59375,
+              "width": 621.796875,
+              "x": 68.296875,
+              "y": 227.796875
+            },
+            "selector": "h1",
+            "text": "Tecnologiacom umnúcleo próprio."
+          },
+          {
+            "rect": {
+              "height": 86.015625,
+              "width": 480,
+              "x": 68.296875,
+              "y": 538.390625
+            },
+            "selector": ".hero-description",
+            "text": "Criamos produtos. Construímos soluções.Uma empresa de tecnologia, do primeiro conceito à próxima evolução."
+          },
+          {
+            "rect": {
+              "height": 52,
+              "width": 621.796875,
+              "x": 68.296875,
+              "y": 660.40625
+            },
+            "selector": ".actions",
+            "text": "Conheça a NV SolutionsExplore nossos produtos"
+          },
+          {
+            "rect": {
+              "height": 500.25,
+              "width": 565.296875,
+              "x": 717.40625,
+              "y": 190.078125
+            },
+            "selector": ".core-diagram",
+            "text": "O ponto de conexão.NV / CoreNV HubNV MedNV LexNV SolutionsDesign + produto + engenharia"
+          },
+          {
+            "rect": {
+              "height": 20.390625,
+              "width": 520.078125,
+              "x": 740.015625,
+              "y": 190.078125
+            },
+            "selector": ".diagram-caption",
+            "text": "O ponto de conexão.NV / Core"
+          },
+          {
+            "rect": {
+              "height": 44,
+              "width": 89.03125,
+              "x": 717.40625,
+              "y": 250.09375
+            },
+            "selector": ".diagram-node.node-hub",
+            "text": "NV Hub"
+          },
+          {
+            "rect": {
+              "height": 44,
+              "width": 91.078125,
+              "x": 1191.625,
+              "y": 270.109375
+            },
+            "selector": ".diagram-node.node-med",
+            "text": "NV Med"
+          },
+          {
+            "rect": {
+              "height": 44,
+              "width": 85.265625,
+              "x": 768.28125,
+              "y": 601.3125
+            },
+            "selector": ".diagram-node.node-lex",
+            "text": "NV Lex"
+          },
+          {
+            "rect": {
+              "height": 44,
+              "width": 124.15625,
+              "x": 1164.1875,
+              "y": 626.328125
+            },
+            "selector": ".diagram-node.node-solutions",
+            "text": "NV Solutions"
+          }
+        ],
+        "height": 768,
+        "lines": "M130 198H80V70H28M475 195H560V85H615M310 362V450H100M500 330H595V470H620",
+        "overflow": false,
+        "width": 1366,
+        "y": 0
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "samples": [
+        {
+          "time": "2026-10-07T22:22:15.428Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -203.347778,
+              "opacity": 0.533,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -253.75,
+              "opacity": 0,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -302.47,
+              "opacity": 0,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -263.9,
+              "opacity": 0,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 390
+        },
+        {
+          "time": "2026-10-07T22:22:23.553Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -233.45,
+              "opacity": 0,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -253.75,
+              "opacity": 0,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -302.47,
+              "opacity": 0,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -263.9,
+              "opacity": 0,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 390
+        },
+        {
+          "time": "2026-10-07T22:22:31.695Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -233.45,
+              "opacity": 0,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -3.362903,
+              "opacity": 0.468,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -302.47,
+              "opacity": 0,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -263.9,
+              "opacity": 0,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 390
+        },
+        {
+          "time": "2026-10-07T22:22:39.825Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -233.45,
+              "opacity": 0,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -253.75,
+              "opacity": 0,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -302.47,
+              "opacity": 0,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -263.9,
+              "opacity": 0,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 390
+        },
+        {
+          "time": "2026-10-07T22:22:47.965Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -108.223333,
+              "opacity": 0.533,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -168.093619,
+              "opacity": 0.468,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -29.502,
+              "opacity": 0.494,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -163.26664,
+              "opacity": 0.442,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 390
+        },
+        {
+          "time": "2026-10-07T22:22:56.101Z",
+          "signals": [
+            {
+              "arrival": 0,
+              "dash": "19.55 460",
+              "name": "hub",
+              "offset": -233.45,
+              "opacity": 0,
+              "path": "M28 70H80V198H130"
+            },
+            {
+              "arrival": 0,
+              "dash": "21.25 500",
+              "name": "med",
+              "offset": -253.75,
+              "opacity": 0,
+              "path": "M615 85H560V195H475"
+            },
+            {
+              "arrival": 0,
+              "dash": "25.330000000000002 596",
+              "name": "lex",
+              "offset": -302.47,
+              "opacity": 0,
+              "path": "M100 450H310V362"
+            },
+            {
+              "arrival": 0,
+              "dash": "22.1 520",
+              "name": "solutions",
+              "offset": -263.9,
+              "opacity": 0,
+              "path": "M620 470H595V330H500"
+            }
+          ],
+          "state": "running",
+          "width": 390
+        }
+      ],
+      "layout": {
+        "elements": [
+          {
+            "rect": {
+              "height": 947.46875,
+              "width": 375,
+              "x": 0,
+              "y": 80
+            },
+            "selector": ".hero",
+            "text": "Products & engineeringTecnologiacom umnúcleo próprio.Criamos produtos. Construímos soluções.Uma empresa de tecnologia, do primeiro conceito à próxima evolução.Conheça a NV SolutionsExplore nossos produtosO ponto de conexão.NV / CoreNV HubNV MedNV LexNV SolutionsDesign + produto + engenhariaProdutos próprios. Engenharia sob medida.Conheça o núcleo "
+          },
+          {
+            "rect": {
+              "height": 155.203125,
+              "width": 327,
+              "x": 24,
+              "y": 187.822265625
+            },
+            "selector": "h1",
+            "text": "Tecnologiacom umnúcleo próprio."
+          },
+          {
+            "rect": {
+              "height": 84,
+              "width": 327,
+              "x": 24,
+              "y": 359
+            },
+            "selector": ".hero-description",
+            "text": "Criamos produtos. Construímos soluções.Uma empresa de tecnologia, do primeiro conceito à próxima evolução."
+          },
+          {
+            "rect": {
+              "height": 119.09375,
+              "width": 327,
+              "x": 24,
+              "y": 471
+            },
+            "selector": ".actions",
+            "text": "Conheça a NV SolutionsExplore nossos produtos"
+          },
+          {
+            "rect": {
+              "height": 289.375,
+              "width": 327,
+              "x": 24,
+              "y": 638.09375
+            },
+            "selector": ".core-diagram",
+            "text": "O ponto de conexão.NV / CoreNV HubNV MedNV LexNV SolutionsDesign + produto + engenharia"
+          },
+          {
+            "rect": {
+              "height": 20.390625,
+              "width": 300.84375,
+              "x": 37.078125,
+              "y": 638.09375
+            },
+            "selector": ".diagram-caption",
+            "text": "O ponto de conexão.NV / Core"
+          },
+          {
+            "rect": {
+              "height": 44,
+              "width": 89.03125,
+              "x": 24,
+              "y": 678.8125
+            },
+            "selector": ".diagram-node.node-hub",
+            "text": "NV Hub"
+          },
+          {
+            "rect": {
+              "height": 44,
+              "width": 91.078125,
+              "x": 259.921875,
+              "y": 690.390625
+            },
+            "selector": ".diagram-node.node-med",
+            "text": "NV Med"
+          },
+          {
+            "rect": {
+              "height": 44,
+              "width": 85.265625,
+              "x": 53.421875,
+              "y": 863.4375
+            },
+            "selector": ".diagram-node.node-lex",
+            "text": "NV Lex"
+          },
+          {
+            "rect": {
+              "height": 44,
+              "width": 124.15625,
+              "x": 230.109375,
+              "y": 877.90625
+            },
+            "selector": ".diagram-node.node-solutions",
+            "text": "NV Solutions"
+          }
+        ],
+        "height": 844,
+        "lines": "M130 198H80V70H28M475 195H560V85H615M310 362V450H100M500 330H595V470H620",
+        "overflow": false,
+        "width": 390,
+        "y": 0
+      }
+    }
+  ],
+  "layout": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "lineUnchanged": true,
+      "overflow": false,
+      "differences": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "lineUnchanged": true,
+      "overflow": false,
+      "differences": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "lineUnchanged": true,
+      "overflow": false,
+      "differences": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lineUnchanged": true,
+      "overflow": false,
+      "differences": []
+    }
+  ],
+  "pause": {
+    "state": "paused",
+    "unchanged": true,
+    "before": {
+      "signals": [
+        {
+          "arrival": 0,
+          "dash": "19.55 460",
+          "name": "hub",
+          "offset": -233.45,
+          "opacity": 0,
+          "path": "M28 70H80V198H130"
+        },
+        {
+          "arrival": 0,
+          "dash": "21.25 500",
+          "name": "med",
+          "offset": -49.427419,
+          "opacity": 0.468,
+          "path": "M615 85H560V195H475"
+        },
+        {
+          "arrival": 0,
+          "dash": "25.330000000000002 596",
+          "name": "lex",
+          "offset": -302.47,
+          "opacity": 0,
+          "path": "M100 450H310V362"
+        },
+        {
+          "arrival": 0,
+          "dash": "22.1 520",
+          "name": "solutions",
+          "offset": -126.998182,
+          "opacity": 0.442,
+          "path": "M620 470H595V330H500"
+        }
+      ],
+      "state": "paused",
+      "width": 390
+    },
+    "after": {
+      "signals": [
+        {
+          "arrival": 0,
+          "dash": "19.55 460",
+          "name": "hub",
+          "offset": -233.45,
+          "opacity": 0,
+          "path": "M28 70H80V198H130"
+        },
+        {
+          "arrival": 0,
+          "dash": "21.25 500",
+          "name": "med",
+          "offset": -49.427419,
+          "opacity": 0.468,
+          "path": "M615 85H560V195H475"
+        },
+        {
+          "arrival": 0,
+          "dash": "25.330000000000002 596",
+          "name": "lex",
+          "offset": -302.47,
+          "opacity": 0,
+          "path": "M100 450H310V362"
+        },
+        {
+          "arrival": 0,
+          "dash": "22.1 520",
+          "name": "solutions",
+          "offset": -126.998182,
+          "opacity": 0.442,
+          "path": "M620 470H595V330H500"
+        }
+      ],
+      "state": "paused",
+      "width": 390
+    }
+  },
+  "navigation": [
+    {
+      "motion": {
+        "motionMode": "full",
+        "motionReady": "true",
+        "motionTotalTriggers": "3",
+        "motionTriggers": "3"
+      },
+      "pulses": 0,
+      "route": "/solutions"
+    },
+    {
+      "motion": {
+        "motionMode": "full",
+        "motionReady": "true",
+        "motionTotalTriggers": "8",
+        "motionTriggers": "8"
+      },
+      "pulses": 4,
+      "route": "/"
+    },
+    {
+      "motion": {
+        "motionMode": "full",
+        "motionReady": "true",
+        "motionTotalTriggers": "3",
+        "motionTriggers": "3"
+      },
+      "pulses": 0,
+      "route": "/solutions"
+    },
+    {
+      "motion": {
+        "motionMode": "full",
+        "motionReady": "true",
+        "motionTotalTriggers": "8",
+        "motionTriggers": "8"
+      },
+      "pulses": 4,
+      "route": "/"
+    },
+    {
+      "motion": {
+        "motionMode": "full",
+        "motionReady": "true",
+        "motionTotalTriggers": "3",
+        "motionTriggers": "3"
+      },
+      "pulses": 0,
+      "route": "/solutions"
+    },
+    {
+      "motion": {
+        "motionMode": "full",
+        "motionReady": "true",
+        "motionTotalTriggers": "8",
+        "motionTriggers": "8"
+      },
+      "pulses": 4,
+      "route": "/"
+    }
+  ],
+  "reduced": {
+    "before": {
+      "signals": [
+        {
+          "arrival": 0,
+          "dash": "0 1000",
+          "name": "hub",
+          "offset": 0,
+          "opacity": 0,
+          "path": "M28 70H80V198H130"
+        },
+        {
+          "arrival": 0,
+          "dash": "0 1000",
+          "name": "med",
+          "offset": 0,
+          "opacity": 0,
+          "path": "M615 85H560V195H475"
+        },
+        {
+          "arrival": 0,
+          "dash": "0 1000",
+          "name": "lex",
+          "offset": 0,
+          "opacity": 0,
+          "path": "M100 450H310V362"
+        },
+        {
+          "arrival": 0,
+          "dash": "0 1000",
+          "name": "solutions",
+          "offset": 0,
+          "opacity": 0,
+          "path": "M620 470H595V330H500"
+        }
+      ],
+      "state": null,
+      "width": 1440
+    },
+    "after": {
+      "signals": [
+        {
+          "arrival": 0,
+          "dash": "0 1000",
+          "name": "hub",
+          "offset": 0,
+          "opacity": 0,
+          "path": "M28 70H80V198H130"
+        },
+        {
+          "arrival": 0,
+          "dash": "0 1000",
+          "name": "med",
+          "offset": 0,
+          "opacity": 0,
+          "path": "M615 85H560V195H475"
+        },
+        {
+          "arrival": 0,
+          "dash": "0 1000",
+          "name": "lex",
+          "offset": 0,
+          "opacity": 0,
+          "path": "M100 450H310V362"
+        },
+        {
+          "arrival": 0,
+          "dash": "0 1000",
+          "name": "solutions",
+          "offset": 0,
+          "opacity": 0,
+          "path": "M620 470H595V330H500"
+        }
+      ],
+      "state": null,
+      "width": 1440
+    }
+  }
+}

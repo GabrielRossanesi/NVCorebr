@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { Brand } from "./brand";
 import { track } from "@/lib/analytics";
+import { coreConnectionMotion } from "./core-connection-motion";
 export const motion = {
   fast: 0.16,
   standard: 0.32,
@@ -46,13 +47,15 @@ export function Motion({ route }: { route: string }) {
       mm.add(
         {
           desktop: "(min-width: 1000px) and (min-height: 700px)",
+          pointer: "(hover: hover) and (pointer: fine)",
           motion: forceReduced
             ? "not all"
             : "(prefers-reduced-motion: no-preference)",
           reduce: forceReduced ? "all" : "(prefers-reduced-motion: reduce)",
         },
         (ctx) => {
-          const { motion: animate, desktop } = ctx.conditions ?? {};
+          const { motion: animate, desktop, pointer } = ctx.conditions ?? {};
+          const cleanups: (() => void)[] = [];
           main.dataset.motionMode = animate ? "full" : "reduced";
           if (!animate) {
             main.dataset.motionTriggers = "0";
@@ -89,6 +92,35 @@ export function Motion({ route }: { route: string }) {
           }
           const diagram = main.querySelector(".core-diagram");
           const core = diagram?.querySelector(".core-layers");
+          const response = diagram?.querySelector(".core-response");
+          if (diagram)
+            cleanups.push(coreConnectionMotion(diagram, gsap, !desktop));
+          if (diagram && response && pointer && desktop) {
+            const xTo = gsap.quickTo(response, "x", {
+              duration: 0.55,
+              ease: motion.ease,
+            });
+            const yTo = gsap.quickTo(response, "y", {
+              duration: 0.55,
+              ease: motion.ease,
+            });
+            const move = (event: Event) => {
+              const e = event as PointerEvent;
+              const bounds = diagram.getBoundingClientRect();
+              xTo(((e.clientX - bounds.left) / bounds.width - 0.5) * 16);
+              yTo(((e.clientY - bounds.top) / bounds.height - 0.5) * 12);
+            };
+            const reset = () => {
+              xTo(0);
+              yTo(0);
+            };
+            diagram.addEventListener("pointermove", move);
+            diagram.addEventListener("pointerleave", reset);
+            cleanups.push(() => {
+              diagram.removeEventListener("pointermove", move);
+              diagram.removeEventListener("pointerleave", reset);
+            });
+          }
           if (diagram && core && desktop)
             gsap.to(core, {
               y: 36,
@@ -118,6 +150,156 @@ export function Motion({ route }: { route: string }) {
                   },
                 },
               );
+            });
+          const ecosystem = main.querySelector(".ecosystem-map");
+          if (ecosystem)
+            gsap.from(
+              ecosystem.querySelectorAll(
+                ".ecosystem-branches > div,.ecosystem-children a",
+              ),
+              {
+                y: desktop ? 24 : 10,
+                stagger: 0.08,
+                duration: 0.65,
+                ease: motion.ease,
+                scrollTrigger: {
+                  trigger: ecosystem,
+                  start: "top 75%",
+                  end: "bottom 85%",
+                  scrub: 0.4,
+                },
+              },
+            );
+          main
+            .querySelectorAll<HTMLElement>(".engineering-visual")
+            .forEach((visual) => {
+              if (
+                visual.closest(".capability-inline") ||
+                !visual.getClientRects().length
+              )
+                return;
+              const layers = visual.querySelectorAll(
+                "[data-engineering-layer]",
+              );
+              gsap.from(layers, {
+                x: (i: number) => (i - 1) * (desktop ? 22 : 8),
+                y: desktop ? 32 : 12,
+                stagger: 0.08,
+                duration: 0.7,
+                ease: motion.ease,
+                scrollTrigger: {
+                  trigger: visual,
+                  start: "top 85%",
+                  end: "center 55%",
+                  scrub: 0.35,
+                },
+              });
+            });
+          let stageTween: ReturnType<typeof gsap.to> | undefined;
+          const engineeringChange = ctx.add("engineeringChange", () => {
+            const persistent = main.querySelector<HTMLElement>(
+              ".engineering-stage .engineering-visual",
+            );
+            const stage = persistent?.getClientRects().length
+              ? persistent
+              : main.querySelector(".capability-inline .engineering-visual");
+            if (!stage) return;
+            stageTween?.revert();
+            stageTween = gsap.fromTo(
+              stage.querySelectorAll("[data-engineering-layer]"),
+              { x: (i: number) => (i - 1) * 10 },
+              {
+                x: 0,
+                duration: 0.42,
+                stagger: 0.045,
+                ease: motion.ease,
+                clearProps: "transform",
+              },
+            );
+          });
+          const onEngineering: EventListener = () => engineeringChange();
+          document.addEventListener("nv:engineering", onEngineering);
+          cleanups.push(() =>
+            document.removeEventListener("nv:engineering", onEngineering),
+          );
+          const capabilities = main.querySelector(".capabilities");
+          if (capabilities) {
+            let resizeTimer: ReturnType<typeof setTimeout>;
+            const observer = new ResizeObserver(() => {
+              clearTimeout(resizeTimer);
+              resizeTimer = setTimeout(() => ScrollTrigger.refresh(), 100);
+            });
+            observer.observe(capabilities);
+            cleanups.push(() => {
+              clearTimeout(resizeTimer);
+              observer.disconnect();
+            });
+          }
+          main
+            .querySelectorAll<HTMLElement>(".product-scene")
+            .forEach((scene) => {
+              const parts = scene.querySelectorAll("[data-scene-part]");
+              const article = scene.closest<HTMLElement>("[data-product]");
+              const showcase =
+                article?.closest<HTMLElement>(".product-showcase");
+              const setActive = () => {
+                if (showcase && article)
+                  showcase.dataset.activeProduct = article.dataset.product;
+              };
+              gsap.from(parts, {
+                x: (i: number) => (i % 2 ? 1 : -1) * (desktop ? 22 : 8),
+                y: (i: number) => (i < 2 ? 1 : -1) * (desktop ? 30 : 10),
+                scale: desktop ? 0.94 : 0.98,
+                stagger: 0.08,
+                ease: "none",
+                scrollTrigger: {
+                  trigger: article ?? scene,
+                  start: "top 85%",
+                  end: "center 55%",
+                  scrub: 0.45,
+                  onEnter: setActive,
+                  onEnterBack: setActive,
+                },
+              });
+            });
+          const convergence = main.querySelector(".convergence-art");
+          if (convergence) {
+            const timeline = gsap.timeline({
+              scrollTrigger: {
+                trigger: convergence,
+                start: "top 85%",
+                end: "bottom 60%",
+                scrub: 0.4,
+              },
+            });
+            convergence
+              .querySelectorAll<SVGPathElement>("[data-converge-path]")
+              .forEach((line, i) => {
+                const length = line.getTotalLength();
+                timeline.fromTo(
+                  line,
+                  { strokeDasharray: length, strokeDashoffset: length },
+                  { strokeDashoffset: 0, duration: 0.6, ease: "none" },
+                  i * 0.1,
+                );
+              });
+            timeline.from(
+              convergence.querySelector(".convergence-symbol"),
+              { scale: 0.85, transformOrigin: "center", duration: 0.7 },
+              0.2,
+            );
+          }
+          const lifecycle = main.querySelector(".lifecycle");
+          if (lifecycle)
+            gsap.from(lifecycle.querySelectorAll("li"), {
+              y: 14,
+              stagger: 0.08,
+              duration: 0.6,
+              scrollTrigger: {
+                trigger: lifecycle,
+                start: "top 85%",
+                once: true,
+              },
             });
           const process = main.querySelector(".process-rail");
           if (process && desktop)
@@ -150,9 +332,10 @@ export function Motion({ route }: { route: string }) {
             );
             gsap.fromTo(
               overlay.current,
-              { scaleX: 1, autoAlpha: 1 },
+              { x: 12, scale: 0.94, autoAlpha: 1 },
               {
-                scaleX: 0,
+                x: -8,
+                scale: 1,
                 autoAlpha: 0,
                 transformOrigin: "right center",
                 duration: motion.standard,
@@ -169,6 +352,7 @@ export function Motion({ route }: { route: string }) {
             ScrollTrigger.getAll().length,
           );
           return () => {
+            cleanups.forEach((cleanup) => cleanup());
             main.dataset.motionTriggers = "0";
           };
         },
@@ -211,7 +395,20 @@ export function Motion({ route }: { route: string }) {
     <>
       <span ref={anchor} hidden aria-hidden="true" />
       <div ref={overlay} className="route-wipe" aria-hidden="true">
-        <Brand symbolOnly />
+        <Brand
+          name={
+            path === "/products/hub"
+              ? "hub"
+              : path === "/products/med"
+                ? "med"
+                : path === "/products/lex"
+                  ? "lex"
+                  : path === "/solutions"
+                    ? "solutions"
+                    : "core"
+          }
+          symbolOnly
+        />
         <span className="transition-rail" />
       </div>
     </>

@@ -46,6 +46,17 @@ export default async function Contact({
               Um bom projeto começa com as perguntas certas.
             </p>
           </div>
+          <ol className="contact-flow" aria-label="Como iniciar a conversa">
+            <li>
+              <span>01</span>Conte o contexto
+            </li>
+            <li>
+              <span>02</span>Prepare a mensagem
+            </li>
+            <li>
+              <span>03</span>Continue no WhatsApp
+            </li>
+          </ol>
         </div>
         <ContactForm
           key={intent + ":" + product}

@@ -5,6 +5,7 @@ import { ScrollHistory } from "@/components/nv/scroll-history";
 import { WhatsappButton } from "@/components/nv/whatsapp-button";
 import { pageMetadata, siteOrigin } from "@/lib/site";
 import "./globals.css";
+import "./refinements.css";
 export const metadata: Metadata = {
   ...pageMetadata(
     "NV Core",

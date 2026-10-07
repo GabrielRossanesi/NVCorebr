@@ -1,6 +1,7 @@
 import { Motion } from "@/components/nv/motion";
 import { Brand } from "@/components/nv/brand";
 import { Ecosystem } from "@/components/nv/ecosystem";
+import { Lifecycle } from "@/components/nv/lifecycle";
 import { Cta } from "@/components/nv/cta";
 import { pageMetadata } from "@/lib/site";
 export const metadata = pageMetadata(
@@ -45,6 +46,7 @@ export default function About() {
           Projetar, desenvolver, operar e evoluir são partes do mesmo trabalho.
           É essa visão que conecta NV Products e NV Solutions.
         </p>
+        <Lifecycle />
       </section>
       <section className="section wrap principles">
         <article>

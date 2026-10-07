@@ -3,6 +3,11 @@ import { Brand } from "./brand";
 export function SiteFooter() {
   return (
     <footer className="footer wrap">
+      <div className="footer-epilogue" aria-hidden="true">
+        <span>NV CORE</span>
+        <span>PRODUTO · DESIGN · ENGENHARIA</span>
+        <span>O NÚCLEO CONTINUA.</span>
+      </div>
       <div className="footer-top">
         <Link href="/" aria-label="NV Core, início">
           <Brand />

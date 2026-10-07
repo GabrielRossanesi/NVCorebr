@@ -1,0 +1,128 @@
+[
+  {
+    "route": "/",
+    "htmlBytes": 100209,
+    "htmlGzip": 16956,
+    "scriptCount": 12,
+    "scriptGzip": 231591,
+    "styles": [
+      {
+        "path": "/_next/static/chunks/3s-twfzjvplu3.css",
+        "bytes": 87084,
+        "gzip": 17299
+      }
+    ]
+  },
+  {
+    "route": "/solutions",
+    "htmlBytes": 53903,
+    "htmlGzip": 9731,
+    "scriptCount": 12,
+    "scriptGzip": 231591,
+    "styles": [
+      {
+        "path": "/_next/static/chunks/3s-twfzjvplu3.css",
+        "bytes": 87084,
+        "gzip": 17299
+      }
+    ]
+  },
+  {
+    "route": "/products",
+    "htmlBytes": 65383,
+    "htmlGzip": 11184,
+    "scriptCount": 11,
+    "scriptGzip": 222526,
+    "styles": [
+      {
+        "path": "/_next/static/chunks/3s-twfzjvplu3.css",
+        "bytes": 87084,
+        "gzip": 17299
+      }
+    ]
+  },
+  {
+    "route": "/products/hub",
+    "htmlBytes": 38063,
+    "htmlGzip": 7599,
+    "scriptCount": 11,
+    "scriptGzip": 222526,
+    "styles": [
+      {
+        "path": "/_next/static/chunks/3s-twfzjvplu3.css",
+        "bytes": 87084,
+        "gzip": 17299
+      }
+    ]
+  },
+  {
+    "route": "/products/med",
+    "htmlBytes": 38727,
+    "htmlGzip": 7499,
+    "scriptCount": 11,
+    "scriptGzip": 222526,
+    "styles": [
+      {
+        "path": "/_next/static/chunks/3s-twfzjvplu3.css",
+        "bytes": 87084,
+        "gzip": 17299
+      }
+    ]
+  },
+  {
+    "route": "/products/lex",
+    "htmlBytes": 30559,
+    "htmlGzip": 6604,
+    "scriptCount": 11,
+    "scriptGzip": 222526,
+    "styles": [
+      {
+        "path": "/_next/static/chunks/3s-twfzjvplu3.css",
+        "bytes": 87084,
+        "gzip": 17299
+      }
+    ]
+  },
+  {
+    "route": "/about",
+    "htmlBytes": 33219,
+    "htmlGzip": 6744,
+    "scriptCount": 11,
+    "scriptGzip": 222526,
+    "styles": [
+      {
+        "path": "/_next/static/chunks/3s-twfzjvplu3.css",
+        "bytes": 87084,
+        "gzip": 17299
+      }
+    ]
+  },
+  {
+    "route": "/projects",
+    "htmlBytes": 52824,
+    "htmlGzip": 9480,
+    "scriptCount": 11,
+    "scriptGzip": 222526,
+    "styles": [
+      {
+        "path": "/_next/static/chunks/3s-twfzjvplu3.css",
+        "bytes": 87084,
+        "gzip": 17299
+      }
+    ]
+  },
+  {
+    "route": "/contact",
+    "htmlBytes": 34876,
+    "htmlGzip": 7446,
+    "scriptCount": 12,
+    "scriptGzip": 250786,
+    "styles": [
+      {
+        "path": "/_next/static/chunks/3s-twfzjvplu3.css",
+        "bytes": 87084,
+        "gzip": 17299
+      }
+    ]
+  }
+]

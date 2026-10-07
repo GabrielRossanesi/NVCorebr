@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useRef } from "react";
 import { Brand } from "./brand";
 import {
   Sheet,
@@ -18,8 +19,11 @@ const links = [
 ];
 export function SiteHeader() {
   const path = usePathname();
+  const menuNavigated = useRef(false);
   return (
-    <header className="site-header wrap">
+    <header
+      className={`site-header wrap theme-${path.startsWith("/products/") ? path.split("/").pop() : path === "/solutions" ? "solutions" : "core"}`}
+    >
       <Link href="/" aria-label="NV Core, início">
         <Brand />
       </Link>
@@ -46,11 +50,29 @@ export function SiteHeader() {
       </Link>
       <div className="mobile-menu">
         <Sheet>
-          <SheetTrigger className="menu-trigger" aria-label="Abrir menu">
+          <SheetTrigger
+            className="menu-trigger"
+            aria-label="Abrir menu"
+            onClick={() => {
+              menuNavigated.current = false;
+            }}
+          >
             <span />
             <span />
           </SheetTrigger>
-          <SheetContent className="nv-menu" showCloseButton={false}>
+          <SheetContent
+            className="nv-menu"
+            showCloseButton={false}
+            aria-modal="true"
+            onCloseAutoFocus={(event) => {
+              if (menuNavigated.current) {
+                event.preventDefault();
+                document
+                  .querySelector<HTMLElement>("main")
+                  ?.focus({ preventScroll: true });
+              }
+            }}
+          >
             <div className="menu-heading">
               <Brand />
               <SheetClose className="menu-close" aria-label="Fechar menu">
@@ -66,6 +88,9 @@ export function SiteHeader() {
                 <SheetClose asChild key={href}>
                   <Link
                     href={href}
+                    onClick={() => {
+                      menuNavigated.current = true;
+                    }}
                     aria-current={path === href ? "page" : undefined}
                   >
                     {label}
@@ -77,7 +102,12 @@ export function SiteHeader() {
               <p>Dentro do núcleo</p>
               {["hub", "med", "lex"].map((id) => (
                 <SheetClose asChild key={id}>
-                  <Link href={`/products/${id}`}>
+                  <Link
+                    href={`/products/${id}`}
+                    onClick={() => {
+                      menuNavigated.current = true;
+                    }}
+                  >
                     NV {id[0].toUpperCase() + id.slice(1)}
                   </Link>
                 </SheetClose>

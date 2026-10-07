@@ -44,7 +44,15 @@
     },
     {
       "label": "WhatsApp icon",
-      "ratio": 8.2
+      "ratio": 8.65
+    },
+    {
+      "label": "Hub UI",
+      "ratio": 8.3
+    },
+    {
+      "label": "Med UI",
+      "ratio": 9.94
     }
   ],
   "largestChunks": [
@@ -64,24 +72,24 @@
       "gzip": 39627
     },
     {
-      "name": "1vnijvik-r_4w.js",
-      "bytes": 88214,
-      "gzip": 23999
+      "name": "0g8q2qhn75o17.css",
+      "bytes": 90203,
+      "gzip": 17835
+    },
+    {
+      "name": "0h6awwxy312ri.js",
+      "bytes": 88565,
+      "gzip": 24041
+    },
+    {
+      "name": "1xy57jg99q0j5.js",
+      "bytes": 73881,
+      "gzip": 24634
     },
     {
       "name": "26z5y3xewknxi.js",
       "bytes": 70637,
       "gzip": 27335
-    },
-    {
-      "name": "2_tsz_4im_7yy.js",
-      "bytes": 69172,
-      "gzip": 23310
-    },
-    {
-      "name": "3uoknzdlxh2xb.css",
-      "bytes": 65718,
-      "gzip": 13319
     },
     {
       "name": "2p2jd75im6m_h.js",

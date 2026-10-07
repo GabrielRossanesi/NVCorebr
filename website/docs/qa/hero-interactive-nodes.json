@@ -1,0 +1,315 @@
+{
+  "date": "2026-10-07",
+  "origin": "http://127.0.0.1:5175",
+  "geometry": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "lineSame": true,
+      "heroSame": true,
+      "nodeSizesAndXSame": true,
+      "nodeYDelta": [
+        -6,
+        -6,
+        -6,
+        -6
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "lineSame": true,
+      "heroSame": true,
+      "nodeSizesAndXSame": true,
+      "nodeYDelta": [
+        -6,
+        -6,
+        -6,
+        -6
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "lineSame": true,
+      "heroSame": true,
+      "nodeSizesAndXSame": true,
+      "nodeYDelta": [
+        -6,
+        -6,
+        -6,
+        -6
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "lineSame": true,
+      "heroSame": true,
+      "nodeSizesAndXSame": true,
+      "nodeYDelta": [
+        -6,
+        -6,
+        -6,
+        -6
+      ]
+    },
+    {
+      "width": 393,
+      "height": 852,
+      "overflow": false,
+      "lineSame": true,
+      "heroSame": true,
+      "nodeSizesAndXSame": true,
+      "nodeYDelta": [
+        -6,
+        -6,
+        -6,
+        -6
+      ]
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "lineSame": true,
+      "heroSame": true,
+      "nodeSizesAndXSame": true,
+      "nodeYDelta": [
+        -6,
+        -6,
+        -6,
+        -6
+      ]
+    }
+  ],
+  "geometryNote": "Baseline captured existing entrance at translateY(6px); final settled nodes have -6px delta. CSS positions and dimensions unchanged.",
+  "keyboard": [
+    {
+      "emission": "0.002982",
+      "focusVisible": true,
+      "outline": "2px",
+      "outlineColor": "rgb(134, 170, 255)",
+      "signalOpacity": "0.96",
+      "text": "NV Hub"
+    },
+    {
+      "emission": "0.002739",
+      "focusVisible": true,
+      "outline": "2px",
+      "outlineColor": "rgb(101, 218, 197)",
+      "signalOpacity": "0.96",
+      "text": "NV Med"
+    },
+    {
+      "emission": "0.006704",
+      "focusVisible": true,
+      "outline": "2px",
+      "outlineColor": "rgb(219, 185, 137)",
+      "signalOpacity": "0.96",
+      "text": "NV Lex"
+    },
+    {
+      "emission": "0.012912",
+      "focusVisible": true,
+      "outline": "2px",
+      "outlineColor": "rgb(175, 188, 206)",
+      "signalOpacity": "0.96",
+      "text": "NV Solutions"
+    }
+  ],
+  "hover": [
+    {
+      "extraOpacity": "0.96",
+      "focusVisible": true,
+      "glow": "0.6",
+      "hovered": true,
+      "name": "hub",
+      "path": "M28 70H80V198H130"
+    },
+    {
+      "extraOpacity": "0.96",
+      "focusVisible": true,
+      "glow": "0.7",
+      "hovered": false,
+      "name": "med",
+      "path": "M615 85H560V195H475"
+    },
+    {
+      "extraOpacity": "0.96",
+      "focusVisible": true,
+      "glow": "0.598925",
+      "hovered": true,
+      "name": "lex",
+      "path": "M100 450H310V362"
+    },
+    {
+      "extraOpacity": "0.96",
+      "focusVisible": true,
+      "glow": "0.7",
+      "hovered": false,
+      "name": "solutions",
+      "path": "M620 470H595V330H500"
+    }
+  ],
+  "rapidReentry": {
+    "offset": -168.4175,
+    "tracks": 4
+  },
+  "reducedMotion": {
+    "mode": "reduced",
+    "nodes": [
+      {
+        "borderAnimation": "none",
+        "cursor": "pointer",
+        "statusAnimation": "none",
+        "text": "NV Hub"
+      },
+      {
+        "borderAnimation": "none",
+        "cursor": "pointer",
+        "statusAnimation": "none",
+        "text": "NV Med"
+      },
+      {
+        "borderAnimation": "none",
+        "cursor": "pointer",
+        "statusAnimation": "none",
+        "text": "NV Lex"
+      },
+      {
+        "borderAnimation": "none",
+        "cursor": "pointer",
+        "statusAnimation": "none",
+        "text": "NV Solutions"
+      }
+    ],
+    "signals": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "reducedInteraction": {
+    "extra": "0",
+    "glow": "0.7"
+  },
+  "navigation": [
+    {
+      "viewport": 1440,
+      "node": "hub",
+      "url": "http://127.0.0.1:5175/products/hub"
+    },
+    {
+      "viewport": 1440,
+      "node": "med",
+      "url": "http://127.0.0.1:5175/products/med"
+    },
+    {
+      "viewport": 1440,
+      "node": "lex",
+      "url": "http://127.0.0.1:5175/products/lex"
+    },
+    {
+      "viewport": 1440,
+      "node": "solutions",
+      "url": "http://127.0.0.1:5175/solutions"
+    },
+    {
+      "viewport": 390,
+      "node": "hub",
+      "url": "http://127.0.0.1:5175/products/hub"
+    },
+    {
+      "viewport": 390,
+      "node": "med",
+      "url": "http://127.0.0.1:5175/products/med"
+    },
+    {
+      "viewport": 390,
+      "node": "lex",
+      "url": "http://127.0.0.1:5175/products/lex"
+    },
+    {
+      "viewport": 390,
+      "node": "solutions",
+      "url": "http://127.0.0.1:5175/solutions"
+    }
+  ],
+  "automaticEmission": {
+    "hub": {
+      "emission": 0.488662,
+      "name": "hub",
+      "signal": "0.5907"
+    },
+    "lex": {
+      "emission": 0.385584,
+      "name": "lex",
+      "signal": "0.6442"
+    },
+    "med": {
+      "emission": 0.39424,
+      "name": "med",
+      "signal": "0.2139"
+    },
+    "solutions": {
+      "emission": 0.466654,
+      "name": "solutions",
+      "signal": "0.3822"
+    }
+  },
+  "offscreenPause": {
+    "stateBefore": "paused",
+    "stateAfter": "paused",
+    "pathsStable": true,
+    "dotsStable": true,
+    "border": "paused",
+    "resumedState": "running",
+    "resumedDotState": [
+      "running",
+      "running",
+      "running",
+      "running"
+    ]
+  },
+  "routeCleanup": [
+    {
+      "extras": 4,
+      "pinSpacers": 0,
+      "signals": 4,
+      "triggers": null
+    },
+    {
+      "extras": 4,
+      "pinSpacers": 0,
+      "signals": 4,
+      "triggers": null
+    },
+    {
+      "extras": 4,
+      "pinSpacers": 0,
+      "signals": 4,
+      "triggers": null
+    }
+  ],
+  "productionConsole": [],
+  "checks": {
+    "build": "passed",
+    "lint": "passed",
+    "verify": "passed (QA_ORIGIN=5175)"
+  },
+  "limitations": [
+    "Mobile viewports validated through mouse input; physical touch device not exercised.",
+    "Reduced-motion behavior exercised through existing development QA branch.",
+    "Route DOM counts and cleanup implementation checked; heap/FPS not measured."
+  ]
+}

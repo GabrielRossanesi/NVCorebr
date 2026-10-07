@@ -1,0 +1,22 @@
+# NV Core
+
+> Empresa de tecnologia com produtos próprios e engenharia sob medida.
+
+## Empresa e soluções
+- [A NV Core](/about): design, produto, engenharia, operação e evolução.
+- [NV Solutions](/solutions): software, CRM/ERP, web, APIs, integrações, automações e plataformas digitais sob medida.
+- [Projetos](/projects): produtos próprios; cases de clientes somente quando aprovados para divulgação.
+
+## Produtos
+- [Ecossistema NV](/products): produtos com identidades próprias e o mesmo núcleo de engenharia.
+- [NV Hub](/products/hub): gestão comercial e operacional, Central de Leads, clientes, propostas e planner de tarefas/publicações.
+- [NV Med](/products/med): escalas por unidade e setor, cobertura por turno e acompanhamento de documentação médica.
+- [NV Lex](/products/lex): produto do contexto jurídico. Detalhes funcionais ainda aguardam fonte verificada; a composição apresentada é de identidade.
+
+As interfaces de Hub e Med são reconstruções editoriais baseadas no código dos produtos, com dados demonstrativos fictícios. Não representam dados de clientes ou indicadores de produção.
+
+## Contato
+- [Vamos conversar](/contact): formulário que prepara mensagem para WhatsApp. O visitante confirma o envio no WhatsApp.
+- Contato comercial: +55 (11) 95884-6541.
+
+Não são divulgados clientes, resultados, métricas, disponibilidade de integrações externas ou certificações sem verificação e autorização.

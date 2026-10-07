@@ -1,6 +1,6 @@
 # NV Core
 
-Website institucional em **Next.js 16.3.4, React 19 e TypeScript**, com App Router, GSAP/ScrollTrigger, Radix e SVGs próprios. A pasta original estava vazia. Repositório: https://github.com/GabrielRossanesi/NVCorebr. Nenhum deploy ou alteração de DNS foi realizado.
+Website institucional em **Next.js 16.3.4, React 19 e TypeScript**, com App Router, GSAP/ScrollTrigger, Radix e SVGs próprios. Repositório: https://github.com/GabrielRossanesi/NVCorebr. A V1 publicada tem integração Vercel com main; esta rodada V2 permanece local, sem push ou deploy.
 
 ## Executar
 
@@ -65,7 +65,9 @@ O botão flutuante aparece em todas as páginas e abre uma conversa com uma saud
 
 ## Conteúdo e analytics
 
-Produtos têm `contentStatus: awaiting-product-details`. Cases aparecem somente com conteúdo real e `approved: true`. Não existem clientes, métricas, features, screenshots ou depoimentos inventados.
+Hub e Med têm `contentStatus: verified-code`, com funções verificadas por pesquisa somente leitura nos repositórios reais. Lex mantém `awaiting-product-details`: o repositório encontrado está vazio. As interfaces reconstruídas usam dados demonstrativos fictícios, identificados na composição. Cases aparecem somente com conteúdo real e `approved: true`. Não são inventados clientes, resultados ou depoimentos.
+
+Pesquisa e proveniência: [Product Research](docs/PRODUCT-RESEARCH.md). Entrega e QA da V2: [V2 Delivery](docs/V2-DELIVERY.md).
 
 `lib/analytics.ts` emite eventos locais `nv:analytics`, sem SDK, cookies ou IDs fictícios. Conectar um provedor aprovado nessa camada. Nunca incluir dados do formulário nos eventos.
 

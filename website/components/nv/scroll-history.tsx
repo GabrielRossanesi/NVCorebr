@@ -19,11 +19,13 @@ export function ScrollHistory() {
   const currentKey = useRef<string | null>(null);
   const pending = useRef<Entry | null>(null);
   const currentPath = useRef(pathname);
+  const currentHash = useRef("");
   const restoreFrame = useRef(0);
 
   useEffect(() => {
     const previousMode = history.scrollRestoration;
     history.scrollRestoration = "manual";
+    currentHash.current = location.hash;
     const save = (writeState: boolean) => {
       if (!currentKey.current) return;
       const position = { x: scrollX, y: scrollY };
@@ -60,6 +62,33 @@ export function ScrollHistory() {
     const pop = (event: PopStateEvent) => {
       save(false);
       const state = event.state?.nvScroll as Entry | undefined;
+      const newFragment =
+        currentPath.current === location.pathname &&
+        currentHash.current !== location.hash &&
+        (!state?.key || state.key === currentKey.current);
+      currentHash.current = location.hash;
+      if (newFragment) {
+        // A new fragment entry can inherit the source history state. It is an
+        // anchor navigation, not a request to restore that source position.
+        const key = crypto.randomUUID();
+        currentKey.current = key;
+        pending.current = null;
+        cancelAnimationFrame(restoreFrame.current);
+        restoreFrame.current = requestAnimationFrame(() => {
+          const target = document.getElementById(location.hash.slice(1));
+          if (target)
+            target.scrollIntoView({ block: "start", behavior: "instant" });
+          else if (!location.hash)
+            window.scrollTo({ top: 0, behavior: "instant" });
+          const position = { x: scrollX, y: scrollY };
+          remember(key, position);
+          history.replaceState(
+            { ...history.state, nvScroll: { key, position } },
+            "",
+          );
+        });
+        return;
+      }
       const entry = {
         key: state?.key ?? crypto.randomUUID(),
         position: (state?.key && positions.get(state.key)) ||
@@ -90,6 +119,7 @@ export function ScrollHistory() {
 
   useEffect(() => {
     currentPath.current = pathname;
+    currentHash.current = location.hash;
     const initial = currentKey.current === null;
     const entry =
       pending.current ??
@@ -109,7 +139,18 @@ export function ScrollHistory() {
       },
       "",
     );
-    if (entry) {
+    if (
+      (initial || !entry) &&
+      location.hash &&
+      (!entry || entry.position.y === 0)
+    ) {
+      cancelAnimationFrame(restoreFrame.current);
+      restoreFrame.current = requestAnimationFrame(() => {
+        document
+          .getElementById(location.hash.slice(1))
+          ?.scrollIntoView({ block: "start", behavior: "instant" });
+      });
+    } else if (entry) {
       cancelAnimationFrame(restoreFrame.current);
       restoreFrame.current = requestAnimationFrame(() => {
         window.scrollTo({

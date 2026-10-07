@@ -1,0 +1,66 @@
+[
+  {
+    "active": "crm-erp",
+    "diagram": [
+      "OPERAÇÃO",
+      "CLIENTES · PROCESSOS",
+      "INFORMAÇÃO"
+    ],
+    "expanded": 1,
+    "label": "EM FOCOCRM & ERP"
+  },
+  {
+    "active": "web",
+    "diagram": [
+      "NAVEGAÇÃO",
+      "CONTEÚDO · EXPERIÊNCIA",
+      "ESTRUTURA"
+    ],
+    "expanded": 1,
+    "label": "EM FOCOExperiências web"
+  },
+  {
+    "active": "integrations",
+    "diagram": [
+      "SISTEMAS",
+      "API / CONEXÃO",
+      "APIs · CONEXÕES",
+      "DADOS EM TRÂNSITO"
+    ],
+    "expanded": 1,
+    "label": "EM FOCOAPIs & integrações"
+  },
+  {
+    "active": "automation",
+    "diagram": [
+      "ENTRADA",
+      "ENTRADA",
+      "REGRA",
+      "AÇÃO",
+      "ETAPAS · REGRAS",
+      "RESULTADO"
+    ],
+    "expanded": 1,
+    "label": "EM FOCOAutomações"
+  },
+  {
+    "active": "platforms",
+    "diagram": [
+      "USUÁRIOS",
+      "MÓDULOS · ACESSOS",
+      "DADOS COMPARTILHADOS"
+    ],
+    "expanded": 1,
+    "label": "EM FOCOPlataformas digitais"
+  },
+  {
+    "active": "software",
+    "diagram": [
+      "INTERFACE",
+      "REGRAS DE NEGÓCIO",
+      "PERSISTÊNCIA"
+    ],
+    "expanded": 1,
+    "label": "EM FOCOSoftware sob medida"
+  }
+]

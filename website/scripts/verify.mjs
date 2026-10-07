@@ -162,7 +162,9 @@ const pairs = [
   ["button", "#111e32", "#c8ddff"],
   ["error", "#ffb5a5", "#080e18"],
   ["input border", "#6c7d97", "#0c1625"],
-  ["WhatsApp icon", "#08251c", "#25d366"],
+  ["WhatsApp icon", "#25d366", "#101c2c"],
+  ["Hub UI", "#d8aa58", "#15181f"],
+  ["Med UI", "#2dd4bf", "#101418"],
 ];
 const ratios = pairs.map(([label, a, b]) => {
   const ratio = contrast(a, b);

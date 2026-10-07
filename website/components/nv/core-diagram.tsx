@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { monogramPath } from "./brand";
+import { CoreConnectionPulse } from "./core-connection-pulse";
 export function CoreDiagram() {
   return (
     <div
@@ -40,22 +41,24 @@ export function CoreDiagram() {
           <circle cx="320" cy="260" r="255" strokeDasharray="3 8" />
           <path d="M85 495L555 25M60 0L580 520" />
         </g>
-        <g
-          className="core-layers"
-          stroke="url(#core-stroke)"
-          strokeWidth=".55"
-          strokeLinejoin="round"
-        >
-          {[6, 5, 4, 3, 2, 1, 0].map((i) => (
-            <path
-              key={i}
-              className="core-layer"
-              d={monogramPath}
-              fill={i === 0 ? "url(#core-fill)" : "none"}
-              transform={`translate(${86 + i * 9} ${134 + i * 12}) scale(4.05)`}
-              opacity={1 - i * 0.12}
-            />
-          ))}
+        <g className="core-response">
+          <g
+            className="core-layers"
+            stroke="url(#core-stroke)"
+            strokeWidth=".55"
+            strokeLinejoin="round"
+          >
+            {[6, 5, 4, 3, 2, 1, 0].map((i) => (
+              <path
+                key={i}
+                className="core-layer"
+                d={monogramPath}
+                fill={i === 0 ? "url(#core-fill)" : "none"}
+                transform={`translate(${86 + i * 9} ${134 + i * 12}) scale(4.05)`}
+                opacity={1 - i * 0.12}
+              />
+            ))}
+          </g>
         </g>
         <g className="connector-lines" stroke="#608bbc" strokeOpacity=".6">
           <path d="M130 198H80V70H28M475 195H560V85H615M310 362V450H100M500 330H595V470H620" />
@@ -66,6 +69,7 @@ export function CoreDiagram() {
           <circle cx="310" cy="362" r="3" />
           <circle cx="500" cy="330" r="3" />
         </g>
+        <CoreConnectionPulse />
       </svg>
       <Link href="/products/hub" className="diagram-node node-hub">
         <span className="node-square" />

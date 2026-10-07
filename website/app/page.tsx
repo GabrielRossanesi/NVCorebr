@@ -2,9 +2,9 @@ import { Motion } from "@/components/nv/motion";
 import Link from "next/link";
 import { CoreDiagram } from "@/components/nv/core-diagram";
 import { Ecosystem } from "@/components/nv/ecosystem";
-import { ProductExplorer } from "@/components/nv/product-explorer";
+import { ProductShowcase } from "@/components/nv/product-showcase";
 import { Capabilities } from "@/components/nv/capabilities";
-import { Cta } from "@/components/nv/cta";
+import { Convergence } from "@/components/nv/convergence";
 import { Brand } from "@/components/nv/brand";
 import { pageMetadata } from "@/lib/site";
 export const metadata = pageMetadata(
@@ -29,10 +29,10 @@ export default function Home() {
             núcleo próprio.
           </h1>
           <p className="hero-description">
-            Criamos produtos. Construímos soluções. <br />
-            Uma empresa de tecnologia, do primeiro{" "}
-            <br className="desktop-break" />
-            conceito à próxima evolução.
+            Criamos produtos. Construímos soluções.
+            <br />
+            Uma empresa de tecnologia, do primeiro
+            <br className="desktop-break" /> conceito à próxima evolução.
           </p>
           <div className="actions">
             <Link className="button primary" href="/solutions">
@@ -70,100 +70,50 @@ export default function Home() {
         </div>
         <Ecosystem />
       </section>
-      <section className="section wrap home-products">
+      <section className="section wrap home-solutions">
         <div className="section-heading">
           <div>
-            <p className="section-label">NV Products</p>
+            <Brand name="solutions" />
             <h2>
-              A nossa visão
+              O que a sua empresa
               <br />
-              ganha identidade.
+              precisa construir?
             </h2>
           </div>
-          <p>
-            Produtos próprios. Contextos diferentes.
-            <br />
-            Explore as conexões do núcleo NV.
-          </p>
-        </div>
-        <ProductExplorer />
-      </section>
-      <section className="section wrap split-section">
-        <div>
-          <Brand name="solutions" />
-          <h2>
-            O que a sua
-            <br />
-            empresa precisa
-            <br />
-            construir?
-          </h2>
-          <p>
-            Aplicamos nossa experiência de produto a sistemas, plataformas e
-            experiências digitais para o seu negócio.
-          </p>
-          <Link href="/solutions" className="text-link">
-            Explore a NV Solutions
-          </Link>
+          <div>
+            <p>
+              Aplicamos nossa experiência de produto a sistemas, plataformas e
+              experiências digitais para o seu negócio.
+            </p>
+            <Link href="/solutions" className="text-link">
+              Explore a NV Solutions
+            </Link>
+          </div>
         </div>
         <Capabilities />
       </section>
-      <section className="section wrap home-engineering">
-        <div className="engineering-heading">
-          <p className="section-label">No centro, engenharia.</p>
-          <h2>
-            O que você vê
-            <br />é só o começo.
-          </h2>
+      <section className="section wrap home-products">
+        <div className="section-heading">
+          <div>
+            <p className="section-label">
+              NV Products / A nossa visão ganha identidade
+            </p>
+            <h2>
+              Produtos que carregam
+              <br />a nossa assinatura.
+            </h2>
+          </div>
           <p>
-            Uma interface clara depende de uma estrutura bem pensada. Produto,
-            design, dados e integrações fazem parte da mesma construção.
+            Contextos diferentes.
+            <br />A mesma capacidade de construir.
           </p>
         </div>
-        <div className="engineering-stack">
-          <div>
-            <span>Experiência</span>
-            <p>Interfaces que fazem sentido para quem usa.</p>
-          </div>
-          <div>
-            <span>Aplicação</span>
-            <p>Regras, fluxos e software para o negócio.</p>
-          </div>
-          <div>
-            <span>Conexões</span>
-            <p>APIs, dados e integrações entre sistemas.</p>
-          </div>
-          <div className="engineering-stack-core">
-            <Brand />
-            <span>Um núcleo para construir e evoluir.</span>
-          </div>
-        </div>
-      </section>
-      <section className="section wrap home-work">
-        <p className="section-label">O que construímos</p>
-        <h2>
-          Produtos que carregam
-          <br />a nossa assinatura.
-        </h2>
-        <div className="work-brands">
-          {(["hub", "med", "lex"] as const).map((id) => (
-            <Link key={id} href={`/products/${id}`}>
-              <Brand name={id} />
-              <span>
-                {id === "hub"
-                  ? "Produto próprio"
-                  : id === "med"
-                    ? "Tecnologia para saúde"
-                    : "Tecnologia para o jurídico"}
-              </span>
-            </Link>
-          ))}
-        </div>
-        <Link className="text-link" href="/projects">
+        <ProductShowcase />
+        <Link className="text-link showcase-work-link" href="/projects">
           Conheça nosso trabalho
         </Link>
       </section>
-      <Cta title="A sua próxima evolução precisa de um bom núcleo." />
+      <Convergence />
       <Motion route="/" />
     </main>
   );

@@ -1,0 +1,74 @@
+[
+  {
+    "h1": 1,
+    "mode": "reduced",
+    "overflow": false,
+    "route": "/",
+    "scenes": 3,
+    "triggers": "0"
+  },
+  {
+    "h1": 1,
+    "mode": "reduced",
+    "overflow": false,
+    "route": "/solutions",
+    "scenes": 0,
+    "triggers": "0"
+  },
+  {
+    "h1": 1,
+    "mode": "reduced",
+    "overflow": false,
+    "route": "/products",
+    "scenes": 3,
+    "triggers": "0"
+  },
+  {
+    "h1": 1,
+    "mode": "reduced",
+    "overflow": false,
+    "route": "/products/hub",
+    "scenes": 1,
+    "triggers": "0"
+  },
+  {
+    "h1": 1,
+    "mode": "reduced",
+    "overflow": false,
+    "route": "/products/med",
+    "scenes": 1,
+    "triggers": "0"
+  },
+  {
+    "h1": 1,
+    "mode": "reduced",
+    "overflow": false,
+    "route": "/products/lex",
+    "scenes": 1,
+    "triggers": "0"
+  },
+  {
+    "h1": 1,
+    "mode": "reduced",
+    "overflow": false,
+    "route": "/about",
+    "scenes": 0,
+    "triggers": "0"
+  },
+  {
+    "h1": 1,
+    "mode": "reduced",
+    "overflow": false,
+    "route": "/projects",
+    "scenes": 3,
+    "triggers": "0"
+  },
+  {
+    "h1": 1,
+    "mode": "reduced",
+    "overflow": false,
+    "route": "/contact",
+    "scenes": 0,
+    "triggers": "0"
+  }
+]

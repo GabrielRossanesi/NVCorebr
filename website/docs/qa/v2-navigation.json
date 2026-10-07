@@ -1,0 +1,93 @@
+{
+  "journey": [
+    {
+      "focus": "MAIN",
+      "h1": "O seu desafio.A nossaengenharia.",
+      "motion": {
+        "motionMode": "full",
+        "motionReady": "true",
+        "motionTotalTriggers": "3",
+        "motionTriggers": "3"
+      },
+      "route": "/solutions"
+    },
+    {
+      "motion": {
+        "motionMode": "full",
+        "motionReady": "true",
+        "motionTotalTriggers": "8",
+        "motionTriggers": "8"
+      },
+      "route": "/"
+    },
+    {
+      "motion": {
+        "motionMode": "full",
+        "motionReady": "true",
+        "motionTotalTriggers": "5",
+        "motionTriggers": "5"
+      },
+      "route": "/products"
+    },
+    {
+      "motion": {
+        "motionMode": "full",
+        "motionReady": "true",
+        "motionTotalTriggers": "1",
+        "motionTriggers": "1"
+      },
+      "route": "/products/med"
+    },
+    {
+      "motion": {
+        "motionMode": "full",
+        "motionReady": "true",
+        "motionTotalTriggers": "1",
+        "motionTriggers": "1"
+      },
+      "route": "/products/lex"
+    },
+    {
+      "motion": {
+        "motionMode": "full",
+        "motionReady": "true",
+        "motionTotalTriggers": "1",
+        "motionTriggers": "1"
+      },
+      "route": "/products/hub"
+    },
+    {
+      "motion": {
+        "motionMode": "full",
+        "motionReady": "true",
+        "motionTotalTriggers": "3",
+        "motionTriggers": "3"
+      },
+      "route": "/about"
+    },
+    {
+      "motion": {
+        "motionMode": "full",
+        "motionReady": "true",
+        "motionTotalTriggers": "0",
+        "motionTriggers": "0"
+      },
+      "route": "/contact"
+    }
+  ],
+  "anchor": {
+    "hash": "#showcase-med",
+    "top": 140.171875,
+    "y": 5288
+  },
+  "back": {
+    "hash": "#showcase-med",
+    "top": 140.171875,
+    "y": 5288
+  },
+  "forward": "http://127.0.0.1:5175/solutions",
+  "samePosition": true,
+  "menuFocus": "MAIN",
+  "deepCapability": "integrations",
+  "selectedHeadingTop": 104.046875
+}

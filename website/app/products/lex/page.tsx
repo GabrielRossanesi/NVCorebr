@@ -1,7 +1,7 @@
 import { Motion } from "@/components/nv/motion";
 import Link from "next/link";
 import { Brand } from "@/components/nv/brand";
-import { ProductGlyph } from "@/components/nv/product-glyph";
+import { ProductScene } from "@/components/nv/product-scene";
 import { Cta } from "@/components/nv/cta";
 import { pageMetadata } from "@/lib/site";
 export const metadata = pageMetadata(
@@ -27,7 +27,7 @@ export default function Lex() {
           </h1>
         </div>
         <div className="lex-side">
-          <ProductGlyph id="lex" />
+          <ProductScene id="lex" />
           <p>
             NV Lex é o produto próprio da NV Core voltado ao setor jurídico.
           </p>

@@ -1,0 +1,44 @@
+[
+  {
+    "active": "EM FOCOSoftware sob medida",
+    "diagram": "INTERFACEREGRAS DE NEGÓCIOPERSISTÊNCIA",
+    "expanded": 1,
+    "stageDisplay": "block",
+    "width": 1440
+  },
+  {
+    "active": "EM FOCOCRM & ERP",
+    "diagram": "OPERAÇÃOCLIENTES · PROCESSOSINFORMAÇÃO",
+    "expanded": 1,
+    "stageDisplay": "block",
+    "width": 1440
+  },
+  {
+    "active": "EM FOCOExperiências web",
+    "diagram": "NAVEGAÇÃOCONTEÚDO · EXPERIÊNCIAESTRUTURA",
+    "expanded": 1,
+    "stageDisplay": "block",
+    "width": 1440
+  },
+  {
+    "active": "EM FOCOAPIs & integrações",
+    "diagram": "SISTEMASAPI / CONEXÃOAPIs · CONEXÕESDADOS EM TRÂNSITO",
+    "expanded": 1,
+    "stageDisplay": "block",
+    "width": 1440
+  },
+  {
+    "active": "EM FOCOAutomações",
+    "diagram": "ENTRADAENTRADAREGRAAÇÃOETAPAS · REGRASRESULTADO",
+    "expanded": 1,
+    "stageDisplay": "block",
+    "width": 1440
+  },
+  {
+    "active": "EM FOCOPlataformas digitais",
+    "diagram": "USUÁRIOSMÓDULOS · ACESSOSDADOS COMPARTILHADOS",
+    "expanded": 1,
+    "stageDisplay": "block",
+    "width": 1440
+  }
+]

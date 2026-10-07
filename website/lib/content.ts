@@ -5,26 +5,26 @@ export interface Product {
   category: string;
   description: string;
   audience: string;
-  contentStatus: "awaiting-product-details";
+  contentStatus: "verified-code" | "awaiting-product-details";
 }
 export const products: Product[] = [
   {
     id: "hub",
     name: "NV Hub",
-    category: "Produto próprio",
-    description: "Um produto que nasce no núcleo da NV Core.",
+    category: "Operações conectadas",
+    description: "Do primeiro contato à rotina da equipe. Gestão comercial e operacional conectada em um produto próprio.",
     audience:
-      "Aplicação e público serão apresentados com a documentação do produto.",
-    contentStatus: "awaiting-product-details",
+      "Para agências, consultorias e empresas de serviços recorrentes.",
+    contentStatus: "verified-code",
   },
   {
     id: "med",
     name: "NV Med",
     category: "Tecnologia para saúde",
-    description: "Produto próprio da NV Core voltado ao ecossistema de saúde.",
+    description: "Escalas, cobertura por turno e documentação médica. Clareza para a operação de equipes de saúde.",
     audience:
-      "Para o setor de saúde. Escopo e funcionalidades serão apresentados com a documentação do produto.",
-    contentStatus: "awaiting-product-details",
+      "Para equipes que organizam profissionais, unidades e escalas médicas.",
+    contentStatus: "verified-code",
   },
   {
     id: "lex",

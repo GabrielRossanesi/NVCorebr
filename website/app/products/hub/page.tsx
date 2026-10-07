@@ -1,12 +1,12 @@
 import { Motion } from "@/components/nv/motion";
 import Link from "next/link";
 import { Brand } from "@/components/nv/brand";
-import { ProductGlyph } from "@/components/nv/product-glyph";
+import { ProductScene } from "@/components/nv/product-scene";
 import { Cta } from "@/components/nv/cta";
 import { pageMetadata } from "@/lib/site";
 export const metadata = pageMetadata(
   "NV Hub | Produto próprio da NV Core",
-  "Conheça o NV Hub, produto próprio do ecossistema NV Core. Converse com a NV para saber mais sobre o produto.",
+  "Gestão comercial e operacional para agências e consultorias: Central de Leads, clientes, propostas e planner da equipe. Um produto da NV Core.",
   "/products/hub",
 );
 export default function Hub() {
@@ -25,9 +25,8 @@ export default function Hub() {
             <br />o núcleo.
           </h1>
           <p className="opening-description">
-            NV Hub é um produto próprio da NV Core.
-            <br />
-            Design, produto e engenharia na mesma origem.
+            Da Central de Leads ao planner da equipe. Gestão comercial e
+            operacional para agências, consultorias e empresas de serviços.
           </p>
           <Link
             className="button product-button"
@@ -36,11 +35,7 @@ export default function Hub() {
             Converse sobre o NV Hub
           </Link>
         </div>
-        <div className="hub-matrix">
-          <ProductGlyph id="hub" />
-          <span className="matrix-top">NV Products</span>
-          <span className="matrix-bottom">Hub / Core connection</span>
-        </div>
+        <ProductScene id="hub" />
       </section>
       <section className="section wrap product-statement">
         <span className="statement-glyph">
@@ -55,17 +50,40 @@ export default function Hub() {
         </h2>
         <div>
           <p className="lead">
-            O NV Hub faz parte do nosso ecossistema de produtos próprios.
+            A operação fica mais clara quando suas etapas se conectam.
           </p>
           <p>
-            Para entender a aplicação do produto ao seu contexto, converse com a
-            NV. A apresentação detalhada de escopo e funcionalidades será
-            disponibilizada com a documentação do produto.
+            O Kanban organiza o avanço dos leads. Clientes e propostas dão
+            continuidade ao trabalho comercial. O planner reúne tarefas e
+            publicações em visões de agenda e calendário.
           </p>
           <Link className="text-link" href="/about">
             Conheça a empresa por trás do produto
           </Link>
         </div>
+      </section>
+      <section className="wrap product-modules" aria-label="Dentro do NV Hub">
+        <article>
+          <span>01 / COMERCIAL</span>
+          <h3>Central de Leads</h3>
+          <p>
+            Kanban, lista e acompanhamento das etapas do primeiro contato à
+            conversão.
+          </p>
+        </article>
+        <article>
+          <span>02 / CONTEXTO</span>
+          <h3>Clientes & propostas</h3>
+          <p>Cadastros e propostas fazem parte da mesma rotina comercial.</p>
+        </article>
+        <article>
+          <span>03 / OPERAÇÃO</span>
+          <h3>Planner da equipe</h3>
+          <p>
+            Tarefas e publicações. Dia, semana e mês para organizar o próximo
+            passo.
+          </p>
+        </article>
       </section>
       <section className="wrap product-siblings">
         <p>No mesmo ecossistema</p>

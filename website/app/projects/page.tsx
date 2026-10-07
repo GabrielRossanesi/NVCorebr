@@ -1,7 +1,7 @@
 import { Motion } from "@/components/nv/motion";
 import Link from "next/link";
 import { Brand } from "@/components/nv/brand";
-import { ProductGlyph } from "@/components/nv/product-glyph";
+import { ProductScene } from "@/components/nv/product-scene";
 import { Cta } from "@/components/nv/cta";
 import { caseStudies, products } from "@/lib/content";
 import { pageMetadata } from "@/lib/site";
@@ -34,7 +34,7 @@ export default function Projects() {
             href={`/products/${p.id}`}
           >
             <div className="project-visual">
-              <ProductGlyph id={p.id} />
+              <ProductScene id={p.id} compact />
             </div>
             <div className="project-caption">
               <Brand name={p.id} />
