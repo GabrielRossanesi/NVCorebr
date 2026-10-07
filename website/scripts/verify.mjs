@@ -27,127 +27,66 @@ function compile(source, destination, replacements = []) {
   );
 }
 compile("lib/contact.ts", "contact.mjs");
-compile("lib/contact-rate-limit.ts", "contact-rate-limit.mjs");
-compile("app/api/contact/route.ts", "route.mjs", [
-  ["@/lib/contact-rate-limit", "./contact-rate-limit.mjs"],
-  ["@/lib/contact", "./contact.mjs"],
-]);
+compile("lib/whatsapp.ts", "whatsapp.mjs", [["./contact", "./contact.mjs"]]);
 compile("lib/site.ts", "site.mjs");
 compile("app/sitemap.ts", "sitemap.mjs", [["@/lib/site", "./site.mjs"]]);
 compile("app/robots.ts", "robots.mjs", [["@/lib/site", "./site.mjs"]]);
-const { POST } = await import(pathToFileURL(resolve(temp, "route.mjs")).href);
+const { contactSchema } = await import(
+  pathToFileURL(resolve(temp, "contact.mjs")).href
+);
+const { formatContactMessage, whatsappUrl } = await import(
+  pathToFileURL(resolve(temp, "whatsapp.mjs")).href
+);
 const base = {
   intent: "software",
   name: "Teste QA",
-  email: "qa@example.test",
+  email: "",
   company: "",
   product: "",
   context: "",
-  message: "Mensagem de teste para validar o formulário.",
-  consent: true,
-  website: "",
-  startedAt: Date.now() - 5000,
+  message: "Integração com ações & dados?\nUma segunda linha.",
 };
-function request(data = base, headers = {}) {
-  return new Request("https://nv.example.test/api/contact", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Origin: "https://nv.example.test",
-      ...headers,
-    },
-    body: JSON.stringify(data),
-  });
-}
-const savedUrl = process.env.CONTACT_WEBHOOK_URL,
-  savedToken = process.env.CONTACT_WEBHOOK_TOKEN,
-  realFetch = globalThis.fetch;
-try {
-  delete process.env.CONTACT_WEBHOOK_URL;
-  assert.equal(
-    (
-      await POST(
-        request(base, {
-          Host: "127.0.0.1:5175",
-          Origin: "http://127.0.0.1:5175",
-        }),
-      )
-    ).status,
-    503,
-    "Validate host from Node adapter",
-  );
-  assert.equal(
-    (await POST(request())).status,
-    503,
-    "Unconfigured contact cannot claim success",
-  );
-  assert.equal(
-    (await POST(request({ ...base, email: "invalid" }))).status,
-    422,
-  );
-  assert.equal((await POST(request({ ...base, consent: false }))).status, 422);
-  assert.equal((await POST(request({ ...base, website: "spam" }))).status, 422);
-  assert.equal(
-    (await POST(request({ ...base, startedAt: Date.now() }))).status,
-    422,
-  );
-  assert.equal(
-    (await POST(request({ ...base, intent: "product", product: "" }))).status,
-    422,
-  );
-  assert.equal(
-    (await POST(request(base, { Origin: "https://other.example.test" })))
-      .status,
-    403,
-  );
-  assert.equal(
-    (await POST(request(base, { "Content-Type": "text/plain" }))).status,
-    415,
-  );
-  assert.equal(
-    (await POST(request({ ...base, message: "x".repeat(17000) }))).status,
-    413,
-  );
-  process.env.CONTACT_WEBHOOK_URL = "https://contact.example.test/receive";
-  process.env.CONTACT_WEBHOOK_TOKEN = "test-token";
-  let forwarded;
-  globalThis.fetch = async (url, init) => {
-    forwarded = {
-      url: String(url),
-      payload: JSON.parse(init.body),
-      headers: init.headers,
-    };
-    return new Response("ok");
-  };
-  assert.equal((await POST(request())).status, 200);
-  assert.equal(forwarded.payload.email, base.email);
-  assert.equal(forwarded.payload.website, undefined);
-  assert.equal(forwarded.payload.startedAt, undefined);
-  assert.equal(forwarded.headers.Authorization, "Bearer test-token");
-  globalThis.fetch = async () => new Response("failure", { status: 500 });
-  assert.equal((await POST(request())).status, 502);
-  globalThis.fetch = async () => {
-    throw new Error("network");
-  };
-  assert.equal((await POST(request())).status, 502);
-  process.env.CONTACT_WEBHOOK_URL = "http://contact.example.test";
-  assert.equal((await POST(request())).status, 503);
-  for (let i = 0; i < 5; i++)
-    assert.equal(
-      (await POST(request(base, { "cf-connecting-ip": "192.0.2.1" }))).status,
-      503,
-    );
-  assert.equal(
-    (await POST(request(base, { "cf-connecting-ip": "192.0.2.1" }))).status,
-    429,
-  );
-} finally {
-  globalThis.fetch = realFetch;
-  if (savedUrl === undefined) delete process.env.CONTACT_WEBHOOK_URL;
-  else process.env.CONTACT_WEBHOOK_URL = savedUrl;
-  if (savedToken === undefined) delete process.env.CONTACT_WEBHOOK_TOKEN;
-  else process.env.CONTACT_WEBHOOK_TOKEN = savedToken;
-}
+assert.ok(contactSchema.safeParse(base).success);
+assert.ok(!contactSchema.safeParse({ ...base, email: "invalid" }).success);
+assert.ok(!contactSchema.safeParse({ ...base, name: "" }).success);
+assert.ok(!contactSchema.safeParse({ ...base, message: "" }).success);
+assert.ok(
+  !contactSchema.safeParse({ ...base, intent: "product", product: "" }).success,
+);
+const message = formatContactMessage(base);
+const link = new URL(whatsappUrl(message));
+assert.equal(link.origin, "https://wa.me");
+assert.equal(link.pathname, "/5511958846541");
+assert.equal(link.searchParams.get("text"), message);
+assert.ok(
+  !message.includes("E-mail:") &&
+    !message.includes("Empresa:") &&
+    !message.includes("Produto:"),
+);
+assert.ok(
+  formatContactMessage({ ...base, intent: "product", product: "med" }).includes(
+    "*Produto:* NV Med",
+  ),
+);
+assert.ok(
+  !formatContactMessage({ ...base, product: "med" }).includes("*Produto:*"),
+);
+assert.ok(
+  !formatContactMessage({
+    ...base,
+    intent: "product",
+    product: "lex",
+    context: "Contexto antigo",
+  }).includes("Contexto antigo"),
+);
+assert.ok(
+  formatContactMessage({
+    ...base,
+    email: "qa@example.test",
+    company: "NV QA",
+  }).includes("*E-mail:* qa@example.test\n*Empresa:* NV QA"),
+);
+
 process.env.NEXT_PUBLIC_SITE_URL = "https://nv.example.test";
 const { pageMetadata } = await import(
   pathToFileURL(resolve(temp, "site.mjs")).href
@@ -193,7 +132,13 @@ for (const path of routes) {
   assert.match(html, /property="og:title"/);
   assert.match(html, /name="description"/);
   assert.match(html, /application\/ld\+json/);
+  assert.match(html, /class="whatsapp-float"/);
+  assert.match(html, /https:\/\/wa\.me\/5511958846541/);
 }
+assert.equal(
+  (await fetch(new URL("/api/contact", origin), { method: "POST" })).status,
+  404,
+);
 assert.equal((await fetch(new URL("/robots.txt", origin))).status, 200);
 assert.equal((await fetch(new URL("/sitemap.xml", origin))).status, 200);
 assert.equal((await fetch(new URL("/unavailable-page", origin))).status, 404);
@@ -217,6 +162,7 @@ const pairs = [
   ["button", "#111e32", "#c8ddff"],
   ["error", "#ffb5a5", "#080e18"],
   ["input border", "#6c7d97", "#0c1625"],
+  ["WhatsApp icon", "#08251c", "#25d366"],
 ];
 const ratios = pairs.map(([label, a, b]) => {
   const ratio = contrast(a, b);
@@ -238,8 +184,7 @@ const sizes = readdirSync(chunks)
 const report = {
   date: "2026-10-07",
   routes,
-  contactScenarios: 15,
-  contactAssertions: 24,
+  contactAssertions: 13,
   metadataTests: 3,
   contrast: ratios,
   largestChunks: sizes.slice(0, 8),
@@ -247,6 +192,6 @@ const report = {
 mkdirSync("docs/qa", { recursive: true });
 writeFileSync("docs/qa/automated.json", JSON.stringify(report, null, 2));
 console.log(
-  "PASS: contact validation/delivery; 9 SSR routes; metadata, robots, sitemap, 404; contrast.",
+  "PASS: WhatsApp message formatting and validation; 9 SSR routes; metadata, robots, sitemap, 404; contrast.",
 );
 console.log(JSON.stringify(report.largestChunks, null, 2));

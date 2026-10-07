@@ -1,6 +1,6 @@
 # NV Core
 
-Website institucional em **Next.js 16.3.4, React 19 e TypeScript**, com App Router, GSAP/ScrollTrigger, Radix e SVGs próprios. A pasta original estava vazia. Nenhum deploy, registro remoto, alteração de DNS ou push foi realizado.
+Website institucional em **Next.js 16.3.4, React 19 e TypeScript**, com App Router, GSAP/ScrollTrigger, Radix e SVGs próprios. A pasta original estava vazia. Repositório: https://github.com/GabrielRossanesi/NVCorebr. Nenhum deploy ou alteração de DNS foi realizado.
 
 ## Executar
 
@@ -31,15 +31,15 @@ $env:QA_ORIGIN = "http://127.0.0.1:5175"
 npm run verify
 ```
 
-`verify.mjs` requer uma prévia em execução e build em `.next`. Os testes de contato simulam o destino, sem transmitir dados a terceiros. `npm run format` formata o código da aplicação.
+`verify.mjs` requer uma prévia em execução e build em `.next`. Os testes de contato verificam a validação e a mensagem formatada para WhatsApp, sem transmitir mensagens a terceiros. `npm run format` formata o código da aplicação.
 
 ## Rotas e estrutura
 
 `/` · `/solutions` · `/products` · `/products/hub` · `/products/med` · `/products/lex` · `/projects` · `/about` · `/contact`.
 
-Também existem `/api/contact`, `/robots.txt`, `/sitemap.xml` e 404. Páginas institucionais são pré-renderizadas; contato usa SSR para ler a intenção na URL. `next/link` mantém URL, histórico, prefetch e navegação sem recarregar o documento.
+Também existem `/robots.txt`, `/sitemap.xml` e 404. Páginas institucionais são pré-renderizadas; contato usa SSR para ler a intenção na URL. `next/link` mantém URL, histórico, prefetch e navegação sem recarregar o documento.
 
-- `app`: rotas, metadata, layouts e endpoint.
+- `app`: rotas, metadata e layouts.
 - `components/nv`: identidade, navegação, diagrama, produtos, contato e movimento.
 - `components/ui`: primitives acessíveis do starter.
 - `lib/content.ts`: produtos, capacidades e estrutura tipada de cases.
@@ -56,14 +56,12 @@ O starter inicial de Sites usava Vinext beta. O QA do build revelou erros de pre
 Copie `.env.example` para `.env.local` no desenvolvimento. No host, configure:
 
 - `NEXT_PUBLIC_SITE_URL`: origem pública verificada; recompilar após definir. Sem ela: noindex, nenhum canonical fictício, sitemap vazio e robots bloqueia indexação.
-- `CONTACT_WEBHOOK_URL`: endpoint HTTPS que aceita o JSON validado. Sem destino: resposta 503, mensagem preservada e opção de baixar o briefing; sucesso nunca é simulado.
-- `CONTACT_WEBHOOK_TOKEN`: token opcional, apenas no servidor.
 
-Payload enviado: intent, name, email, company, product, context, message, consent, source e receivedAt. O endpoint deve retornar 2xx somente após aceitar a entrega. Honeypot e relógio do navegador não são encaminhados. O token fica no header do servidor.
+## Contato por WhatsApp
 
-O endpoint verifica campos, consentimento, origem, tamanho via stream, tempo mínimo e honeypot, com timeout de 8 segundos no destino. Quando servido atrás de Cloudflare, usa o IP do proxy para um limite complementar de 5 tentativas/minuto por processo. Antes do lançamento, configurar rate limiting distribuído no gateway e confiar somente em headers fornecidos pelo proxy. O limite em memória não substitui esse controle.
+O formulário valida os campos no navegador e abre uma nova aba com a mensagem preenchida para **+55 (11) 95884-6541**. O visitante revisa e confirma o envio no WhatsApp. Nome e mensagem são obrigatórios; e-mail, empresa e contexto são opcionais. Interesse e produto selecionado compõem o texto.
 
-Nenhum dado pessoal fica em localStorage. O briefing baixado permanece no dispositivo. Definir privacidade, retenção e responsável pelo atendimento junto ao serviço escolhido.
+O botão flutuante aparece em todas as páginas e abre uma conversa com uma saudação. Número, URL e formatação ficam centralizados em `lib/whatsapp.ts`. Não há endpoint de contato, webhook ou serviço de entrega para configurar. Os campos não são persistidos no navegador e os eventos de analytics não incluem o conteúdo do formulário.
 
 ## Conteúdo e analytics
 

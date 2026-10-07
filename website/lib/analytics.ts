@@ -3,7 +3,7 @@ export type AnalyticsEvent =
   | "product_view"
   | "solution_view"
   | "contact_start"
-  | "contact_submit"
+  | "whatsapp_open"
   | "product_cta"
   | "navigation";
 export function track(

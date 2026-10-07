@@ -11,8 +11,7 @@
     "/about",
     "/contact"
   ],
-  "contactScenarios": 15,
-  "contactAssertions": 24,
+  "contactAssertions": 13,
   "metadataTests": 3,
   "contrast": [
     {
@@ -42,6 +41,10 @@
     {
       "label": "input border",
       "ratio": 4.34
+    },
+    {
+      "label": "WhatsApp icon",
+      "ratio": 8.2
     }
   ],
   "largestChunks": [
@@ -56,14 +59,14 @@
       "gzip": 42894
     },
     {
-      "name": "3ne9q32x4iyc7.js",
-      "bytes": 139383,
-      "gzip": 39927
-    },
-    {
       "name": "0cz1d0mv5g_q7.js",
       "bytes": 112594,
       "gzip": 39627
+    },
+    {
+      "name": "1vnijvik-r_4w.js",
+      "bytes": 88214,
+      "gzip": 23999
     },
     {
       "name": "26z5y3xewknxi.js",
@@ -71,19 +74,19 @@
       "gzip": 27335
     },
     {
-      "name": "456xqoxdr7185.css",
-      "bytes": 65870,
-      "gzip": 13310
+      "name": "2_tsz_4im_7yy.js",
+      "bytes": 69172,
+      "gzip": 23310
+    },
+    {
+      "name": "3uoknzdlxh2xb.css",
+      "bytes": 65718,
+      "gzip": 13319
     },
     {
       "name": "2p2jd75im6m_h.js",
       "bytes": 43373,
       "gzip": 17488
-    },
-    {
-      "name": "3d1essxkdyz5v.js",
-      "bytes": 39398,
-      "gzip": 12694
     }
   ]
 }

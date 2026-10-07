@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SiteHeader } from "@/components/nv/site-header";
 import { SiteFooter } from "@/components/nv/site-footer";
 import { ScrollHistory } from "@/components/nv/scroll-history";
+import { WhatsappButton } from "@/components/nv/whatsapp-button";
 import { pageMetadata, siteOrigin } from "@/lib/site";
 import "./globals.css";
 export const metadata: Metadata = {
@@ -43,6 +44,7 @@ export default function RootLayout({
         <ScrollHistory />
         {children}
         <SiteFooter />
+        <WhatsappButton />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
