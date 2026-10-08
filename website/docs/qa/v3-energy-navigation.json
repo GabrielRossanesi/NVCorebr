@@ -1,0 +1,6332 @@
+{
+  "date": "2026-10-07",
+  "origin": "http://127.0.0.1:5175",
+  "geometry": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "headerSame": true,
+      "navSame": true,
+      "ctaSame": true,
+      "nodeContentDimensionsXAndTypographySame": true,
+      "nodeYDelta": [
+        -6,
+        -6,
+        -6,
+        -6
+      ],
+      "headlineContentDimensionsXAndTypographySame": true,
+      "headlineYDelta": [
+        -10.86480712890625
+      ],
+      "connectorPathSame": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "headerSame": true,
+      "navSame": true,
+      "ctaSame": true,
+      "nodeContentDimensionsXAndTypographySame": true,
+      "nodeYDelta": [
+        -6,
+        -6,
+        -6,
+        -6
+      ],
+      "headlineContentDimensionsXAndTypographySame": true,
+      "headlineYDelta": [
+        -12.815185546875
+      ],
+      "connectorPathSame": true
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "headerSame": true,
+      "navSame": true,
+      "ctaSame": true,
+      "nodeContentDimensionsXAndTypographySame": true,
+      "nodeYDelta": [
+        -6,
+        -6,
+        -6,
+        -6
+      ],
+      "headlineContentDimensionsXAndTypographySame": true,
+      "headlineYDelta": [
+        -11.735000610351562
+      ],
+      "connectorPathSame": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "headerSame": true,
+      "navSame": true,
+      "ctaSame": true,
+      "nodeContentDimensionsXAndTypographySame": true,
+      "nodeYDelta": [
+        -6,
+        -6,
+        -6,
+        -6
+      ],
+      "headlineContentDimensionsXAndTypographySame": true,
+      "headlineYDelta": [
+        -12.895095825195312
+      ],
+      "connectorPathSame": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "headerSame": true,
+      "navSame": true,
+      "ctaSame": true,
+      "nodeContentDimensionsXAndTypographySame": true,
+      "nodeYDelta": [
+        -6,
+        -6,
+        -6,
+        -6
+      ],
+      "headlineContentDimensionsXAndTypographySame": true,
+      "headlineYDelta": [
+        -12.266204833984403
+      ],
+      "connectorPathSame": true
+    }
+  ],
+  "geometryNote": "Baseline captured pre-existing entrance transforms in a throttled background tab. Final captures settled. Node CSS positions remain unchanged, with baseline translateY(6px) explaining the -6px delta. Headline entrance transform also explains its vertical delta.",
+  "energy": [
+    {
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "nodes": [
+        {
+          "name": "NV Hub",
+          "completed": 5,
+          "phases": [
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.006462000000000023,
+            1
+          ],
+          "maxTailHeadDifference": 1.1102230246251565e-16,
+          "emissionMax": 0.899438,
+          "arrivalMax": 0.4474
+        },
+        {
+          "name": "NV Med",
+          "completed": 4,
+          "phases": [
+            null,
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.005479000000000012,
+            1
+          ],
+          "maxTailHeadDifference": 1.1102230246251565e-16,
+          "emissionMax": 0.899938,
+          "arrivalMax": 0.4274
+        },
+        {
+          "name": "NV Lex",
+          "completed": 4,
+          "phases": [
+            null,
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.007246000000000003,
+            1
+          ],
+          "maxTailHeadDifference": 1.1102230246251565e-16,
+          "emissionMax": 0.884,
+          "arrivalMax": 0.397
+        },
+        {
+          "name": "NV Solutions",
+          "completed": 3,
+          "phases": [
+            null,
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.0020780000000000243,
+            1
+          ],
+          "maxTailHeadDifference": 1.1102230246251565e-16,
+          "emissionMax": 0.877438,
+          "arrivalMax": 0.3013
+        }
+      ],
+      "transitions": [
+        {
+          "sample": 0,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.04307700000000002,
+            0.043077,
+            0.043077,
+            0.043077
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.04307700000000002,
+          "travel": 0
+        },
+        {
+          "sample": 0,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.14,
+            0.09,
+            0.045,
+            0.014
+          ],
+          "name": "NV Med",
+          "phase": null,
+          "progress": 0.14,
+          "travel": 0
+        },
+        {
+          "sample": 0,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.14,
+            0.09,
+            0.045,
+            0.014
+          ],
+          "name": "NV Lex",
+          "phase": null,
+          "progress": 0.14,
+          "travel": 0
+        },
+        {
+          "sample": 0,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.14,
+            0.09,
+            0.045,
+            0.014
+          ],
+          "name": "NV Solutions",
+          "phase": null,
+          "progress": 0.14,
+          "travel": 0
+        },
+        {
+          "sample": 4,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.02904100000000001,
+            0.029040999999999997,
+            0.029040999999999997,
+            0.029041
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.02904100000000001,
+          "travel": 0
+        },
+        {
+          "sample": 7,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.02115900000000001,
+            0.021158999999999997,
+            0.021158999999999997,
+            0.021159
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.02115900000000001,
+          "travel": 0
+        },
+        {
+          "sample": 10,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.007013000000000019,
+            0.0070129999999999915,
+            0.007012999999999998,
+            0.007013
+          ],
+          "name": "NV Solutions",
+          "phase": "orbit",
+          "progress": 0.007013000000000019,
+          "travel": 0
+        },
+        {
+          "sample": 15,
+          "arrival": 0,
+          "emission": 0.667063,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 16,
+          "arrival": 0,
+          "emission": 0.016837,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.88
+        },
+        {
+          "sample": 21,
+          "arrival": 0,
+          "emission": 0.635364,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 22,
+          "arrival": 0.1649,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0022
+        },
+        {
+          "sample": 22,
+          "arrival": 0,
+          "emission": 0.01108,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.82
+        },
+        {
+          "sample": 23,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 23,
+          "arrival": 0,
+          "emission": 0.884,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 24,
+          "arrival": 0,
+          "emission": 0.098094,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.84
+        },
+        {
+          "sample": 26,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.026769000000000015,
+            0.026769,
+            0.026769,
+            0.026769
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.026769000000000015,
+          "travel": 0
+        },
+        {
+          "sample": 28,
+          "arrival": 0.3743,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.4799
+        },
+        {
+          "sample": 28,
+          "arrival": 0,
+          "emission": 0.866937,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 29,
+          "arrival": 0,
+          "emission": 0.145196,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.7944
+        },
+        {
+          "sample": 30,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 31,
+          "arrival": 0.397,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.4725
+        },
+        {
+          "sample": 33,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.005479000000000012,
+            0.005478999999999998,
+            0.005478999999999998,
+            0.0054789999999999995
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.005479000000000012,
+          "travel": 0
+        },
+        {
+          "sample": 33,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 36,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.035942000000000016,
+            0.035941999999999995,
+            0.035942,
+            0.035942
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.035942000000000016,
+          "travel": 0
+        },
+        {
+          "sample": 36,
+          "arrival": 0.261,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0627
+        },
+        {
+          "sample": 37,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 41,
+          "arrival": 0,
+          "emission": 0.899438,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 41,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.004416000000000003,
+            0.004416000000000003,
+            0.004415999999999996,
+            0.004416
+          ],
+          "name": "NV Solutions",
+          "phase": "orbit",
+          "progress": 0.004416000000000003,
+          "travel": 0
+        },
+        {
+          "sample": 42,
+          "arrival": 0,
+          "emission": 0.095966,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.88
+        },
+        {
+          "sample": 48,
+          "arrival": 0.2671,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0528
+        },
+        {
+          "sample": 49,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 50,
+          "arrival": 0,
+          "emission": 0.784437,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 51,
+          "arrival": 0,
+          "emission": 0.160966,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.8054
+        },
+        {
+          "sample": 52,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.014769000000000004,
+            0.01476899999999999,
+            0.014768999999999996,
+            0.014769
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.014769000000000004,
+          "travel": 0
+        },
+        {
+          "sample": 52,
+          "arrival": 0,
+          "emission": 0.676179,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 53,
+          "arrival": 0,
+          "emission": 0.018699,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.84
+        },
+        {
+          "sample": 58,
+          "arrival": 0.1907,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0139
+        },
+        {
+          "sample": 59,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 59,
+          "arrival": 0,
+          "emission": 0.877438,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 60,
+          "arrival": 0.36,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.1553
+        },
+        {
+          "sample": 60,
+          "arrival": 0,
+          "emission": 0.135097,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.798
+        },
+        {
+          "sample": 61,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 63,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.040548000000000015,
+            0.040547999999999994,
+            0.040548,
+            0.040548
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.040548000000000015,
+          "travel": 0
+        },
+        {
+          "sample": 65,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.054493000000000014,
+            0.054493,
+            0.054493,
+            0.054493
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.054493000000000014,
+          "travel": 0
+        },
+        {
+          "sample": 67,
+          "arrival": 0,
+          "emission": 0.704,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 67,
+          "arrival": 0.2877,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0871
+        },
+        {
+          "sample": 68,
+          "arrival": 0,
+          "emission": 0.197613,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.8286
+        },
+        {
+          "sample": 68,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 72,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.0020780000000000243,
+            0.0020779999999999965,
+            0.0020779999999999965,
+            0.002078
+          ],
+          "name": "NV Solutions",
+          "phase": "orbit",
+          "progress": 0.0020780000000000243,
+          "travel": 0
+        },
+        {
+          "sample": 74,
+          "arrival": 0.3865,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.1743
+        },
+        {
+          "sample": 75,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 78,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.006462000000000023,
+            0.0064619999999999955,
+            0.0064619999999999955,
+            0.006462
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.006462000000000023,
+          "travel": 0
+        },
+        {
+          "sample": 79,
+          "arrival": 0,
+          "emission": 0.073437,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 80,
+          "arrival": 0,
+          "emission": 0.458187,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.2275
+        },
+        {
+          "sample": 80,
+          "arrival": 0,
+          "emission": 0.24975,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 81,
+          "arrival": 0,
+          "emission": 0.352115,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.5119
+        },
+        {
+          "sample": 87,
+          "arrival": 0.4274,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.2572
+        },
+        {
+          "sample": 89,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 89,
+          "arrival": 0.1856,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0102
+        },
+        {
+          "sample": 90,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 90,
+          "arrival": 0,
+          "emission": 0.851,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 91,
+          "arrival": 0,
+          "emission": 0.125332,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.7998
+        },
+        {
+          "sample": 92,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.016986000000000015,
+            0.016986,
+            0.016985999999999998,
+            0.016986
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.016986000000000015,
+          "travel": 0
+        },
+        {
+          "sample": 93,
+          "arrival": 0,
+          "emission": 0.335937,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 93,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.007246000000000003,
+            0.007246000000000003,
+            0.0072459999999999955,
+            0.007246000000000001
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.007246000000000003,
+          "travel": 0
+        },
+        {
+          "sample": 94,
+          "arrival": 0,
+          "emission": 0.326318,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.5974
+        },
+        {
+          "sample": 98,
+          "arrival": 0.277,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0769
+        },
+        {
+          "sample": 99,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 100,
+          "arrival": 0.4474,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.4436
+        },
+        {
+          "sample": 102,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 103,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.0031170000000000087,
+            0.0031169999999999948,
+            0.0031170000000000017,
+            0.003117
+          ],
+          "name": "NV Solutions",
+          "phase": "orbit",
+          "progress": 0.0031170000000000087,
+          "travel": 0
+        },
+        {
+          "sample": 105,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.05600000000000001,
+            0.055999999999999994,
+            0.055999999999999994,
+            0.056
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.05600000000000001,
+          "travel": 0
+        },
+        {
+          "sample": 109,
+          "arrival": 0,
+          "emission": 0.899938,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 109,
+          "arrival": 0,
+          "emission": 0.737437,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 110,
+          "arrival": 0,
+          "emission": 0.093859,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.82
+        },
+        {
+          "sample": 110,
+          "arrival": 0,
+          "emission": 0.2249,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.7558
+        },
+        {
+          "sample": 116,
+          "arrival": 0.0223,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.8037
+        },
+        {
+          "sample": 117,
+          "arrival": 0.157,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.7187
+        },
+        {
+          "sample": 118,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 119,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 120,
+          "arrival": 0,
+          "emission": 0.538247,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 121,
+          "arrival": 0,
+          "emission": 0.000789,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.88
+        },
+        {
+          "sample": 121,
+          "arrival": 0,
+          "emission": 0.80975,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 122,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.05178100000000001,
+            0.051780999999999994,
+            0.051781,
+            0.051781
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.05178100000000001,
+          "travel": 0
+        },
+        {
+          "sample": 122,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.025797000000000014,
+            0.025797,
+            0.025796999999999997,
+            0.025797
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.025797000000000014,
+          "travel": 0
+        },
+        {
+          "sample": 122,
+          "arrival": 0,
+          "emission": 0.147773,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.7933
+        },
+        {
+          "sample": 126,
+          "arrival": 0.0699,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.828
+        },
+        {
+          "sample": 128,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 129,
+          "arrival": 0.3013,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.1008
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 1440,
+        "height": 900
+      },
+      "nodes": [
+        {
+          "name": "NV Hub",
+          "completed": 4,
+          "phases": [
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.02276900000000001,
+            1
+          ],
+          "maxTailHeadDifference": 1.1102230246251565e-16,
+          "emissionMax": 0.899,
+          "arrivalMax": 0.444
+        },
+        {
+          "name": "NV Med",
+          "completed": 4,
+          "phases": [
+            null,
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.005205000000000015,
+            1
+          ],
+          "maxTailHeadDifference": 1.1102230246251565e-16,
+          "emissionMax": 0.784437,
+          "arrivalMax": 0.4199
+        },
+        {
+          "name": "NV Lex",
+          "completed": 4,
+          "phases": [
+            null,
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.009855000000000004,
+            1
+          ],
+          "maxTailHeadDifference": 1.1102230246251565e-16,
+          "emissionMax": 0.899,
+          "arrivalMax": 0.4386
+        },
+        {
+          "name": "NV Solutions",
+          "completed": 4,
+          "phases": [
+            null,
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.004156000000000021,
+            1
+          ],
+          "maxTailHeadDifference": 1.1102230246251565e-16,
+          "emissionMax": 0.892438,
+          "arrivalMax": 0.417
+        }
+      ],
+      "transitions": [
+        {
+          "sample": 0,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.042769000000000015,
+            0.042768999999999995,
+            0.042769,
+            0.042769
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.042769000000000015,
+          "travel": 0
+        },
+        {
+          "sample": 0,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.14,
+            0.09,
+            0.045,
+            0.014
+          ],
+          "name": "NV Med",
+          "phase": null,
+          "progress": 0.14,
+          "travel": 0
+        },
+        {
+          "sample": 0,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.14,
+            0.09,
+            0.045,
+            0.014
+          ],
+          "name": "NV Lex",
+          "phase": null,
+          "progress": 0.14,
+          "travel": 0
+        },
+        {
+          "sample": 0,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.14,
+            0.09,
+            0.045,
+            0.014
+          ],
+          "name": "NV Solutions",
+          "phase": null,
+          "progress": 0.14,
+          "travel": 0
+        },
+        {
+          "sample": 4,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.03260300000000001,
+            0.032603,
+            0.032603,
+            0.032603
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.03260300000000001,
+          "travel": 0
+        },
+        {
+          "sample": 7,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.020870000000000017,
+            0.02087,
+            0.02087,
+            0.02087
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.020870000000000017,
+          "travel": 0
+        },
+        {
+          "sample": 10,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.006494,
+            0.006494,
+            0.006494,
+            0.006494000000000001
+          ],
+          "name": "NV Solutions",
+          "phase": "orbit",
+          "progress": 0.006494,
+          "travel": 0
+        },
+        {
+          "sample": 15,
+          "arrival": 0,
+          "emission": 0.612937,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 16,
+          "arrival": 0,
+          "emission": 0.007097,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.88
+        },
+        {
+          "sample": 21,
+          "arrival": 0,
+          "emission": 0.639871,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 22,
+          "arrival": 0.1373,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 22,
+          "arrival": 0,
+          "emission": 0.003994,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.82
+        },
+        {
+          "sample": 23,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 23,
+          "arrival": 0,
+          "emission": 0.899,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 24,
+          "arrival": 0,
+          "emission": 0.100244,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.84
+        },
+        {
+          "sample": 26,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.030462000000000017,
+            0.030461999999999996,
+            0.030461999999999996,
+            0.030462000000000003
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.030462000000000017,
+          "travel": 0
+        },
+        {
+          "sample": 28,
+          "arrival": 0.4199,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.4076
+        },
+        {
+          "sample": 28,
+          "arrival": 0,
+          "emission": 0.892438,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 29,
+          "arrival": 0,
+          "emission": 0.113605,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.8
+        },
+        {
+          "sample": 30,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 31,
+          "arrival": 0.4386,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.3999
+        },
+        {
+          "sample": 33,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.005205000000000015,
+            0.005205000000000001,
+            0.005205000000000001,
+            0.005205
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.005205000000000015,
+          "travel": 0
+        },
+        {
+          "sample": 33,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 36,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.03565200000000002,
+            0.035651999999999996,
+            0.035651999999999996,
+            0.035652
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.03565200000000002,
+          "travel": 0
+        },
+        {
+          "sample": 36,
+          "arrival": 0.2637,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.065
+        },
+        {
+          "sample": 37,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 41,
+          "arrival": 0,
+          "emission": 0.899,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 41,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.004156000000000021,
+            0.004155999999999993,
+            0.004156,
+            0.004156
+          ],
+          "name": "NV Solutions",
+          "phase": "orbit",
+          "progress": 0.004156000000000021,
+          "travel": 0
+        },
+        {
+          "sample": 42,
+          "arrival": 0,
+          "emission": 0.100244,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.88
+        },
+        {
+          "sample": 48,
+          "arrival": 0.3105,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0901
+        },
+        {
+          "sample": 49,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.604923,
+            0.604923,
+            0.604923,
+            0.604923
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.604923,
+          "travel": 0
+        },
+        {
+          "sample": 49,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 49,
+          "arrival": 0.0114,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 49,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.8
+        },
+        {
+          "sample": 50,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 51,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.03287700000000002,
+            0.032876999999999997,
+            0.032876999999999997,
+            0.032877
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.03287700000000002,
+          "travel": 0
+        },
+        {
+          "sample": 53,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.04231900000000001,
+            0.042319,
+            0.042319,
+            0.042319
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.04231900000000001,
+          "travel": 0
+        },
+        {
+          "sample": 55,
+          "arrival": 0,
+          "emission": 0.459,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 55,
+          "arrival": 0.3655,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.1767
+        },
+        {
+          "sample": 56,
+          "arrival": 0,
+          "emission": 0.333612,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.5806
+        },
+        {
+          "sample": 56,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 61,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.05013000000000001,
+            0.050129999999999994,
+            0.05013,
+            0.05013
+          ],
+          "name": "NV Solutions",
+          "phase": "orbit",
+          "progress": 0.05013000000000001,
+          "travel": 0
+        },
+        {
+          "sample": 62,
+          "arrival": 0.444,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.4499
+        },
+        {
+          "sample": 64,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 67,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.05538500000000002,
+            0.055385,
+            0.055385,
+            0.055385
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.05538500000000002,
+          "travel": 0
+        },
+        {
+          "sample": 68,
+          "arrival": 0,
+          "emission": 0.694484,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 69,
+          "arrival": 0,
+          "emission": 0.022715,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.82
+        },
+        {
+          "sample": 69,
+          "arrival": 0,
+          "emission": 0.635364,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 70,
+          "arrival": 0,
+          "emission": 0.003156,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.84
+        },
+        {
+          "sample": 75,
+          "arrival": 0.3743,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.4799
+        },
+        {
+          "sample": 77,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 77,
+          "arrival": 0.2936,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0833
+        },
+        {
+          "sample": 78,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 78,
+          "arrival": 0,
+          "emission": 0.59375,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 79,
+          "arrival": 0,
+          "emission": 0.240711,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.6973
+        },
+        {
+          "sample": 80,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.005479000000000012,
+            0.005478999999999998,
+            0.005478999999999998,
+            0.0054789999999999995
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.005479000000000012,
+          "travel": 0
+        },
+        {
+          "sample": 82,
+          "arrival": 0,
+          "emission": 0.491409,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.1406
+        },
+        {
+          "sample": 82,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.06087000000000001,
+            0.060869999999999994,
+            0.060869999999999994,
+            0.06087
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.06087000000000001,
+          "travel": 0
+        },
+        {
+          "sample": 86,
+          "arrival": 0.3911,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.2122
+        },
+        {
+          "sample": 88,
+          "arrival": 0.0472,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.8452
+        },
+        {
+          "sample": 88,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 90,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 92,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.047792000000000015,
+            0.047791999999999994,
+            0.047792,
+            0.047792
+          ],
+          "name": "NV Solutions",
+          "phase": "orbit",
+          "progress": 0.047792000000000015,
+          "travel": 0
+        },
+        {
+          "sample": 93,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.039077000000000015,
+            0.039076999999999994,
+            0.039077,
+            0.039077
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.039077000000000015,
+          "travel": 0
+        },
+        {
+          "sample": 97,
+          "arrival": 0,
+          "emission": 0.784437,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 97,
+          "arrival": 0,
+          "emission": 0.359437,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 98,
+          "arrival": 0,
+          "emission": 0.197613,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.7721
+        },
+        {
+          "sample": 98,
+          "arrival": 0,
+          "emission": 0.367188,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.4759
+        },
+        {
+          "sample": 105,
+          "arrival": 0.1907,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0139
+        },
+        {
+          "sample": 106,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 106,
+          "arrival": 0.1643,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0035
+        },
+        {
+          "sample": 107,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 108,
+          "arrival": 0,
+          "emission": 0.7872,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 109,
+          "arrival": 0,
+          "emission": 0.029459,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.88
+        },
+        {
+          "sample": 109,
+          "arrival": 0,
+          "emission": 0.509937,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 110,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.03671200000000001,
+            0.036711999999999995,
+            0.036711999999999995,
+            0.036712
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.03671200000000001,
+          "travel": 0
+        },
+        {
+          "sample": 110,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.009855000000000004,
+            0.009855000000000004,
+            0.009854999999999996,
+            0.009855
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.009855000000000004,
+          "travel": 0
+        },
+        {
+          "sample": 110,
+          "arrival": 0,
+          "emission": 0.319088,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.558
+        },
+        {
+          "sample": 115,
+          "arrival": 0.1944,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0106
+        },
+        {
+          "sample": 116,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 117,
+          "arrival": 0.417,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.2509
+        },
+        {
+          "sample": 119,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.02276900000000001,
+            0.022769,
+            0.022769,
+            0.022769
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.02276900000000001,
+          "travel": 0
+        },
+        {
+          "sample": 119,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 123,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.04545500000000001,
+            0.045454999999999995,
+            0.045454999999999995,
+            0.045454999999999995
+          ],
+          "name": "NV Solutions",
+          "phase": "orbit",
+          "progress": 0.04545500000000001,
+          "travel": 0
+        },
+        {
+          "sample": 126,
+          "arrival": 0,
+          "emission": 0.78975,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 127,
+          "arrival": 0,
+          "emission": 0.568688,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 127,
+          "arrival": 0,
+          "emission": 0.194676,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.7943
+        },
+        {
+          "sample": 128,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.82
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "nodes": [
+        {
+          "name": "NV Hub",
+          "completed": 5,
+          "phases": [
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.002154000000000017,
+            1
+          ],
+          "maxTailHeadDifference": 1.1102230246251565e-16,
+          "emissionMax": 0.899438,
+          "arrivalMax": 0.4474
+        },
+        {
+          "name": "NV Med",
+          "completed": 4,
+          "phases": [
+            null,
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.00904100000000002,
+            1
+          ],
+          "maxTailHeadDifference": 1.1102230246251565e-16,
+          "emissionMax": 0.89975,
+          "arrivalMax": 0.4303
+        },
+        {
+          "name": "NV Lex",
+          "completed": 4,
+          "phases": [
+            null,
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.011014000000000024,
+            1
+          ],
+          "maxTailHeadDifference": 1.1102230246251565e-16,
+          "emissionMax": 0.852898,
+          "arrivalMax": 0.4411
+        },
+        {
+          "name": "NV Solutions",
+          "completed": 3,
+          "phases": [
+            null,
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.002857000000000026,
+            1
+          ],
+          "maxTailHeadDifference": 1.1102230246251565e-16,
+          "emissionMax": 0.89775,
+          "arrivalMax": 0.304
+        }
+      ],
+      "transitions": [
+        {
+          "sample": 0,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.042769000000000015,
+            0.042768999999999995,
+            0.042769,
+            0.042769
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.042769000000000015,
+          "travel": 0
+        },
+        {
+          "sample": 0,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.14,
+            0.09,
+            0.045,
+            0.014
+          ],
+          "name": "NV Med",
+          "phase": null,
+          "progress": 0.14,
+          "travel": 0
+        },
+        {
+          "sample": 0,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.14,
+            0.09,
+            0.045,
+            0.014
+          ],
+          "name": "NV Lex",
+          "phase": null,
+          "progress": 0.14,
+          "travel": 0
+        },
+        {
+          "sample": 0,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.14,
+            0.09,
+            0.045,
+            0.014
+          ],
+          "name": "NV Solutions",
+          "phase": null,
+          "progress": 0.14,
+          "travel": 0
+        },
+        {
+          "sample": 4,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.03260300000000001,
+            0.032603,
+            0.032603,
+            0.032603
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.03260300000000001,
+          "travel": 0
+        },
+        {
+          "sample": 7,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.020870000000000017,
+            0.02087,
+            0.02087,
+            0.02087
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.020870000000000017,
+          "travel": 0
+        },
+        {
+          "sample": 10,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.006753000000000009,
+            0.006752999999999995,
+            0.006752999999999995,
+            0.006753
+          ],
+          "name": "NV Solutions",
+          "phase": "orbit",
+          "progress": 0.006753000000000009,
+          "travel": 0
+        },
+        {
+          "sample": 15,
+          "arrival": 0,
+          "emission": 0.731357,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 16,
+          "arrival": 0,
+          "emission": 0.016837,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.88
+        },
+        {
+          "sample": 21,
+          "arrival": 0,
+          "emission": 0.577469,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 22,
+          "arrival": 0.1351,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 22,
+          "arrival": 0,
+          "emission": 0.003563,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.82
+        },
+        {
+          "sample": 23,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 23,
+          "arrival": 0,
+          "emission": 0.852898,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 24,
+          "arrival": 0,
+          "emission": 0.072161,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.84
+        },
+        {
+          "sample": 26,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.03076900000000002,
+            0.030769,
+            0.030769,
+            0.030769
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.03076900000000002,
+          "travel": 0
+        },
+        {
+          "sample": 28,
+          "arrival": 0.4228,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.4018
+        },
+        {
+          "sample": 28,
+          "arrival": 0,
+          "emission": 0.89375,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 29,
+          "arrival": 0,
+          "emission": 0.113605,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.8
+        },
+        {
+          "sample": 30,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 31,
+          "arrival": 0.4411,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.3941
+        },
+        {
+          "sample": 33,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.00904100000000002,
+            0.009040999999999992,
+            0.009041,
+            0.009041
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.00904100000000002,
+          "travel": 0
+        },
+        {
+          "sample": 33,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 36,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.03942000000000001,
+            0.03942,
+            0.03942,
+            0.03942
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.03942000000000001,
+          "travel": 0
+        },
+        {
+          "sample": 36,
+          "arrival": 0.2301,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0387
+        },
+        {
+          "sample": 37,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 41,
+          "arrival": 0,
+          "emission": 0.899438,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 41,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.004416000000000003,
+            0.004416000000000003,
+            0.004415999999999996,
+            0.004416
+          ],
+          "name": "NV Solutions",
+          "phase": "orbit",
+          "progress": 0.004416000000000003,
+          "travel": 0
+        },
+        {
+          "sample": 42,
+          "arrival": 0,
+          "emission": 0.072161,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.88
+        },
+        {
+          "sample": 48,
+          "arrival": 0.2699,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.055
+        },
+        {
+          "sample": 49,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 50,
+          "arrival": 0,
+          "emission": 0.84375,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 51,
+          "arrival": 0,
+          "emission": 0.127742,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.8195
+        },
+        {
+          "sample": 52,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.01846200000000002,
+            0.018461999999999992,
+            0.018462,
+            0.018462
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.01846200000000002,
+          "travel": 0
+        },
+        {
+          "sample": 52,
+          "arrival": 0,
+          "emission": 0.621885,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 53,
+          "arrival": 0,
+          "emission": 0.002084,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.84
+        },
+        {
+          "sample": 58,
+          "arrival": 0.1603,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0035
+        },
+        {
+          "sample": 59,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 59,
+          "arrival": 0,
+          "emission": 0.89775,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 60,
+          "arrival": 0.3221,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.1119
+        },
+        {
+          "sample": 60,
+          "arrival": 0,
+          "emission": 0.104611,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.8
+        },
+        {
+          "sample": 61,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 63,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.043836000000000014,
+            0.043836,
+            0.043836,
+            0.043836
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.043836000000000014,
+          "travel": 0
+        },
+        {
+          "sample": 65,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.05797100000000001,
+            0.057970999999999995,
+            0.057970999999999995,
+            0.057971
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.05797100000000001,
+          "travel": 0
+        },
+        {
+          "sample": 67,
+          "arrival": 0,
+          "emission": 0.784437,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 67,
+          "arrival": 0.2532,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0562
+        },
+        {
+          "sample": 68,
+          "arrival": 0,
+          "emission": 0.160966,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.8644
+        },
+        {
+          "sample": 68,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 72,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.005195000000000005,
+            0.005194999999999991,
+            0.005194999999999998,
+            0.005195
+          ],
+          "name": "NV Solutions",
+          "phase": "orbit",
+          "progress": 0.005195000000000005,
+          "travel": 0
+        },
+        {
+          "sample": 74,
+          "arrival": 0.3896,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.1782
+        },
+        {
+          "sample": 75,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 78,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.002154000000000017,
+            0.002154000000000003,
+            0.002153999999999996,
+            0.0021539999999999997
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.002154000000000017,
+          "travel": 0
+        },
+        {
+          "sample": 80,
+          "arrival": 0,
+          "emission": 0.462298,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.2159
+        },
+        {
+          "sample": 80,
+          "arrival": 0,
+          "emission": 0.236937,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 81,
+          "arrival": 0,
+          "emission": 0.405879,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.3779
+        },
+        {
+          "sample": 87,
+          "arrival": 0.4303,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.2618
+        },
+        {
+          "sample": 89,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 89,
+          "arrival": 0.1551,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0017
+        },
+        {
+          "sample": 90,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 90,
+          "arrival": 0,
+          "emission": 0.884,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 91,
+          "arrival": 0,
+          "emission": 0.125332,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.7998
+        },
+        {
+          "sample": 92,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.020274000000000018,
+            0.020274,
+            0.020273999999999997,
+            0.020274
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.020274000000000018,
+          "travel": 0
+        },
+        {
+          "sample": 93,
+          "arrival": 0,
+          "emission": 0.47975,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 93,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.011014000000000024,
+            0.011013999999999996,
+            0.011013999999999996,
+            0.011014
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.011014000000000024,
+          "travel": 0
+        },
+        {
+          "sample": 94,
+          "arrival": 0,
+          "emission": 0.329957,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.589
+        },
+        {
+          "sample": 98,
+          "arrival": 0.2428,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.048
+        },
+        {
+          "sample": 99,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 100,
+          "arrival": 0.4474,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.4436
+        },
+        {
+          "sample": 102,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 103,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.002857000000000026,
+            0.0028569999999999984,
+            0.0028569999999999984,
+            0.002857
+          ],
+          "name": "NV Solutions",
+          "phase": "orbit",
+          "progress": 0.002857000000000026,
+          "travel": 0
+        },
+        {
+          "sample": 105,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.05569200000000002,
+            0.055692,
+            0.055692,
+            0.055692
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.05569200000000002,
+          "travel": 0
+        },
+        {
+          "sample": 109,
+          "arrival": 0,
+          "emission": 0.89975,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 109,
+          "arrival": 0,
+          "emission": 0.731,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 110,
+          "arrival": 0,
+          "emission": 0.068508,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.82
+        },
+        {
+          "sample": 110,
+          "arrival": 0,
+          "emission": 0.185982,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.8035
+        },
+        {
+          "sample": 116,
+          "arrival": 0.0112,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.8118
+        },
+        {
+          "sample": 117,
+          "arrival": 0.157,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.7187
+        },
+        {
+          "sample": 118,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 119,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 120,
+          "arrival": 0,
+          "emission": 0.542567,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 121,
+          "arrival": 0,
+          "emission": 0.000999,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.88
+        },
+        {
+          "sample": 121,
+          "arrival": 0,
+          "emission": 0.804937,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 122,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.05150700000000001,
+            0.051507,
+            0.051507,
+            0.051507
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.05150700000000001,
+          "travel": 0
+        },
+        {
+          "sample": 122,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.025507000000000016,
+            0.025507,
+            0.025507,
+            0.025507
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.025507000000000016,
+          "travel": 0
+        },
+        {
+          "sample": 122,
+          "arrival": 0,
+          "emission": 0.150371,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.792
+        },
+        {
+          "sample": 126,
+          "arrival": 0.0586,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.8366
+        },
+        {
+          "sample": 128,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 129,
+          "arrival": 0.304,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.1037
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "nodes": [
+        {
+          "name": "NV Hub",
+          "completed": 5,
+          "phases": [
+            "orbit",
+            "transmission",
+            "arrival",
+            "rest",
+            "emission"
+          ],
+          "perimeterRange": [
+            0.0061540000000000206,
+            1
+          ],
+          "maxTailHeadDifference": 1.1102230246251565e-16,
+          "emissionMax": 0.899,
+          "arrivalMax": 0.4062
+        },
+        {
+          "name": "NV Med",
+          "completed": 4,
+          "phases": [
+            null,
+            "orbit",
+            "transmission",
+            "arrival",
+            "rest",
+            "emission"
+          ],
+          "perimeterRange": [
+            0.007397000000000015,
+            1
+          ],
+          "maxTailHeadDifference": 1.1102230246251565e-16,
+          "emissionMax": 0.899,
+          "arrivalMax": 0.3709
+        },
+        {
+          "name": "NV Lex",
+          "completed": 4,
+          "phases": [
+            null,
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.026087000000000013,
+            1
+          ],
+          "maxTailHeadDifference": 1.1102230246251565e-16,
+          "emissionMax": 0.834086,
+          "arrivalMax": 0.3927
+        },
+        {
+          "name": "NV Solutions",
+          "completed": 4,
+          "phases": [
+            null,
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.010909000000000002,
+            1
+          ],
+          "maxTailHeadDifference": 1.1102230246251565e-16,
+          "emissionMax": 0.87173,
+          "arrivalMax": 0.1683
+        }
+      ],
+      "transitions": [
+        {
+          "sample": 0,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.120308,
+            0.120308,
+            0.120308,
+            0.120308
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.120308,
+          "travel": 0
+        },
+        {
+          "sample": 0,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.14,
+            0.09,
+            0.045,
+            0.014
+          ],
+          "name": "NV Med",
+          "phase": null,
+          "progress": 0.14,
+          "travel": 0
+        },
+        {
+          "sample": 0,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.14,
+            0.09,
+            0.045,
+            0.014
+          ],
+          "name": "NV Lex",
+          "phase": null,
+          "progress": 0.14,
+          "travel": 0
+        },
+        {
+          "sample": 0,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.14,
+            0.09,
+            0.045,
+            0.014
+          ],
+          "name": "NV Solutions",
+          "phase": null,
+          "progress": 0.14,
+          "travel": 0
+        },
+        {
+          "sample": 3,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.03972600000000001,
+            0.039726,
+            0.039726,
+            0.039726
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.03972600000000001,
+          "travel": 0
+        },
+        {
+          "sample": 6,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.028406000000000015,
+            0.02840599999999999,
+            0.028405999999999997,
+            0.028406
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.028406000000000015,
+          "travel": 0
+        },
+        {
+          "sample": 9,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.013247000000000009,
+            0.013246999999999997,
+            0.013246999999999997,
+            0.013247
+          ],
+          "name": "NV Solutions",
+          "phase": "orbit",
+          "progress": 0.013247000000000009,
+          "travel": 0
+        },
+        {
+          "sample": 14,
+          "arrival": 0,
+          "emission": 0.499828,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.0964
+        },
+        {
+          "sample": 20,
+          "arrival": 0.1398,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.64
+        },
+        {
+          "sample": 20,
+          "arrival": 0,
+          "emission": 0.470557,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.1634
+        },
+        {
+          "sample": 22,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 22,
+          "arrival": 0,
+          "emission": 0.796557,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 23,
+          "arrival": 0,
+          "emission": 0.031898,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.714
+        },
+        {
+          "sample": 25,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.03846200000000001,
+            0.038462,
+            0.038462,
+            0.038462
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.03846200000000001,
+          "travel": 0
+        },
+        {
+          "sample": 27,
+          "arrival": 0.3709,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.2304
+        },
+        {
+          "sample": 27,
+          "arrival": 0,
+          "emission": 0.829387,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 28,
+          "arrival": 0,
+          "emission": 0.061478,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.68
+        },
+        {
+          "sample": 29,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 30,
+          "arrival": 0.3696,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.2199
+        },
+        {
+          "sample": 32,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.01616400000000001,
+            0.016163999999999998,
+            0.016163999999999998,
+            0.016164
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.01616400000000001,
+          "travel": 0
+        },
+        {
+          "sample": 32,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 35,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.04318800000000002,
+            0.043188,
+            0.043188,
+            0.043188
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.04318800000000002,
+          "travel": 0
+        },
+        {
+          "sample": 35,
+          "arrival": 0.1683,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0163
+        },
+        {
+          "sample": 36,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 40,
+          "arrival": 0,
+          "emission": 0.796557,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 40,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.010909000000000002,
+            0.010909000000000002,
+            0.010908999999999997,
+            0.010909
+          ],
+          "name": "NV Solutions",
+          "phase": "orbit",
+          "progress": 0.010909000000000002,
+          "travel": 0
+        },
+        {
+          "sample": 41,
+          "arrival": 0,
+          "emission": 0.031898,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.748
+        },
+        {
+          "sample": 47,
+          "arrival": 0.1696,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0108
+        },
+        {
+          "sample": 48,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 49,
+          "arrival": 0,
+          "emission": 0.899,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 50,
+          "arrival": 0,
+          "emission": 0.100244,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.697
+        },
+        {
+          "sample": 51,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.026462000000000013,
+            0.026462,
+            0.026462,
+            0.026462
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.026462000000000013,
+          "travel": 0
+        },
+        {
+          "sample": 51,
+          "arrival": 0,
+          "emission": 0.508292,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.0696
+        },
+        {
+          "sample": 57,
+          "arrival": 0.0902,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 58,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 58,
+          "arrival": 0,
+          "emission": 0.87173,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 59,
+          "arrival": 0.2424,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0643
+        },
+        {
+          "sample": 59,
+          "arrival": 0,
+          "emission": 0.077809,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.68
+        },
+        {
+          "sample": 60,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 62,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.04739700000000001,
+            0.047396999999999995,
+            0.047396999999999995,
+            0.047397
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.04739700000000001,
+          "travel": 0
+        },
+        {
+          "sample": 64,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.06550700000000001,
+            0.065507,
+            0.065507,
+            0.065507
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.06550700000000001,
+          "travel": 0
+        },
+        {
+          "sample": 66,
+          "arrival": 0,
+          "emission": 0.899,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 66,
+          "arrival": 0.1348,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0033
+        },
+        {
+          "sample": 67,
+          "arrival": 0,
+          "emission": 0.098094,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.748
+        },
+        {
+          "sample": 67,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 71,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.011948000000000014,
+            0.011948,
+            0.011948,
+            0.011948
+          ],
+          "name": "NV Solutions",
+          "phase": "orbit",
+          "progress": 0.011948000000000014,
+          "travel": 0
+        },
+        {
+          "sample": 73,
+          "arrival": 0.264,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0766
+        },
+        {
+          "sample": 74,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 77,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.018154000000000017,
+            0.018154000000000003,
+            0.018154,
+            0.018154
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.018154000000000017,
+          "travel": 0
+        },
+        {
+          "sample": 78,
+          "arrival": 0,
+          "emission": 0.529438,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 79,
+          "arrival": 0,
+          "emission": 0.311921,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.4987
+        },
+        {
+          "sample": 79,
+          "arrival": 0,
+          "emission": 0.644,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 80,
+          "arrival": 0,
+          "emission": 0.221793,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.6461
+        },
+        {
+          "sample": 86,
+          "arrival": 0.2071,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0385
+        },
+        {
+          "sample": 87,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 87,
+          "arrival": 0.1414,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.6043
+        },
+        {
+          "sample": 89,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 89,
+          "arrival": 0,
+          "emission": 0.72673,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 90,
+          "arrival": 0,
+          "emission": 0.030667,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.68
+        },
+        {
+          "sample": 91,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.030959000000000014,
+            0.030958999999999993,
+            0.030959,
+            0.030959
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.030959000000000014,
+          "travel": 0
+        },
+        {
+          "sample": 92,
+          "arrival": 0,
+          "emission": 0.84375,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 92,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.026087000000000013,
+            0.026087,
+            0.026087,
+            0.026087
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.026087000000000013,
+          "travel": 0
+        },
+        {
+          "sample": 93,
+          "arrival": 0,
+          "emission": 0.163665,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.733
+        },
+        {
+          "sample": 97,
+          "arrival": 0.1044,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 98,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 99,
+          "arrival": 0.2971,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.1109
+        },
+        {
+          "sample": 100,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 102,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.020000000000000014,
+            0.01999999999999999,
+            0.019999999999999997,
+            0.02
+          ],
+          "name": "NV Solutions",
+          "phase": "orbit",
+          "progress": 0.020000000000000014,
+          "travel": 0
+        },
+        {
+          "sample": 103,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.0061540000000000206,
+            0.006153999999999993,
+            0.006154,
+            0.006154
+          ],
+          "name": "NV Hub",
+          "phase": "orbit",
+          "progress": 0.0061540000000000206,
+          "travel": 0
+        },
+        {
+          "sample": 108,
+          "arrival": 0,
+          "emission": 0.60402,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 108,
+          "arrival": 0,
+          "emission": 0.834086,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 109,
+          "arrival": 0,
+          "emission": 0.006518,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.697
+        },
+        {
+          "sample": 109,
+          "arrival": 0,
+          "emission": 0.064947,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.714
+        },
+        {
+          "sample": 115,
+          "arrival": 0.3429,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.3714
+        },
+        {
+          "sample": 116,
+          "arrival": 0.3927,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.257
+        },
+        {
+          "sample": 117,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Med",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 118,
+          "arrival": 0,
+          "emission": 0.469437,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 118,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Lex",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 119,
+          "arrival": 0,
+          "emission": 0.283908,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.5851
+        },
+        {
+          "sample": 120,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.007397000000000015,
+            0.007397000000000001,
+            0.007397000000000001,
+            0.007397
+          ],
+          "name": "NV Med",
+          "phase": "orbit",
+          "progress": 0.007397000000000015,
+          "travel": 0
+        },
+        {
+          "sample": 120,
+          "arrival": 0,
+          "emission": 0.773189,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "emission",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 121,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            0.04058000000000002,
+            0.04058,
+            0.04058,
+            0.04058
+          ],
+          "name": "NV Lex",
+          "phase": "orbit",
+          "progress": 0.04058000000000002,
+          "travel": 0
+        },
+        {
+          "sample": 121,
+          "arrival": 0,
+          "emission": 0.044049,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "transmission",
+          "progress": 1,
+          "travel": 0.68
+        },
+        {
+          "sample": 125,
+          "arrival": 0.4062,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.3112
+        },
+        {
+          "sample": 127,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Hub",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        },
+        {
+          "sample": 128,
+          "arrival": 0.1201,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "arrival",
+          "progress": 1,
+          "travel": 0.0006
+        },
+        {
+          "sample": 129,
+          "arrival": 0,
+          "emission": 0,
+          "heads": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "name": "NV Solutions",
+          "phase": "rest",
+          "progress": 1,
+          "travel": 0
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "nodes": [
+        {
+          "name": "NV Hub",
+          "completed": 5,
+          "phases": [
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.003385000000000027,
+            1
+          ],
+          "emissionMax": 0.82469,
+          "arrivalMax": 0.3882
+        },
+        {
+          "name": "NV Med",
+          "completed": 4,
+          "phases": [
+            null,
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.01205500000000001,
+            1
+          ],
+          "emissionMax": 0.877438,
+          "arrivalMax": 0.3709
+        },
+        {
+          "name": "NV Lex",
+          "completed": 4,
+          "phases": [
+            null,
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.0037680000000000218,
+            1
+          ],
+          "emissionMax": 0.794937,
+          "arrivalMax": 0.301
+        },
+        {
+          "name": "NV Solutions",
+          "completed": 4,
+          "phases": [
+            null,
+            "orbit",
+            "emission",
+            "transmission",
+            "arrival",
+            "rest"
+          ],
+          "perimeterRange": [
+            0.03636400000000001,
+            1
+          ],
+          "emissionMax": 0.429751,
+          "arrivalMax": 0.3731
+        }
+      ]
+    }
+  ],
+  "navigation": {
+    "hover": [
+      {
+        "center": "29.578125px",
+        "engaged": true,
+        "label": "Produtos",
+        "line": "matrix(59.1562, 0, 0, 1, 0, 0)",
+        "links": [
+          {
+            "text": "Produtos",
+            "weight": "400",
+            "width": 59.15625,
+            "x": 540.46875
+          },
+          {
+            "text": "Soluções",
+            "weight": "400",
+            "width": 59.859375,
+            "x": 635.625
+          },
+          {
+            "text": "Projetos",
+            "weight": "400",
+            "width": 54.234375,
+            "x": 731.484375
+          },
+          {
+            "text": "A empresa",
+            "weight": "400",
+            "width": 68.03125,
+            "x": 821.71875
+          }
+        ],
+        "transform": "matrix(1, 0, 0, 1, 29.5781, 0)",
+        "width": "59.15625"
+      },
+      {
+        "center": "125.0859375px",
+        "engaged": true,
+        "label": "Soluções",
+        "line": "matrix(59.8594, 0, 0, 1, 0, 0)",
+        "links": [
+          {
+            "text": "Produtos",
+            "weight": "400",
+            "width": 59.15625,
+            "x": 540.46875
+          },
+          {
+            "text": "Soluções",
+            "weight": "400",
+            "width": 59.859375,
+            "x": 635.625
+          },
+          {
+            "text": "Projetos",
+            "weight": "400",
+            "width": 54.234375,
+            "x": 731.484375
+          },
+          {
+            "text": "A empresa",
+            "weight": "400",
+            "width": 68.03125,
+            "x": 821.71875
+          }
+        ],
+        "transform": "matrix(1, 0, 0, 1, 125.086, 0)",
+        "width": "59.859375"
+      },
+      {
+        "center": "218.1328125px",
+        "engaged": true,
+        "label": "Projetos",
+        "line": "matrix(54.2344, 0, 0, 1, 0, 0)",
+        "links": [
+          {
+            "text": "Produtos",
+            "weight": "400",
+            "width": 59.15625,
+            "x": 540.46875
+          },
+          {
+            "text": "Soluções",
+            "weight": "400",
+            "width": 59.859375,
+            "x": 635.625
+          },
+          {
+            "text": "Projetos",
+            "weight": "400",
+            "width": 54.234375,
+            "x": 731.484375
+          },
+          {
+            "text": "A empresa",
+            "weight": "400",
+            "width": 68.03125,
+            "x": 821.71875
+          }
+        ],
+        "transform": "matrix(1, 0, 0, 1, 218.133, 0)",
+        "width": "54.234375"
+      },
+      {
+        "center": "315.265625px",
+        "engaged": true,
+        "label": "A empresa",
+        "line": "matrix(68.0312, 0, 0, 1, 0, 0)",
+        "links": [
+          {
+            "text": "Produtos",
+            "weight": "400",
+            "width": 59.15625,
+            "x": 540.46875
+          },
+          {
+            "text": "Soluções",
+            "weight": "400",
+            "width": 59.859375,
+            "x": 635.625
+          },
+          {
+            "text": "Projetos",
+            "weight": "400",
+            "width": 54.234375,
+            "x": 731.484375
+          },
+          {
+            "text": "A empresa",
+            "weight": "400",
+            "width": 68.03125,
+            "x": 821.71875
+          }
+        ],
+        "transform": "matrix(1, 0, 0, 1, 315.266, 0)",
+        "width": "68.03125"
+      }
+    ],
+    "routing": [
+      {
+        "step": "Products SPA",
+        "url": "http://127.0.0.1:5175/products",
+        "active": [
+          {
+            "label": "Produtos",
+            "line": "matrix(0.667264, 0, 0, 1, 0, 0)",
+            "opacity": "0.388169"
+          }
+        ],
+        "hoverEngaged": false
+      },
+      {
+        "step": "Hover Solutions while Products active",
+        "active": [
+          {
+            "label": "Produtos",
+            "line": "matrix(0.72, 0, 0, 1, 0, 0)",
+            "opacity": "0.55"
+          }
+        ],
+        "hoverEngaged": true
+      },
+      {
+        "step": "Solutions SPA",
+        "url": "http://127.0.0.1:5175/solutions",
+        "active": [
+          {
+            "label": "Soluções",
+            "line": "matrix(0.69225, 0, 0, 1, 0, 0)",
+            "opacity": "0.441455"
+          }
+        ],
+        "hoverEngaged": false
+      },
+      {
+        "step": "Back",
+        "url": "http://127.0.0.1:5175/products",
+        "active": [
+          {
+            "label": "Produtos",
+            "line": "matrix(0.712462, 0, 0, 1, 0, 0)",
+            "opacity": "0.530719"
+          }
+        ],
+        "hoverEngaged": false
+      },
+      {
+        "step": "Forward",
+        "url": "http://127.0.0.1:5175/solutions",
+        "active": [
+          {
+            "label": "Soluções",
+            "line": "matrix(0.714237, 0, 0, 1, 0, 0)",
+            "opacity": "0.513448"
+          }
+        ],
+        "hoverEngaged": false
+      },
+      {
+        "step": "Direct Med",
+        "active": [
+          {
+            "label": "Produtos",
+            "line": "matrix(0.72, 0, 0, 1, 0, 0)",
+            "opacity": "0.55"
+          }
+        ],
+        "hoverEngaged": false
+      },
+      {
+        "step": "Refresh Med",
+        "active": [
+          {
+            "label": "Produtos",
+            "line": "matrix(0.72, 0, 0, 1, 0, 0)",
+            "opacity": "0.55"
+          }
+        ],
+        "hoverEngaged": false
+      }
+    ],
+    "activeLinks": [
+      {
+        "url": "http://127.0.0.1:5175/products",
+        "active": [
+          {
+            "label": "Produtos",
+            "line": "matrix(0.72, 0, 0, 1, 0, 0)",
+            "opacity": "0.55"
+          }
+        ],
+        "hoverEngaged": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/solutions",
+        "active": [
+          {
+            "label": "Soluções",
+            "line": "matrix(0.72, 0, 0, 1, 0, 0)",
+            "opacity": "0.55"
+          }
+        ],
+        "hoverEngaged": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/projects",
+        "active": [
+          {
+            "label": "Projetos",
+            "line": "matrix(0.72, 0, 0, 1, 0, 0)",
+            "opacity": "0.55"
+          }
+        ],
+        "hoverEngaged": false
+      },
+      {
+        "url": "http://127.0.0.1:5175/about",
+        "active": [
+          {
+            "label": "A empresa",
+            "line": "matrix(0.72, 0, 0, 1, 0, 0)",
+            "opacity": "0.55"
+          }
+        ],
+        "hoverEngaged": false
+      }
+    ],
+    "scroll": {
+      "active": "A empresa",
+      "headerY": 0,
+      "hover": true,
+      "scrollY": 535
+    },
+    "keyboard": [
+      {
+        "focusVisible": true,
+        "label": "Pular para o conteúdo",
+        "outline": "2px",
+        "shared": false
+      },
+      {
+        "focusVisible": true,
+        "label": "nvcore",
+        "outline": "2px",
+        "shared": false
+      },
+      {
+        "focusVisible": true,
+        "label": "Produtos",
+        "outline": "2px",
+        "shared": true
+      },
+      {
+        "focusVisible": true,
+        "label": "Soluções",
+        "outline": "2px",
+        "shared": true
+      },
+      {
+        "focusVisible": true,
+        "label": "Projetos",
+        "outline": "2px",
+        "shared": true
+      },
+      {
+        "focusVisible": true,
+        "label": "A empresa",
+        "outline": "2px",
+        "shared": true
+      },
+      {
+        "focusVisible": true,
+        "label": "Vamos conversar",
+        "outline": "2px",
+        "shared": false,
+        "square": "matrix(1, 0, 0, 1, 1.99382, 0)"
+      }
+    ],
+    "ctaDestination": "http://127.0.0.1:5175/contact",
+    "centerEntry": {
+      "position": "matrix(1, 0, 0, 1, 315.266, 0)",
+      "target": "315.265625px"
+    },
+    "mobileOpenStates": [
+      {
+        "active": [
+          "Produtos",
+          "NV Med"
+        ],
+        "dialog": "true",
+        "sharedLine": "block",
+        "step": "Med menu open"
+      },
+      {
+        "active": [
+          "Soluções"
+        ],
+        "step": "Solutions menu"
+      },
+      {
+        "active": [
+          "Produtos",
+          "NV Med"
+        ],
+        "overflow": false,
+        "step": "390px Med menu",
+        "width": 390
+      }
+    ],
+    "mobileFinalClose": {
+      "dialog": false,
+      "focus": "Abrir menu"
+    }
+  },
+  "nodeInteractions": [
+    {
+      "focus": true,
+      "highlight": "0.32",
+      "name": "hub",
+      "orbits": 4,
+      "outline": "2px",
+      "signals": 4,
+      "destination": "http://127.0.0.1:5175/products/hub"
+    },
+    {
+      "focus": true,
+      "highlight": "0.32",
+      "name": "med",
+      "orbits": 4,
+      "outline": "2px",
+      "signals": 4,
+      "destination": "http://127.0.0.1:5175/products/med"
+    },
+    {
+      "focus": true,
+      "highlight": "0.32",
+      "name": "lex",
+      "orbits": 4,
+      "outline": "2px",
+      "signals": 4,
+      "destination": "http://127.0.0.1:5175/products/lex"
+    },
+    {
+      "focus": true,
+      "highlight": "0.32",
+      "name": "solutions",
+      "orbits": 4,
+      "outline": "2px",
+      "signals": 4,
+      "destination": "http://127.0.0.1:5175/solutions"
+    }
+  ],
+  "mobileNodeDestinations": [
+    {
+      "node": "hub",
+      "url": "http://127.0.0.1:5175/products/hub"
+    },
+    {
+      "node": "med",
+      "url": "http://127.0.0.1:5175/products/med"
+    },
+    {
+      "node": "lex",
+      "url": "http://127.0.0.1:5175/products/lex"
+    },
+    {
+      "node": "solutions",
+      "url": "http://127.0.0.1:5175/solutions"
+    }
+  ],
+  "offscreenPause": {
+    "state": "paused",
+    "stable": true,
+    "resumed": "running"
+  },
+  "routeCleanup": [
+    {
+      "orbits": 4,
+      "route": "home",
+      "signals": 4
+    },
+    {
+      "orbits": 0,
+      "route": "solutions",
+      "signals": 0
+    },
+    {
+      "orbits": 4,
+      "route": "home",
+      "signals": 4
+    },
+    {
+      "orbits": 0,
+      "route": "solutions",
+      "signals": 0
+    },
+    {
+      "orbits": 4,
+      "route": "home",
+      "signals": 4
+    },
+    {
+      "orbits": 0,
+      "route": "solutions",
+      "signals": 0
+    }
+  ],
+  "reducedMotion": {
+    "headerIndicator": "none",
+    "mode": "reduced",
+    "nodeFocus": "0.6",
+    "nodes": [
+      {
+        "border": "0.48",
+        "breathing": "none",
+        "orbit": "none",
+        "phase": null
+      },
+      {
+        "border": "0.48",
+        "breathing": "none",
+        "orbit": "none",
+        "phase": null
+      },
+      {
+        "border": "0.48",
+        "breathing": "none",
+        "orbit": "none",
+        "phase": null
+      },
+      {
+        "border": "0.48",
+        "breathing": "none",
+        "orbit": "none",
+        "phase": null
+      }
+    ],
+    "signals": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "headerFocus": {
+      "line": "matrix(1, 0, 0, 1, 0, 0)",
+      "outline": "2px",
+      "transition": "0s"
+    },
+    "cta": {
+      "square": "none",
+      "transition": "0s"
+    },
+    "afterFourSeconds": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "productionConsole": [],
+  "checks": {
+    "build": "passed",
+    "lint": "passed",
+    "verify": "passed on port 5175"
+  },
+  "limitations": [
+    "Mobile viewports and mouse input tested; no physical touch device.",
+    "Reduced-motion QA uses the existing development branch, shared with the actual system preference behavior.",
+    "No physical-device FPS or heap profiling."
+  ],
+  "geometryPrecision": "Numeric geometry tolerance: 0.01 CSS px. The 390px headline height differs by 0.0000153px from floating-point transform measurement."
+}

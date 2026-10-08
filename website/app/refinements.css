@@ -1483,3 +1483,258 @@
     animation: none;
   }
 }
+
+/* V3: energy stays on the existing node border; the same timeline sends it to Core. */
+.core-diagram .diagram-node {
+  border-color: color-mix(in srgb, var(--node-color) 44%, #293d5b);
+}
+.core-diagram .diagram-node::before {
+  animation: none;
+  opacity: var(--node-energy, 0.48);
+  box-shadow:
+    0 0 9px color-mix(in srgb, var(--node-color) 24%, transparent),
+    inset 0 0 7px color-mix(in srgb, var(--node-color) 8%, transparent);
+}
+.core-diagram .diagram-node::after {
+  box-shadow:
+    0 0 11px color-mix(in srgb, var(--node-color) 36%, transparent),
+    inset 0 0 7px color-mix(in srgb, var(--node-color) 12%, transparent);
+}
+.core-diagram .node-square {
+  animation: none;
+  opacity: var(--node-status, 1);
+  box-shadow:
+    0 0 3px var(--node-color),
+    0 0 7px color-mix(in srgb, var(--node-color) 50%, transparent);
+}
+.node-circuit {
+  position: absolute;
+  inset: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  overflow: visible;
+  pointer-events: none;
+}
+.node-circuit rect {
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+.core-diagram .diagram-node:focus-visible .node-square,
+.core-diagram .diagram-node:active .node-square {
+  opacity: 1;
+}
+@media (hover: hover) and (pointer: fine) {
+  .core-diagram .diagram-node:hover .node-square {
+    opacity: 1;
+  }
+}
+
+/* One traveling hover line, with a separate quiet underline for the current route. */
+.site-header .header-navigation {
+  position: relative;
+}
+.site-header .header-navigation a {
+  position: relative;
+  font-weight: inherit;
+  transition: color 320ms ease;
+}
+.site-header .header-navigation a[aria-current="page"] {
+  color: var(--foreground);
+}
+.site-header .header-navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--core);
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition:
+    transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 320ms ease;
+}
+.site-header .header-navigation a[aria-current="page"]::after {
+  opacity: 0.55;
+  transform: scaleX(0.72);
+}
+.nav-hover-indicator {
+  position: absolute;
+  pointer-events: none;
+  bottom: 0;
+  left: -0.5px;
+  width: 1px;
+  height: 1px;
+  transform: translateX(var(--nav-center, 0px));
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.nav-hover-indicator::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--core);
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--core) 18%, transparent);
+  transform: scaleX(0);
+  opacity: 0;
+  transition:
+    transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 320ms ease;
+}
+.header-navigation[data-nav-entering] .nav-hover-indicator {
+  transition: none;
+}
+.header-navigation[data-nav-engaged] .nav-hover-indicator::after {
+  transform: scaleX(var(--nav-width, 0));
+  opacity: 0.95;
+}
+.site-header .header-navigation a:focus-visible,
+.site-header .header-contact:focus-visible {
+  outline: 2px solid var(--core);
+  outline-offset: 5px;
+  color: var(--foreground);
+}
+.site-header .header-contact {
+  transition: color 320ms ease;
+}
+.site-header .contact-label {
+  position: relative;
+}
+.site-header .contact-label::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: var(--core);
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition:
+    transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 320ms ease;
+}
+.site-header .contact-square {
+  position: relative;
+  transition:
+    transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    background 320ms ease;
+}
+.site-header .contact-square::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  box-shadow: 0 0 7px color-mix(in srgb, var(--context) 55%, transparent);
+  opacity: 0;
+  transition: opacity 320ms ease;
+}
+.site-header .header-contact:focus-visible .contact-label::after,
+.site-header .header-contact:active .contact-label::after {
+  opacity: 0.8;
+  transform: scaleX(1);
+}
+.site-header .header-contact:focus-visible .contact-square::after,
+.site-header .header-contact:active .contact-square::after {
+  opacity: 1;
+}
+.site-header .header-contact:focus-visible .contact-square {
+  transform: translateX(2px);
+}
+@media (hover: hover) and (pointer: fine) {
+  .site-header .header-navigation a:hover,
+  .site-header .header-contact:hover {
+    color: #fff;
+  }
+  .site-header .header-contact:hover .contact-label::after {
+    opacity: 0.8;
+    transform: scaleX(1);
+  }
+  .site-header .header-contact:hover .contact-square {
+    transform: translateX(2px);
+  }
+  .site-header .header-contact:hover .contact-square::after {
+    opacity: 1;
+  }
+}
+.nv-menu nav a > span {
+  position: relative;
+  display: inline-block;
+}
+.nv-menu nav a[aria-current="page"] > span::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--core);
+}
+.nv-menu nav a[aria-current="page"],
+.nv-menu .menu-products a[aria-current="page"] {
+  color: var(--core);
+}
+.nv-menu a:active {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--core) 8%, transparent);
+}
+.nv-menu a:focus-visible {
+  outline: 2px solid var(--core);
+  outline-offset: 3px;
+}
+[data-motion-mode="reduced"] .node-circuit {
+  display: none;
+}
+/* The shared main motion mode also covers the persistent header during route changes. */
+body:has(main[data-motion-mode="reduced"]) .nav-hover-indicator {
+  display: none;
+}
+body:has(main[data-motion-mode="reduced"]) .site-header .header-navigation a,
+body:has(main[data-motion-mode="reduced"])
+  .site-header
+  .header-navigation
+  a::after,
+body:has(main[data-motion-mode="reduced"]) .site-header .header-contact,
+body:has(main[data-motion-mode="reduced"]) .site-header .contact-label::after,
+body:has(main[data-motion-mode="reduced"]) .site-header .contact-square,
+body:has(main[data-motion-mode="reduced"]) .site-header .contact-square::after {
+  transition: none;
+}
+body:has(main[data-motion-mode="reduced"]) .site-header .contact-square {
+  transform: none !important;
+}
+body:has(main[data-motion-mode="reduced"])
+  .site-header
+  .header-navigation
+  a:hover::after,
+body:has(main[data-motion-mode="reduced"])
+  .site-header
+  .header-navigation
+  a:focus-visible::after {
+  opacity: 0.95;
+  transform: scaleX(1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .node-circuit,
+  .nav-hover-indicator {
+    display: none;
+  }
+  .site-header .header-navigation a,
+  .site-header .header-navigation a::after,
+  .site-header .header-contact,
+  .site-header .contact-label::after,
+  .site-header .contact-square,
+  .site-header .contact-square::after {
+    transition: none;
+  }
+  .site-header .contact-square {
+    transform: none !important;
+  }
+  .site-header .header-navigation a:hover::after,
+  .site-header .header-navigation a:focus-visible::after {
+    opacity: 0.95;
+    transform: scaleX(1);
+  }
+}

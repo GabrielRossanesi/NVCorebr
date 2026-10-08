@@ -55,10 +55,13 @@ export function CoreConnectionPulse() {
     <g className="connection-pulses" pointerEvents="none">
       {connections.map(({ name, path, entry }) => (
         <g key={name} data-core-signal={name} stroke={`var(--${name})`}>
+          <path
+            className="connection-highlight"
+            d={path}
+            opacity="0"
+            strokeWidth="1.25"
+          />
           <SignalTrack path={path} entry={entry} />
-          <g data-signal-interaction>
-            <SignalTrack path={path} entry={entry} />
-          </g>
         </g>
       ))}
     </g>

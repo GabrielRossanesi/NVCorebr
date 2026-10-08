@@ -367,7 +367,8 @@ h1 {
 }
 .node-solutions {
   right: -1%;
-  bottom: 4%;
+  /* Match Lex's connection offset: 20 SVG units lower at aspect-ratio 1.13. */
+  bottom: 5.46875%;
   --node-color: var(--solutions);
 }
 .diagram-footnote {

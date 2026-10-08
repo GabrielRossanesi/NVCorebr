@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { monogramPath } from "./brand";
 import { CoreConnectionPulse } from "./core-connection-pulse";
+import { NodeCircuit } from "./node-circuit";
 export function CoreDiagram() {
   return (
     <div
@@ -72,18 +73,22 @@ export function CoreDiagram() {
         <CoreConnectionPulse />
       </svg>
       <Link href="/products/hub" className="diagram-node node-hub">
+        <NodeCircuit />
         <span className="node-square" />
         NV Hub
       </Link>
       <Link href="/products/med" className="diagram-node node-med">
+        <NodeCircuit />
         <span className="node-square" />
         NV Med
       </Link>
       <Link href="/products/lex" className="diagram-node node-lex">
+        <NodeCircuit />
         <span className="node-square" />
         NV Lex
       </Link>
       <Link href="/solutions" className="diagram-node node-solutions">
+        <NodeCircuit />
         <span className="node-square" />
         NV Solutions
       </Link>
