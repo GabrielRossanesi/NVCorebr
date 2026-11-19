@@ -2,38 +2,19 @@ import Link from "next/link";
 import { products } from "@/lib/content";
 import { Brand } from "./brand";
 import { ProductScene } from "./product-scene";
+import { ProductShowcaseRail } from "./product-showcase-rail";
 
 export function ProductShowcase() {
   return (
-    <div className="product-showcase" data-active-product="hub">
-      <nav className="showcase-rail" aria-label="Produtos nesta seção">
-        <span className="rail-label">O MESMO NÚCLEO</span>
-        <Brand symbolOnly />
-        <div>
-          {products.map((p, i) => (
-            <a
-              key={p.id}
-              href={`#showcase-${p.id}`}
-              data-product-link={p.id}
-              className={`theme-${p.id}`}
-            >
-              <small>0{i + 1}</small>
-              <span>{p.name}</span>
-              <span className="rail-dot" aria-hidden="true" />
-            </a>
-          ))}
-        </div>
-        <span className="rail-note">
-          Três identidades.
-          <br />
-          Uma origem.
-        </span>
-      </nav>
+    <div className="product-showcase">
+      <ProductShowcaseRail />
       <div className="showcase-products">
         {products.map((p, i) => (
           <article
             className={`showcase-product theme-${p.id}`}
             id={`showcase-${p.id}`}
+            aria-label={p.name}
+            tabIndex={-1}
             data-product={p.id}
             key={p.id}
           >

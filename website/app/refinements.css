@@ -153,7 +153,7 @@
 }
 .showcase-rail {
   position: sticky;
-  top: 48px;
+  top: var(--site-header-height);
   padding: 30px 0;
 }
 .rail-label,
@@ -189,20 +189,14 @@
   height: 6px;
   border: 1px solid var(--product);
 }
-.product-showcase[data-active-product="hub"] [data-product-link="hub"],
-.product-showcase[data-active-product="med"] [data-product-link="med"],
-.product-showcase[data-active-product="lex"] [data-product-link="lex"] {
+.showcase-rail a[aria-current="location"] {
   color: var(--product);
 }
-.product-showcase[data-active-product="hub"]
-  [data-product-link="hub"]
-  .rail-dot,
-.product-showcase[data-active-product="med"]
-  [data-product-link="med"]
-  .rail-dot,
-.product-showcase[data-active-product="lex"]
-  [data-product-link="lex"]
-  .rail-dot {
+.showcase-rail a[aria-current="location"] > span:first-of-type {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+.showcase-rail a[aria-current="location"] .rail-dot {
   background: var(--product);
 }
 .rail-note {

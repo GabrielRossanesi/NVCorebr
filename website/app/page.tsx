@@ -29,10 +29,10 @@ export default function Home() {
             núcleo próprio.
           </h1>
           <p className="hero-description">
-            Criamos produtos. Construímos soluções.
-            <br />
-            Uma empresa de tecnologia, do primeiro
-            <br className="desktop-break" /> conceito à próxima evolução.
+            Criamos produtos. Construímos soluções.{" "}
+            <br className="desktop-break" />
+            Uma empresa de tecnologia, do primeiro{" "}
+            <br className="desktop-break" />conceito à próxima evolução.
           </p>
           <div className="actions">
             <Link className="button primary" href="/solutions">

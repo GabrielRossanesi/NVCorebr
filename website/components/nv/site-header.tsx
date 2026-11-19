@@ -155,48 +155,59 @@ export function SiteHeader() {
             <SheetDescription className="sr-only">
               Explore produtos, soluções e a empresa.
             </SheetDescription>
-            <nav aria-label="Navegação mobile">
-              {[...links, ["/contact", "Contato"]].map(([href, label]) => (
-                <SheetClose asChild key={href}>
-                  <Link
-                    href={href}
-                    onClick={() => {
-                      menuNavigated.current = true;
-                    }}
-                    aria-current={
-                      path === href || path.startsWith(href + "/")
-                        ? "page"
-                        : undefined
-                    }
-                  >
-                    <span>{label}</span>
-                  </Link>
-                </SheetClose>
-              ))}
-            </nav>
-            <div className="menu-products">
-              <p>Dentro do núcleo</p>
-              {["hub", "med", "lex"].map((id) => (
-                <SheetClose asChild key={id}>
-                  <Link
-                    href={`/products/${id}`}
-                    aria-current={
-                      path === `/products/${id}` ? "page" : undefined
-                    }
-                    onClick={() => {
-                      menuNavigated.current = true;
-                    }}
-                  >
-                    NV {id[0].toUpperCase() + id.slice(1)}
-                  </Link>
-                </SheetClose>
-              ))}
+            <div
+              className="menu-scroll"
+              onFocusCapture={(event) => {
+                // The dialog wraps keyboard focus without scrolling its contents.
+                event.target.scrollIntoView({
+                  block: "nearest",
+                  inline: "nearest",
+                });
+              }}
+            >
+              <nav aria-label="Navegação mobile">
+                {[...links, ["/contact", "Contato"]].map(([href, label]) => (
+                  <SheetClose asChild key={href}>
+                    <Link
+                      href={href}
+                      onClick={() => {
+                        menuNavigated.current = true;
+                      }}
+                      aria-current={
+                        path === href || path.startsWith(href + "/")
+                          ? "page"
+                          : undefined
+                      }
+                    >
+                      <span>{label}</span>
+                    </Link>
+                  </SheetClose>
+                ))}
+              </nav>
+              <div className="menu-products">
+                <p>Dentro do núcleo</p>
+                {["hub", "med", "lex"].map((id) => (
+                  <SheetClose asChild key={id}>
+                    <Link
+                      href={`/products/${id}`}
+                      aria-current={
+                        path === `/products/${id}` ? "page" : undefined
+                      }
+                      onClick={() => {
+                        menuNavigated.current = true;
+                      }}
+                    >
+                      NV {id[0].toUpperCase() + id.slice(1)}
+                    </Link>
+                  </SheetClose>
+                ))}
+              </div>
+              <p className="menu-signature">
+                Produtos próprios.
+                <br />
+                Engenharia sob medida.
+              </p>
             </div>
-            <p className="menu-signature">
-              Produtos próprios.
-              <br />
-              Engenharia sob medida.
-            </p>
           </SheetContent>
         </Sheet>
       </div>

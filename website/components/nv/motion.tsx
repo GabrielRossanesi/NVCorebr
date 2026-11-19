@@ -240,12 +240,6 @@ export function Motion({ route }: { route: string }) {
             .forEach((scene) => {
               const parts = scene.querySelectorAll("[data-scene-part]");
               const article = scene.closest<HTMLElement>("[data-product]");
-              const showcase =
-                article?.closest<HTMLElement>(".product-showcase");
-              const setActive = () => {
-                if (showcase && article)
-                  showcase.dataset.activeProduct = article.dataset.product;
-              };
               gsap.from(parts, {
                 x: (i: number) => (i % 2 ? 1 : -1) * (desktop ? 22 : 8),
                 y: (i: number) => (i < 2 ? 1 : -1) * (desktop ? 30 : 10),
@@ -257,8 +251,6 @@ export function Motion({ route }: { route: string }) {
                   start: "top 85%",
                   end: "center 55%",
                   scrub: 0.45,
-                  onEnter: setActive,
-                  onEnterBack: setActive,
                 },
               });
             });

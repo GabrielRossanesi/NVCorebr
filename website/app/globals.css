@@ -46,6 +46,7 @@
   --motion-cinematic: 1100ms;
   --ease-nv: cubic-bezier(0.22, 1, 0.36, 1);
   --z-header: 30;
+  --site-header-height: 104px;
   --z-overlay: 50;
   --font-body: "Manrope Variable", sans-serif;
   --font-display: "Space Grotesk Variable", sans-serif;
@@ -138,7 +139,7 @@ svg {
   top: 12px;
 }
 .site-header {
-  height: 104px;
+  height: var(--site-header-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -205,7 +206,7 @@ svg {
 }
 .hero {
   position: relative;
-  min-height: calc(100svh - 104px);
+  min-height: calc(100svh - var(--site-header-height));
   max-height: 1100px;
   display: grid;
   grid-template-columns: 1.1fr 1fr;
@@ -234,6 +235,13 @@ svg {
 }
 h1 {
   font-size: clamp(58px, 6.4vw, 118px);
+}
+.hero h1 {
+  font-size: clamp(
+    clamp(42px, min(12.4vw, calc(39px + 2.4vw)), 58px),
+    6.4vw,
+    118px
+  );
 }
 .hero-description {
   margin-top: 30px;
@@ -489,8 +497,8 @@ h1 {
   }
 }
 @media (max-width: 800px) {
-  .site-header {
-    height: 80px;
+  :root {
+    --site-header-height: 80px;
   }
   .site-header nav {
     display: none;
@@ -512,7 +520,7 @@ h1 {
   .hero-description {
     margin-top: 24px;
   }
-  .hero-description br {
+  .hero-description .desktop-break {
     display: none;
   }
   .actions {
@@ -632,12 +640,26 @@ h1 {
   max-width: 550px;
   padding: 30px;
   background: #0b1422;
-  gap: 36px;
+  max-height: 100dvh;
+  gap: clamp(12px, 5dvh, 36px);
 }
 .menu-heading {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: space-between;
+}
+.menu-scroll {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 36px;
+  min-height: 0;
+  margin-inline: -6px;
+  padding: 6px;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-padding-block: 6px;
 }
 .menu-close {
   min-height: 44px;
@@ -2190,9 +2212,6 @@ h1 {
   }
   .ecosystem-children .brand-wordmark {
     font-size: 20px;
-  }
-  .hero h1 {
-    font-size: clamp(42px, 12.4vw, 53px);
   }
   .product-tabs .brand-symbol {
     display: none;
