@@ -1,5 +1,17 @@
 # Product Research — NV Core V2
 
+## Revisão dos checkouts locais em 19 de novembro de 2026
+
+A matriz abaixo atualiza o levantamento histórico de outubro. A verificação foi feita por leitura do código. Disponibilidade, planos, permissões e ambientes comerciais precisam de confirmação com os responsáveis pelos produtos.
+
+| Produto | Evidência atual | Pendência comercial |
+| --- | --- | --- |
+| NV Hub | `app/leads/page.tsx` e `app/propostas/page.tsx` renderizam `ModuleUnavailable` no modo banco. `lib/data-mode.ts` mantém banco como padrão e bloqueia o sandbox em produção. O Kanban e as propostas analisados em outubro pertencem ao sandbox no checkout atual. `app/clientes/page.tsx` e `app/tarefas/page.tsx` implementam acesso ao cadastro de clientes e ao planner com permissões por organização. Publicações têm habilitação própria. | Confirmar a edição comercial e a matriz de módulos habilitados. Até essa confirmação, a apresentação institucional identifica Leads e Propostas como recortes do sandbox e evita atribuir recursos a todos os clientes. |
+| NV Med | `src/app/(dashboard)/escala/page.tsx` e `src/components/schedule/ScheduleCalendarView.tsx` cobrem escalas, filtros, estados de cobertura e conflitos. A rota de documentos e as funções de `src/lib/documentCompliance.ts` sustentam acompanhamento documental. | Manter esse escopo funcional na vitrine. Disponibilidade de serviços externos e resultados em produção dependem de verificação própria. |
+| NV Lex | Há um checkout local com cadastro e consulta de processos e clientes. `src/context/db-context.tsx` usa dados demonstrativos e `localStorage`, com movimentações e alertas simulados. A existência desses fluxos complementa a pesquisa histórica sobre o repositório remoto. | Confirmar estágio e disponibilidade comercial com o responsável. A apresentação permanece institucional, com indicação de protótipo demonstrativo, sem prometer monitoramento, prazos, notificações ou integrações. |
+
+## Levantamento histórico
+
 Análise somente leitura em 7 de outubro de 2026, pelo conector GitHub disponível no ambiente. Nenhum checkout dos produtos, alteração, commit, push, consulta a banco de produção ou acesso a arquivos de ambiente. A implementação está exclusivamente na NV Core, sem dependências entre repositórios.
 
 ## NV Hub

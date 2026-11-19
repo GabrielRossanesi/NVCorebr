@@ -8,27 +8,6 @@
 .site-header nav a[aria-current]::after {
   background: var(--context);
 }
-.showcase-return {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 28px;
-  margin-top: 70px;
-}
-.showcase-return > span {
-  height: 1px;
-  background: var(--border);
-}
-.showcase-return small {
-  grid-column: 1/-1;
-  text-align: center;
-  color: var(--muted);
-  font-size: 9px;
-  letter-spacing: 0.1em;
-}
-.showcase-return .brand-symbol {
-  color: var(--nv-blue);
-}
 .solutions-capabilities .section-heading p:not(.section-label) {
   margin-top: 28px;
   max-width: 480px;
@@ -43,8 +22,35 @@
 .home-solutions {
   background: #0b1524;
 }
+.home-ecosystem,
+.home-products,
+.home-solutions {
+  padding-block: clamp(48px, 6vw, 96px);
+}
+.home-ecosystem h2 {
+  font-size: clamp(30px, 3.6vw, 54px);
+}
+.ecosystem-compact {
+  margin-top: clamp(24px, 3vw, 42px);
+}
+.ecosystem-compact .ecosystem-lines {
+  height: clamp(42px, 6vw, 84px);
+}
+.ecosystem-compact .ecosystem-branch {
+  gap: 12px;
+  min-height: 0;
+}
+.ecosystem-compact .ecosystem-service,
+.ecosystem-compact .ecosystem-children {
+  margin-top: 12px;
+}
+.home-products .section-heading,
+.home-solutions .section-heading {
+  margin-bottom: clamp(24px, 4vw, 48px);
+}
 .home-solutions .section-heading h2 {
   margin-top: 24px;
+  font-size: clamp(30px, 4.2vw, 76px);
 }
 .home-solutions .section-heading > div:last-child {
   max-width: 390px;
@@ -156,15 +162,8 @@
   top: var(--site-header-height);
   padding: 30px 0;
 }
-.rail-label,
-.rail-note {
-  display: block;
-  color: var(--muted);
-  font-size: 10px;
-  letter-spacing: 0.1em;
-}
 .showcase-rail > .brand {
-  margin: 24px 0 46px;
+  margin-bottom: 24px;
 }
 .showcase-rail > .brand .brand-symbol {
   width: 65px;
@@ -178,10 +177,6 @@
   color: var(--muted);
   border-bottom: 1px solid var(--border);
   transition: color 160ms;
-}
-.showcase-rail a small {
-  font-size: 10px;
-  color: var(--muted);
 }
 .rail-dot {
   margin-left: auto;
@@ -199,30 +194,15 @@
 .showcase-rail a[aria-current="location"] .rail-dot {
   background: var(--product);
 }
-.rail-note {
-  margin-top: 40px;
-  line-height: 1.9;
-  letter-spacing: 0;
-  font-size: 12px;
-}
 .showcase-product {
   scroll-margin-top: 40px;
-  padding-bottom: 90px;
-  margin-bottom: 90px;
+  margin-bottom: clamp(36px, 6vw, 88px);
   border-bottom: 1px solid var(--border);
   min-width: 0;
 }
 .showcase-product:last-child {
   margin-bottom: 0;
-  padding-bottom: 0;
   border-bottom: 0;
-}
-.showcase-number {
-  display: block;
-  margin-bottom: 24px;
-  color: var(--muted);
-  font-size: 10px;
-  letter-spacing: 0.12em;
 }
 .showcase-heading {
   display: grid;
@@ -230,16 +210,14 @@
   align-items: center;
   gap: 0 28px;
 }
-.showcase-heading .showcase-number {
-  grid-column: 1/-1;
+.showcase-heading h3 {
+  line-height: 1;
 }
 .showcase-heading .brand-wordmark {
   font-size: 36px;
 }
-.showcase-heading h3 {
-  font-family: var(--font-body);
-  font-size: 13px;
-  letter-spacing: 0;
+.showcase-category {
+  font-size: 14px;
   color: var(--muted);
 }
 .showcase-caption {
@@ -247,11 +225,16 @@
   justify-content: space-between;
   align-items: start;
   gap: 40px;
-  margin-top: 32px;
+  margin-top: 16px;
 }
 .showcase-caption p {
   max-width: 440px;
   font-size: 16px;
+}
+.showcase-caption .showcase-audience {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 14px;
 }
 .showcase-caption .text-link {
   flex-shrink: 0;
@@ -259,7 +242,7 @@
 .showcase-work-link {
   display: block;
   width: fit-content;
-  margin: 60px 0 0 auto;
+  margin: clamp(28px, 4vw, 56px) 0 0 auto;
 }
 .product-scene {
   width: 100%;
@@ -357,17 +340,12 @@
   display: none;
 }
 .product-scene figcaption {
-  padding: 18px 0;
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--border);
+  padding: 12px 0;
   color: var(--muted);
   font-size: 12px;
 }
 .product-scene figcaption small {
-  font-size: 11px;
-  text-align: right;
+  font-size: inherit;
 }
 /* Actual product colors. These panels are static editorial illustrations. */
 .interface-composition {
@@ -875,15 +853,8 @@
   aspect-ratio: 1.05;
 }
 .scene-compact .scene-topline,
-.scene-compact figcaption > span,
 .scene-compact .scene-satellite {
   display: none;
-}
-.scene-compact figcaption {
-  justify-content: start;
-}
-.scene-compact figcaption small {
-  text-align: left;
 }
 .scene-compact .interface-composition {
   inset: 16% -25% 15% 7%;
@@ -910,15 +881,8 @@
   fill: currentColor;
   letter-spacing: 1.5px;
 }
-.convergence-art > span {
-  display: block;
-  color: var(--muted);
-  font-size: 10px;
-  letter-spacing: 0.16em;
-  margin-top: 10px;
-}
 .convergence-copy {
-  margin-top: 64px;
+  margin-top: clamp(20px, 4vw, 56px);
 }
 .convergence-copy h2 {
   font-size: clamp(40px, 5.5vw, 90px);
@@ -935,20 +899,6 @@
   flex-wrap: wrap;
   gap: 32px;
   margin-top: 40px;
-}
-.convergence-signature {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  font-size: 9px;
-  letter-spacing: 0.14em;
-  color: var(--muted);
-  margin-top: 76px;
-}
-.convergence-signature .brand-symbol {
-  width: 28px;
-  height: 19px;
 }
 .footer-epilogue {
   display: flex;
@@ -1040,13 +990,6 @@
     display: inline-block;
     margin-top: 24px;
   }
-  .product-scene figcaption {
-    flex-direction: column;
-    gap: 8px;
-  }
-  .product-scene figcaption small {
-    text-align: left;
-  }
   .hub-opening,
   .med-opening {
     grid-template-columns: 1fr 1fr;
@@ -1110,9 +1053,7 @@
     position: static;
     padding: 0 0 32px;
   }
-  .showcase-rail > .brand,
-  .rail-label,
-  .rail-note {
+  .showcase-rail > .brand {
     display: none;
   }
   .showcase-rail > div {
@@ -1124,32 +1065,25 @@
     font-size: 13px;
     gap: 8px;
   }
-  .showcase-rail a small {
-    font-size: 9px;
-  }
   .rail-dot {
     display: none;
   }
   .showcase-heading {
     display: block;
   }
-  .showcase-heading h3 {
-    margin-top: 18px;
+  .showcase-category {
+    margin-top: 8px;
   }
   .showcase-heading .brand-wordmark {
     font-size: 32px;
   }
-  .showcase-product {
-    padding-bottom: 54px;
-    margin-bottom: 54px;
-  }
   .showcase-caption {
     display: block;
-    margin-top: 22px;
+    margin-top: 12px;
   }
   .showcase-caption .text-link {
     display: inline-block;
-    margin-top: 22px;
+    margin-top: 12px;
   }
   .product-scene {
     margin-top: 28px;
@@ -1201,9 +1135,6 @@
     width: 2cqw;
     height: 2cqw;
   }
-  .interface-med .interface-composition {
-    font-size: 2.4cqw;
-  }
   .schedule-matrix {
     grid-template-columns: 1.1fr repeat(2, 1fr);
   }
@@ -1223,6 +1154,57 @@
     width: 3cqw;
     height: 3cqw;
   }
+  .product-scene:not(.scene-compact) .interface-composition,
+  .product-scene:not(.scene-compact) .interface-detail {
+    font-size: clamp(10px, 2.5cqw, 15px);
+  }
+  .product-scene:not(.scene-compact) :is(
+    .interface-heading small,
+    .lead-card > small,
+    .lead-card > span,
+    .lead-card-footer,
+    .lead-column-title > span,
+    .lead-placeholder,
+    .planner-row small,
+    .planner-row:last-child,
+    .schedule-filter,
+    .schedule-label > span,
+    .schedule-label > small,
+    .shift-cell > small,
+    .shift-avatars,
+    .document-fragment > small
+  ) {
+    display: none;
+  }
+  .product-scene:not(.scene-compact) :is(
+    .lead-card > strong,
+    .lead-column-title,
+    .planner-row,
+    .schedule-head,
+    .schedule-label,
+    .shift-status,
+    .document-fragment > div
+  ) {
+    font-size: 1em;
+  }
+  .product-scene:not(.scene-compact) .lead-column-title {
+    white-space: normal;
+  }
+  .scene-hub:not(.scene-compact) .scene-canvas {
+    width: 100%;
+    min-height: 290px;
+  }
+  .scene-hub:not(.scene-compact) .interface-hub {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 12%;
+  }
+  .scene-hub:not(.scene-compact) .planner-fragment {
+    position: relative;
+    inset: auto;
+    align-self: flex-end;
+  }
   .scene-core {
     left: 4%;
     bottom: 3%;
@@ -1236,15 +1218,6 @@
   }
   .scene-topline {
     font-size: 9px;
-  }
-  .product-scene figcaption {
-    flex-direction: column;
-    gap: 8px;
-    font-size: 11px;
-  }
-  .product-scene figcaption small {
-    text-align: left;
-    font-size: 10px;
   }
   .hub-opening,
   .med-opening {
@@ -1312,12 +1285,6 @@
   .convergence-art > svg {
     min-height: 150px;
   }
-  .convergence-art > span {
-    font-size: 8px;
-  }
-  .convergence-copy {
-    margin-top: 44px;
-  }
   .convergence-copy h2 {
     font-size: clamp(37px, 8.6vw, 58px);
   }
@@ -1330,11 +1297,6 @@
     width: 100%;
     max-width: 340px;
     padding-inline: 12px;
-  }
-  .convergence-signature {
-    font-size: 7px;
-    gap: 12px;
-    margin-top: 52px;
   }
   .footer-epilogue {
     gap: 18px;

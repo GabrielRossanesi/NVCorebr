@@ -6,7 +6,7 @@ import { Cta } from "@/components/nv/cta";
 import { pageMetadata } from "@/lib/site";
 export const metadata = pageMetadata(
   "NV Lex | Tecnologia para o jurídico",
-  "NV Lex é o produto próprio da NV Core voltado ao setor jurídico. Legal technology com a engenharia do núcleo NV.",
+  "NV Lex é o produto da NV Core voltado ao setor jurídico. Conheça a identidade e o estágio demonstrativo do projeto.",
   "/products/lex",
 );
 export default function Lex() {
@@ -18,7 +18,7 @@ export default function Lex() {
             Ecossistema NV
           </Link>
           <Brand name="lex" />
-          <p className="lex-category">Legal technology</p>
+          <p className="lex-category">Protótipo demonstrativo</p>
           <h1>
             Um novo contexto
             <br />
@@ -51,9 +51,9 @@ export default function Lex() {
             Tecnologia aplicada a um setor com identidade própria.
           </p>
           <p>
-            O NV Lex faz parte do ecossistema NV Core. A apresentação detalhada
-            de aplicações e funcionalidades será disponibilizada com a
-            documentação do produto.
+            O protótipo demonstra fluxos de cadastro e consulta de processos e
+            clientes com dados fictícios. A apresentação mostra a identidade do
+            produto e seu estágio atual.
           </p>
           <Link className="text-link" href="/about">
             A engenharia por trás da marca

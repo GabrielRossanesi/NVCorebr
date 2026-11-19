@@ -6,22 +6,22 @@ import { ProductInterface } from "./product-interface";
 const signatures = {
   hub: {
     title: "Conexão",
-    subtitle: "Módulos. Relações. Um núcleo.",
     word: "CONNECT",
+    caption: "Recorte da versão de demonstração (sandbox) · dados fictícios",
   },
   med: {
     title: "Continuidade",
-    subtitle: "Fluxo. Contexto. A mesma origem.",
     word: "FLOW",
+    caption: "Interface reconstruída · dados demonstrativos fictícios",
   },
   lex: {
     title: "Estrutura",
-    subtitle: "Planos. Precisão. Uma direção.",
     word: "STRUCTURE",
+    caption: "Composição da identidade NV Lex",
   },
 };
 
-/** Actual interface structures for Hub/Med; identity only until Lex has source. */
+/** Editorial reconstructions for Hub and Med, brand composition for Lex. */
 export function ProductScene({
   id,
   compact = false,
@@ -64,12 +64,7 @@ export function ProductScene({
         </div>
       </div>
       <figcaption>
-        <span>{signature.subtitle}</span>
-        <small>
-          {id === "lex"
-            ? "Composição da identidade NV Lex"
-            : "Interface reconstruída · dados demonstrativos fictícios"}
-        </small>
+        <small>{signature.caption}</small>
       </figcaption>
     </figure>
   );

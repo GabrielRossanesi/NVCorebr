@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { Brand } from "./brand";
-export function Ecosystem() {
+export function Ecosystem({ compact = false }: { compact?: boolean }) {
   return (
-    <div className="ecosystem-map">
-      <div className="ecosystem-core">
+    <div className={`ecosystem-map${compact ? " ecosystem-compact" : ""}`}>
+      <div className="ecosystem-core" aria-hidden={compact || undefined}>
         <Brand />
-        <span>Um núcleo de engenharia</span>
+        {!compact && <span>Um núcleo de engenharia</span>}
       </div>
       <svg
         className="ecosystem-lines"
@@ -25,11 +25,22 @@ export function Ecosystem() {
           <Link className="ecosystem-branch" href="/products">
             <span>NV Products</span>
             <h3>
-              A nossa visão,
-              <br />
-              em forma de produto.
+              {compact ? (
+                "Produtos próprios"
+              ) : (
+                <>
+                  A nossa visão,
+                  <br />
+                  em forma de produto.
+                </>
+              )}
             </h3>
           </Link>
+          {compact && (
+            <p className="ecosystem-service">
+              Conheça os produtos para operação empresarial, saúde e jurídico.
+            </p>
+          )}
           <div className="ecosystem-children">
             {(["hub", "med", "lex"] as const).map((id) => (
               <Link href={`/products/${id}`} key={id}>
@@ -42,15 +53,27 @@ export function Ecosystem() {
           <Link className="ecosystem-branch" href="/solutions">
             <Brand name="solutions" />
             <h3>
-              O seu negócio,
-              <br />
-              com a nossa engenharia.
+              {compact ? (
+                "Software sob medida"
+              ) : (
+                <>
+                  O seu negócio,
+                  <br />
+                  com a nossa engenharia.
+                </>
+              )}
             </h3>
           </Link>
           <p className="ecosystem-service">
-            Software, sistemas de gestão, plataformas,
-            <br />
-            web, integrações e automações.
+            {compact ? (
+              "Contrate desenvolvimento de sistemas, plataformas e integrações para sua empresa."
+            ) : (
+              <>
+                Software, sistemas de gestão, plataformas,
+                <br />
+                web, integrações e automações.
+              </>
+            )}
           </p>
         </div>
       </div>

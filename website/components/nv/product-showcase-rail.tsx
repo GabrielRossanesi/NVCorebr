@@ -50,10 +50,9 @@ export function ProductShowcaseRail() {
 
   return (
     <nav ref={rail} className="showcase-rail" aria-label="Produtos nesta seção">
-      <span className="rail-label">O MESMO NÚCLEO</span>
       <Brand symbolOnly />
       <div>
-        {products.map((p, i) => (
+        {products.map((p) => (
           <a
             key={p.id}
             href={`#showcase-${p.id}`}
@@ -61,17 +60,11 @@ export function ProductShowcaseRail() {
             className={`theme-${p.id}`}
             aria-current={active === p.id ? "location" : undefined}
           >
-            <small aria-hidden="true">0{i + 1}</small>
             <span>{p.name}</span>
             <span className="rail-dot" aria-hidden="true" />
           </a>
         ))}
       </div>
-      <span className="rail-note">
-        Três identidades.
-        <br />
-        Uma origem.
-      </span>
     </nav>
   );
 }

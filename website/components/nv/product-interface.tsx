@@ -116,7 +116,7 @@ export function ProductInterface({ id }: { id: "hub" | "med" }) {
             <span>Turno diurno</span>
           </div>
           <div className="schedule-matrix">
-            <div className="schedule-head">Unidade · setor · turno</div>
+            <div className="schedule-head">Setor · turno</div>
             {["Seg", "Ter", "Qua"].map((day) => (
               <div className="schedule-head" key={day}>
                 {day}
@@ -156,11 +156,11 @@ export function ProductInterface({ id }: { id: "hub" | "med" }) {
         <small>DOCUMENTAÇÃO MÉDICA</small>
         <strong>Acompanhamento documental</strong>
         <div>
-          <span>Documento demonstrativo A</span>
+          <span>Documento A</span>
           <b className="document-approved">Aprovado</b>
         </div>
         <div>
-          <span>Documento demonstrativo B</span>
+          <span>Documento B</span>
           <b className="document-review">Em análise</b>
         </div>
       </div>

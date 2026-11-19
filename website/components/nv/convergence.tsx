@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Brand, monogramPath, symbolPaths } from "./brand";
+import { monogramPath, symbolPaths } from "./brand";
 
 export function Convergence() {
   return (
@@ -77,32 +77,23 @@ export function Convergence() {
             <path d={monogramPath} transform="translate(432 98) scale(2.45)" />
           </g>
         </svg>
-        <span>TUDO VOLTA PARA O MESMO NÚCLEO</span>
       </div>
       <div className="convergence-copy">
-        <p className="section-label">O próximo capítulo</p>
         <h2 id="convergence-title">
-          A sua próxima evolução
-          <br />
-          precisa de um bom núcleo.
+          Vamos conversar sobre seu projeto?
         </h2>
         <p>
-          Produtos próprios. Engenharia para o seu negócio.
-          <br />
-          Dois caminhos para construir com a NV.
+          Conte à NV Solutions o que a sua empresa precisa desenvolver.
         </p>
       </div>
       <div className="convergence-actions">
         <Link className="button primary" href="/contact?intent=software">
-          Construir com a NV Solutions
+          Conte seu projeto
         </Link>
         <Link className="text-link" href="/products">
-          Conhecer os produtos NV
+          Explore os produtos NV
         </Link>
       </div>
-      <span className="convergence-signature">
-        <Brand symbolOnly /> DESIGN + PRODUTO + ENGENHARIA
-      </span>
     </section>
   );
 }

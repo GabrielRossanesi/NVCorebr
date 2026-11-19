@@ -5,14 +5,14 @@ export interface Product {
   category: string;
   description: string;
   audience: string;
-  contentStatus: "verified-code" | "awaiting-product-details";
+  contentStatus: "verified-code" | "prototype";
 }
 export const products: Product[] = [
   {
     id: "hub",
     name: "NV Hub",
     category: "Operações conectadas",
-    description: "Do primeiro contato à rotina da equipe. Gestão comercial e operacional conectada em um produto próprio.",
+    description: "Gestão comercial e operacional em um produto próprio.",
     audience:
       "Para agências, consultorias e empresas de serviços recorrentes.",
     contentStatus: "verified-code",
@@ -21,7 +21,8 @@ export const products: Product[] = [
     id: "med",
     name: "NV Med",
     category: "Tecnologia para saúde",
-    description: "Escalas, cobertura por turno e documentação médica. Clareza para a operação de equipes de saúde.",
+    description:
+      "Organize escalas por unidade e setor e acompanhe a cobertura por turno e a documentação médica.",
     audience:
       "Para equipes que organizam profissionais, unidades e escalas médicas.",
     contentStatus: "verified-code",
@@ -31,9 +32,8 @@ export const products: Product[] = [
     name: "NV Lex",
     category: "Tecnologia para o jurídico",
     description: "Produto próprio da NV Core voltado ao setor jurídico.",
-    audience:
-      "Para o setor jurídico. Escopo e funcionalidades serão apresentados com a documentação do produto.",
-    contentStatus: "awaiting-product-details",
+    audience: "Para equipes do setor jurídico.",
+    contentStatus: "prototype",
   },
 ];
 export const capabilities = [

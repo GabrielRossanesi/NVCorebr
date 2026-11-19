@@ -18,7 +18,7 @@ export function SiteFooter() {
           começa no núcleo.
         </p>
         <Link className="text-link" href="/contact">
-          Vamos construir juntos
+          Entrar em contato
         </Link>
       </div>
       <div className="footer-columns">

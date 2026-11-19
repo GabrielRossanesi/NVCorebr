@@ -520,9 +520,6 @@ h1 {
   .hero-description {
     margin-top: 24px;
   }
-  .hero-description .desktop-break {
-    display: none;
-  }
   .actions {
     margin-top: 28px;
   }

@@ -6,7 +6,7 @@ import { Cta } from "@/components/nv/cta";
 import { pageMetadata } from "@/lib/site";
 export const metadata = pageMetadata(
   "NV Hub | Produto próprio da NV Core",
-  "Gestão comercial e operacional para agências e consultorias: Central de Leads, clientes, propostas e planner da equipe. Um produto da NV Core.",
+  "Gestão comercial e operacional para agências, consultorias e empresas de serviços. Conheça o NV Hub e veja um recorte demonstrativo do produto.",
   "/products/hub",
 );
 export default function Hub() {
@@ -25,8 +25,8 @@ export default function Hub() {
             <br />o núcleo.
           </h1>
           <p className="opening-description">
-            Da Central de Leads ao planner da equipe. Gestão comercial e
-            operacional para agências, consultorias e empresas de serviços.
+            Gestão comercial e operacional para agências, consultorias e
+            empresas de serviços. A cena ilustra o modo de demonstração.
           </p>
           <Link
             className="button product-button"
@@ -53,9 +53,8 @@ export default function Hub() {
             A operação fica mais clara quando suas etapas se conectam.
           </p>
           <p>
-            O Kanban organiza o avanço dos leads. Clientes e propostas dão
-            continuidade ao trabalho comercial. O planner reúne tarefas e
-            publicações em visões de agenda e calendário.
+            O produto reúne rotinas de clientes e de equipe em um só lugar.
+            Os recursos disponíveis variam conforme as permissões da organização.
           </p>
           <Link className="text-link" href="/about">
             Conheça a empresa por trás do produto
@@ -64,24 +63,27 @@ export default function Hub() {
       </section>
       <section className="wrap product-modules" aria-label="Dentro do NV Hub">
         <article>
-          <span>01 / COMERCIAL</span>
+          <span>MODO DE DEMONSTRAÇÃO</span>
           <h3>Central de Leads</h3>
           <p>
-            Kanban, lista e acompanhamento das etapas do primeiro contato à
-            conversão.
+            A versão demonstrativa apresenta Kanban, lista e etapas de
+            acompanhamento de leads.
           </p>
         </article>
         <article>
           <span>02 / CONTEXTO</span>
-          <h3>Clientes & propostas</h3>
-          <p>Cadastros e propostas fazem parte da mesma rotina comercial.</p>
+          <h3>Clientes</h3>
+          <p>
+            Cadastro e consulta de clientes. O fluxo de propostas é exibido no
+            modo de demonstração.
+          </p>
         </article>
         <article>
           <span>03 / OPERAÇÃO</span>
           <h3>Planner da equipe</h3>
           <p>
-            Tarefas e publicações. Dia, semana e mês para organizar o próximo
-            passo.
+            Tarefas em visões de dia, semana e mês. Publicações dependem de
+            habilitação na organização.
           </p>
         </article>
       </section>
