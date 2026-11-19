@@ -657,6 +657,8 @@ h1 {
   overflow-y: auto;
   overscroll-behavior-y: contain;
   scroll-padding-block: 6px;
+  color-scheme: dark;
+  scrollbar-color: var(--muted) var(--surface);
 }
 .menu-close {
   min-height: 44px;

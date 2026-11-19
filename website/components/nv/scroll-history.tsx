@@ -20,21 +20,30 @@ export function ScrollHistory() {
   const pending = useRef<Entry | null>(null);
   const currentPath = useRef(pathname);
   const currentHash = useRef("");
+  const routeHistoryState = useRef<Record<string, unknown> | null>(null);
   const restoreFrame = useRef(0);
 
   useEffect(() => {
     const previousMode = history.scrollRestoration;
     history.scrollRestoration = "manual";
     currentHash.current = location.hash;
+    const writePosition = (key: string, position: Position) => {
+      // Native fragment entries can start without the router's history state.
+      // Keep the current route's metadata when recording those entries.
+      history.replaceState(
+        {
+          ...routeHistoryState.current,
+          ...history.state,
+          nvScroll: { key, position },
+        },
+        "",
+      );
+    };
     const save = (writeState: boolean) => {
       if (!currentKey.current) return;
       const position = { x: scrollX, y: scrollY };
       remember(currentKey.current, position);
-      if (writeState)
-        history.replaceState(
-          { ...history.state, nvScroll: { key: currentKey.current, position } },
-          "",
-        );
+      if (writeState) writePosition(currentKey.current, position);
     };
     const restore = (entry: Entry) => {
       cancelAnimationFrame(restoreFrame.current);
@@ -82,10 +91,7 @@ export function ScrollHistory() {
             window.scrollTo({ top: 0, behavior: "instant" });
           const position = { x: scrollX, y: scrollY };
           remember(key, position);
-          history.replaceState(
-            { ...history.state, nvScroll: { key, position } },
-            "",
-          );
+          writePosition(key, position);
         });
         return;
       }
@@ -104,15 +110,40 @@ export function ScrollHistory() {
         restore(entry);
       }
     };
+    const restoreShowcase = (event: HashChangeEvent) => {
+      const previous = new URL(event.oldURL);
+      const destination = new URL(event.newURL);
+      if (
+        previous.pathname !== destination.pathname ||
+        previous.search !== destination.search ||
+        destination.href !== location.href
+      )
+        return;
+
+      const target = document.getElementById(destination.hash.slice(1));
+      if (!target?.matches(".showcase-product")) return;
+
+      // A product fragment has its own destination. Restore it after the
+      // browser's history traversal instead of replaying its saved coordinates.
+      cancelAnimationFrame(restoreFrame.current);
+      restoreFrame.current = requestAnimationFrame(() => {
+        if (!target.isConnected || location.href !== destination.href) return;
+        target.scrollIntoView({ block: "start", behavior: "instant" });
+        target.focus({ preventScroll: true });
+        save(true);
+      });
+    };
     const unload = () => save(true);
     document.addEventListener("click", click, true);
     window.addEventListener("popstate", pop, true);
+    window.addEventListener("hashchange", restoreShowcase);
     window.addEventListener("beforeunload", unload);
     return () => {
       cancelAnimationFrame(restoreFrame.current);
       history.scrollRestoration = previousMode;
       document.removeEventListener("click", click, true);
       window.removeEventListener("popstate", pop, true);
+      window.removeEventListener("hashchange", restoreShowcase);
       window.removeEventListener("beforeunload", unload);
     };
   }, []);
@@ -120,6 +151,7 @@ export function ScrollHistory() {
   useEffect(() => {
     currentPath.current = pathname;
     currentHash.current = location.hash;
+    routeHistoryState.current = history.state;
     const initial = currentKey.current === null;
     const entry =
       pending.current ??
@@ -139,16 +171,16 @@ export function ScrollHistory() {
       },
       "",
     );
+    const target = document.getElementById(location.hash.slice(1));
+    const productFragment = target?.matches(".showcase-product");
     if (
-      (initial || !entry) &&
-      location.hash &&
-      (!entry || entry.position.y === 0)
+      productFragment ||
+      (target && (initial || !entry) && (!entry || entry.position.y === 0))
     ) {
       cancelAnimationFrame(restoreFrame.current);
       restoreFrame.current = requestAnimationFrame(() => {
-        document
-          .getElementById(location.hash.slice(1))
-          ?.scrollIntoView({ block: "start", behavior: "instant" });
+        target?.scrollIntoView({ block: "start", behavior: "instant" });
+        if (productFragment) target?.focus({ preventScroll: true });
       });
     } else if (entry) {
       cancelAnimationFrame(restoreFrame.current);
