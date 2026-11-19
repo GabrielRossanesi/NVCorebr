@@ -9,12 +9,16 @@ export function ProductShowcaseRail() {
   const [active, setActive] = useState<string>();
 
   useEffect(() => {
-    const articles = rail.current
-      ?.closest(".product-showcase")
-      ?.querySelectorAll<HTMLElement>("[data-product]");
-    if (!articles?.length) return;
+    const nav = rail.current;
+    const showcase = nav?.closest(".product-showcase");
+    if (!nav || !showcase) return;
+    const articles = [
+      ...showcase.querySelectorAll<HTMLElement>("[data-product]"),
+    ];
+    if (!articles.length) return;
 
     let observer: IntersectionObserver;
+    let focusFrame = 0;
     const observe = () => {
       observer?.disconnect();
       const scrollPadding = parseFloat(
@@ -26,7 +30,10 @@ export function ProductShowcaseRail() {
       // Track the upper reading area, including where fragment links land.
       const top = Math.min(
         innerHeight - 1,
-        Math.max(Math.round(innerHeight * 0.35), scrollPadding + scrollMargin + 8),
+        Math.max(
+          Math.round(innerHeight * 0.35),
+          scrollPadding + scrollMargin + 8,
+        ),
       );
       observer = new IntersectionObserver(
         (entries) => {
@@ -40,11 +47,41 @@ export function ProductShowcaseRail() {
       articles.forEach((article) => observer.observe(article));
     };
 
+    const restoreFragmentFocus = () => {
+      cancelAnimationFrame(focusFrame);
+      const focused = document.activeElement;
+      if (
+        focused !== document.body &&
+        !articles.some((article) => article === focused)
+      )
+        return;
+      const target = articles.find(
+        (article) => `#${article.id}` === location.hash,
+      );
+      if (!target) return;
+
+      // Read the viewport after ScrollHistory restores the previous position.
+      focusFrame = requestAnimationFrame(() => {
+        const bounds = target.getBoundingClientRect();
+        const headerBottom =
+          document.querySelector(".site-header")?.getBoundingClientRect()
+            .bottom ?? 0;
+        const focusTarget =
+          bounds.bottom > headerBottom && bounds.top < innerHeight
+            ? target
+            : nav.querySelector<HTMLAnchorElement>(`a[href="#${target.id}"]`);
+        focusTarget?.focus({ preventScroll: true });
+      });
+    };
+
     observe();
     window.addEventListener("resize", observe);
+    window.addEventListener("hashchange", restoreFragmentFocus);
     return () => {
+      cancelAnimationFrame(focusFrame);
       observer.disconnect();
       window.removeEventListener("resize", observe);
+      window.removeEventListener("hashchange", restoreFragmentFocus);
     };
   }, []);
 

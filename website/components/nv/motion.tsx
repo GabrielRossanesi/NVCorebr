@@ -17,10 +17,13 @@ export function Motion({ route }: { route: string }) {
   const anchor = useRef<HTMLSpanElement>(null);
   const overlay = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    if (path !== route) return;
+    const main = anchor.current?.closest("main");
+    if (path !== route || !main) return;
     const changed =
       lastAnimatedRoute !== undefined && lastAnimatedRoute !== path;
     lastAnimatedRoute = path;
+    // Keep route focus independent of motion and preserve history restoration.
+    if (changed) main.focus({ preventScroll: true });
     track("navigation", { path });
     if (path.startsWith("/products/"))
       track("product_view", { product: path.split("/").pop() ?? "" });
@@ -28,8 +31,6 @@ export function Motion({ route }: { route: string }) {
     let cancelled = false;
     let dispose: undefined | (() => void);
     const frame = requestAnimationFrame(async () => {
-      const main = anchor.current?.closest("main");
-      if (!main) return;
       const [{ gsap }, { ScrollTrigger }] = await Promise.all([
         import("gsap"),
         import("gsap/ScrollTrigger"),
@@ -70,10 +71,9 @@ export function Motion({ route }: { route: string }) {
             if (title)
               gsap.from(title, {
                 y: 18,
-                opacity: 0.4,
                 duration: motion.slow,
                 ease: motion.ease,
-                clearProps: "all",
+                clearProps: "transform",
               });
             const layers = main.querySelectorAll(".core-layer");
             if (layers.length) {
@@ -324,7 +324,7 @@ export function Motion({ route }: { route: string }) {
             );
             gsap.fromTo(
               overlay.current,
-              { x: 12, scale: 0.94, autoAlpha: 1 },
+              { x: 12, scale: 0.94, autoAlpha: 0.28 },
               {
                 x: -8,
                 scale: 1,
@@ -349,10 +349,6 @@ export function Motion({ route }: { route: string }) {
           };
         },
       );
-      if (changed) {
-        // ScrollHistory restores history entries without animated scroll.
-        main.focus({ preventScroll: true });
-      }
       void document.fonts.ready.then(() => {
         if (!cancelled && Number(main.dataset.motionTriggers) > 0) {
           ScrollTrigger.clearScrollMemory("manual");
